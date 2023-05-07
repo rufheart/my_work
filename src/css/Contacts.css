@@ -1,0 +1,369 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.contacts-main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+}
+.contacts-main > div.contacts-main-left {
+  width: 25%;
+  height: 968px;
+  border-right: 1px solid #ECECEC;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header {
+  background-color: #ECECEC;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 68px;
+  border: 1px solid red;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header > * {
+  margin: 5px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header div.button {
+  width: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header div.button > div {
+  width: 90%;
+  border: 1px solid rgb(50, 50, 50);
+  margin: 2px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header input {
+  flex-grow: 1;
+  padding: 7px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 3px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body {
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top {
+  height: 50%;
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 8px 12px;
+  gap: 12px;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(1) {
+  width: 79px;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(1) > span {
+  width: 66px;
+  height: 12px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #B7B7B7;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(1) > i {
+  font-size: 28px;
+  color: #FFD96C;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(2), .contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a div:nth-child(4) {
+  height: 100%;
+  border: 1px solid #EFEFEF;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 8px;
+  width: 213px;
+  border: 1px solid blue;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(3) > * {
+  border: 1px solid red;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(3) > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(3) > span {
+  width: 149px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #383838;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(5) {
+  width: 79px;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(5) > span {
+  width: 70px;
+  height: 12px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #B7B7B7;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-top > a > div:nth-child(5) > i {
+  font-size: 28px;
+  color: #73E473;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom {
+  height: 50%;
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+  width: 100%;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid red;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(1) > span {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #959595;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 171px;
+  width: 100%;
+  height: 72px;
+  border: 1px solid red;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 240px;
+  border: 1px solid red;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) > span {
+  width: 155px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #383838;
+  overflow: hidden;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(2) {
+  width: 60px;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(2) > button {
+  border: none;
+  background: transparent;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A9CFF;
+}
+.contacts-main > div.contacts-main-right {
+  width: 75%;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid blue;
+}
+.contacts-main > div.contacts-main-right > div.messages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head {
+  border: 1px solid red;
+  height: 6%;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 0 10px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left {
+  flex-grow: 1;
+  display: flex;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left div.image-div {
+  width: 5%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left div.image-div > div.image {
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  background-image: url("../images/user1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left div.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left div.about > * {
+  margin: 2px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left div.about > div.username {
+  font-size: 13px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.left div.about > div.date-ago {
+  font-size: 12px;
+  color: #959595;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.right {
+  display: flex;
+  align-items: center;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.right > div {
+  margin: 15px;
+  cursor: pointer;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.head > div.right > div:hover {
+  color: #356CD2;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main {
+  width: 100%;
+  height: 94%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/back.png");
+  background-repeat: repeat;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages {
+  width: 70%;
+  position: relative;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.read-messages {
+  height: 88%;
+  overflow: scroll;
+  padding: 0 10px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.read-messages > * {
+  font-size: 13px;
+  color: rgb(50, 50, 50);
+  display: flex;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.read-messages > * > div {
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 50%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.read-messages > div.my-message {
+  justify-content: right;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.read-messages > div.my-message > div {
+  background-color: #F1F9FF;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.read-messages > div.target-message > div {
+  background-color: white;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.write-messages {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.write-messages > * {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.write-messages > textarea {
+  width: 100%;
+  height: 40px;
+  resize: none;
+  border-radius: 10px;
+  border: none;
+}
+.contacts-main > div.contacts-main-right > div.messages > div.main > div.all-messages > div.write-messages > i {
+  background-color: #356CD2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 45px;
+  border-radius: 50%;
+}/*# sourceMappingURL=Contacts.css.map */

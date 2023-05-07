@@ -1,0 +1,5376 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.card_main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid blue;
+}
+.card_main > div:nth-child(1) {
+  height: 830px;
+}
+.card_main > div.footer {
+  display: flex;
+  justify-content: center;
+  height: 138px;
+  border-top: 1px solid #ECECEC;
+}
+.card_main > div.footer > div {
+  width: 68%;
+}
+.card_main > div.footer > div > div {
+  margin: 18px 0px;
+}
+.card_main > div.footer > div > div:nth-child(1) {
+  display: flex;
+}
+.card_main > div.footer > div > div:nth-child(1) > div {
+  width: 50%;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) {
+  margin-left: 40px;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(1) > a {
+  margin: 5px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B7B7B7;
+  text-decoration: none;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(1) > a > i {
+  color: white;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  justify-content: right;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(2) > select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #FFFFFF;
+  border: none;
+  border: 1px solid #356CD2;
+  color: #356CD2;
+  box-sizing: border-box;
+  padding-left: 16px;
+  margin-right: 40px;
+  width: 220px;
+  height: 40px;
+  border-radius: 100px;
+}
+.card_main > div.footer > div > div:nth-child(1) > div:nth-child(2) > select > select option {
+  color: blue;
+}
+.card_main > div.footer > div > div:nth-child(2) {
+  display: flex;
+}
+.card_main > div.footer > div > div:nth-child(2) > div:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin: 10px 40px;
+  color: #686767;
+}
+.card_main > div.footer > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.card_main > div.footer > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) {
+  margin-left: 5px;
+}
+.card_main > div.footer > div > div:nth-child(2) > a {
+  align-self: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  /* identical to box height, or 133% */
+  /* Neutral/400 */
+  color: #7C7C7C;
+}
+
+.all-cards-start > div > div.header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.all-cards-start > div > div.header > div {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid red;
+}
+.all-cards-start > div > div.header > div > div.header-left {
+  width: 654px;
+  display: flex;
+  align-items: center;
+}
+.all-cards-start > div > div.header > div > div.header-left > div {
+  width: 654px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > div, .all-cards-start > div > div.header > div > div.header-left > div a {
+  margin-left: 15px;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > div:nth-child(1) {
+  width: 169px;
+  height: 32px;
+  height: 32px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #959595;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > div:nth-child(2) {
+  position: relative;
+  width: 260px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > div:nth-child(2) > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > div:nth-child(2) > input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 5px;
+  border: none;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-right: 35px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #959595;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > div:nth-child(2) > span {
+  position: absolute;
+  right: 8px;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 177px;
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  text-decoration: none;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.all-cards-start > div > div.header > div > div.header-left > div > a > span {
+  margin-left: 10px;
+  color: #356CD2;
+  font-size: 34px;
+}
+.all-cards-start > div > div.header > div > div.header-middle {
+  width: 361px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-cards-start > div > div.header > div > div.header-middle > select {
+  margin-left: 8px;
+  width: 111px;
+  height: 36px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: none;
+  border: 1px solid #959595;
+  color: #686767;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.all-cards-start > div > div.header > div > div.header-right {
+  width: 100px;
+  height: 100% px;
+  align-items: center;
+  display: flex;
+}
+.all-cards-start > div > div.header > div > div.header-right > a {
+  margin-left: 15px;
+  border: none;
+  background: transparent;
+  color: #B7B7B7;
+}
+.all-cards-start > div > div.middle {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.all-cards-start > div > div.middle > div.middle-center {
+  width: 68%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card {
+  width: 45%;
+  height: 75%;
+  margin: 10px;
+  border-radius: 16px;
+  border: 1px solid #D1D1D1;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(1) {
+  margin: 0px 10px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(1) > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(2) {
+  margin: 0px 10px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > span:nth-child(1) {
+  font-size: 14px;
+  color: #959595;
+  align-self: center;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  font-size: 14px;
+  color: #959595;
+  margin-left: 5px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > button:nth-child(3) {
+  position: absolute;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #686767;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(2) {
+  height: 60px;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(3) {
+  width: 95%;
+  border: 1px solid #ECECEC;
+  margin: auto;
+  margin-top: 10px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(4) {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(4) > div {
+  color: #686767;
+  border-radius: 8px;
+  height: 32px;
+  border: 1px solid #D1D1D1;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(4) > div > span {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 2px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(4) > div > span:nth-child(1) {
+  padding-left: 5px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(4) > div > span:nth-child(2) {
+  padding-right: 5px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(5) {
+  width: 95%;
+  border: 1px solid #ECECEC;
+  margin: auto;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) {
+  height: 50px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(1) {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(1) > button {
+  border: none;
+  background: transparent;
+  color: red;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(1) > span {
+  margin-left: 5px;
+  color: #686767;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > button:nth-child(2) {
+  position: absolute;
+  left: 85px;
+  border: none;
+  background-color: transparent;
+  color: #686767;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > p:nth-child(3) {
+  position: absolute;
+  left: 150px;
+  color: #686767;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > p:nth-child(4) {
+  position: absolute;
+  left: 190px;
+  color: #686767;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > button:nth-child(5) {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #686767;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(7) {
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(7) > div, .all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(7) button {
+  margin: 5px 5px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(7) > div:nth-child(1) {
+  align-self: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #356CD2;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(7) > a:nth-child(2) {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 60px;
+  background: #356CD2;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.all-cards-start > div > div.middle > div.middle_footer {
+  height: -moz-max-content;
+  height: max-content;
+  width: 68%;
+}
+
+.add-card-main > div.add-card-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+.add-card-main > div.add-card-header > div {
+  width: 80%;
+  display: flex;
+}
+.add-card-main > div.add-card-header > div > div.left-side {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.add-card-main > div.add-card-header > div > div.left-side > a {
+  width: 50%;
+  height: 36px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 15px;
+  text-decoration: none;
+}
+.add-card-main > div.add-card-header > div > div.left-side > a > span {
+  margin-left: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+  /* Neutral/500 */
+  color: #686767;
+}
+.add-card-main > div.add-card-header > div > div.right-side {
+  width: 50%;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  height: 100%;
+  position: relative;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div {
+  margin-left: 10px;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(1) {
+  position: absolute;
+  width: 84px;
+  height: 24px;
+  top: 23px;
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  right: 210px;
+  /* Neutral/500 */
+  color: #686767;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 200px;
+  height: 48px;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 12px;
+  width: 200px;
+  height: 48px;
+  /* Neutral/10 */
+  background: #ECECEC;
+  border-radius: 100px;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div > img, .add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div p, .add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div span {
+  margin-left: 5px;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div > p {
+  height: 24px;
+  /* Body/Subtitle 2/SemiBold */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  /* Neutral/600 */
+  color: #565656;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > div > span {
+  color: #7C7C7C;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > ul {
+  background-color: #ECECEC;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  top: 50px;
+}
+.add-card-main > div.add-card-header > div > div.right-side > div > div:nth-child(2) > ul > li {
+  margin: 10px;
+  list-style: none;
+}
+
+/* Burdan asaqi Add cardin cssidir ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.add-card {
+  height: 830px;
+}
+.add-card > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-top {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+.add-card > div.add-card-top > div.add-card-header-center {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(1), .add-card > div.add-card-top > div.add-card-header-center span:nth-child(3), .add-card > div.add-card-top > div.add-card-header-center span:nth-child(5), .add-card > div.add-card-top > div.add-card-header-center span:nth-child(7) {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background: #ECECEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #356CD2;
+  color: #FFFFFF;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(1) > span:nth-child(1) {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  position: absolute;
+  left: 40px;
+  bottom: 0px;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(3) {
+  color: #FFFFFF;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(3) > span:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height, or 120% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+  position: absolute;
+  left: 395px;
+  bottom: 0px;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(5) {
+  color: #FFFFFF;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(5) > span:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height, or 120% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+  position: absolute;
+  left: 760px;
+  bottom: 0px;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(7) {
+  color: #FFFFFF;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(7) > span:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height, or 120% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+  position: absolute;
+  left: 1120px;
+  bottom: 0px;
+}
+.add-card > div.add-card-top > div.add-card-header-center > span:nth-child(2), .add-card > div.add-card-top > div.add-card-header-center span:nth-child(4), .add-card > div.add-card-top > div.add-card-header-center span:nth-child(6) {
+  height: 2px;
+  width: 320px;
+  border: 1px solid #ECECEC;
+  border-radius: 100%;
+}
+.add-card > div.add-card-middle {
+  width: 100%;
+  height: 660px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center {
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left {
+  width: 58%;
+  height: 100%;
+  overflow: scroll;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > div.left-header {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Neutral/900 */
+  color: #131B20;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information {
+  width: 100%;
+  height: 97.2%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div {
+  margin: 10px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-second {
+  width: 100%;
+  height: 194px;
+  display: flex;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-second > label {
+  width: 186px;
+  height: 192px;
+  border: 1px dashed #D1D1D1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-second > label > input {
+  display: none;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-second > label > span {
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+  color: #D1D1D1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-second > div {
+  width: 186px;
+  height: 192px;
+  background: #f3f0f0;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-second > div > span {
+  width: 40px;
+  height: 40px;
+  background: rgba(41, 41, 41, 0.63);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(1) {
+  width: 48.5%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(1) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(1) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(2) {
+  width: 48.5%;
+  height: 80px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(2) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(2) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 52px;
+  border: none;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four {
+  display: flex;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(1) {
+  width: 48.5%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(1) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(1) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(2) {
+  width: 48.5%;
+  height: 80px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(2) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(2) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five {
+  display: flex;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(1) {
+  width: 48.5%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(1) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(1) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(2) {
+  width: 48.5%;
+  height: 80px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(2) > label {
+  margin-bottom: 5px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(2) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(1) {
+  width: 48.5%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(1) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(1) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(2) {
+  margin-left: 10px;
+  width: 48.5%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(2) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(2) > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div:nth-child(1) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div:nth-child(1) > input {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid #D1D1D1;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office > input {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid #D1D1D1;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office > button {
+  position: absolute;
+  left: 670px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: transparent;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office > button > span {
+  font-size: 22px;
+  color: #686767;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > button {
+  width: 224px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 8px;
+  border: none;
+  border: 1px solid #D1D1D1;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 5px;
+  background: #356CD2;
+  /* identical to box height, or 150% */
+  /* Solid/White */
+  color: #FFFFFF;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > button > span {
+  margin-left: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div:nth-child(1) {
+  width: 98.3%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div:nth-child(1) > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div:nth-child(1) > input {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid #D1D1D1;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home {
+  width: 98.3%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > label {
+  color: #565656;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > input {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid #D1D1D1;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > button {
+  position: absolute;
+  left: 670px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: transparent;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > button > span {
+  font-size: 22px;
+  color: #686767;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > button {
+  width: 224px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 8px;
+  border: none;
+  border: 1px solid #D1D1D1;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 5px;
+  background: #356CD2;
+  /* identical to box height, or 150% */
+  /* Solid/White */
+  color: #FFFFFF;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > button > span {
+  margin-left: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine {
+  display: flex;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div {
+  display: flex;
+  align-items: center;
+  width: 98.3%;
+  height: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(1) {
+  width: 180px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(1) > label {
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(1) > input {
+  height: 52px;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(2) {
+  width: 180px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(2) > select {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(3) {
+  width: 124px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(3) > select {
+  height: 52px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(4) {
+  width: 124px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(4) > select {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > button {
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  background: #356CD2;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7C7C7C;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form {
+  height: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second {
+  margin-top: 20px;
+  height: 196px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > label {
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > input {
+  height: 100px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 52px;
+  top: 140px;
+  right: 0px;
+  color: #FFFFFF;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three {
+  margin-top: 20px;
+  height: 196px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div > label {
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div > input {
+  height: 100px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 52px;
+  top: 140px;
+  right: 0px;
+  color: #FFFFFF;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four {
+  height: 212px;
+  margin-top: 20px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div {
+  margin-top: 10px;
+  width: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-static {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-static > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 12.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-static > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-static > button {
+  position: absolute;
+  right: 0px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 52px;
+  height: 52px;
+  color: white;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-dynamic {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-dynamic > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 12.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-dynamic > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.facebook > div.facebook-dynamic > button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #D1D1D1;
+  background: transparent;
+  /* Primary/950 */
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-static {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-static > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 13.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-static > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-static > button {
+  position: absolute;
+  right: 0px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 52px;
+  height: 52px;
+  color: white;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-dynamic {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-dynamic > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 13.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-dynamic > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.instagram > div.instagram-dynamic > button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #D1D1D1;
+  background: transparent;
+  /* Primary/950 */
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 12.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static > button {
+  position: absolute;
+  right: 0px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 52px;
+  height: 52px;
+  color: white;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-dynamic {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-dynamic > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 12.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-dynamic > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-dynamic > button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #D1D1D1;
+  background: transparent;
+  /* Primary/950 */
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static > i {
+  position: absolute;
+  color: #B7B7B7;
+  top: 12.5px;
+  left: 15px;
+  font-size: 24px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static > input {
+  height: 52px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 53px;
+  /* identical to box height, or 133% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div.twitter > div.twitter-static > button {
+  position: absolute;
+  right: 0px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 52px;
+  height: 52px;
+  color: white;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition {
+  height: 97.2%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div {
+  margin-top: 15px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div {
+  margin: 10px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: 80px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband > div:nth-child(1) > label {
+  padding-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband > div:nth-child(1) > input {
+  height: 52px;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: 80px;
+  margin: 0px 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband > div:nth-child(2) > label {
+  padding-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.wife-husband > div:nth-child(2) > input {
+  height: 52px;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee {
+  display: flex;
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div:nth-child(1) > label {
+  margin-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div:nth-child(1) > input {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div:nth-child(1) > button {
+  position: absolute;
+  right: 0px;
+  top: 34px;
+  height: 52px;
+  width: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #356CD2;
+  color: #FFFFFF;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div.extra-div {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div.extra-div > input {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 100%;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div.extra-div > button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: transparent;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div.extra-div > button > span {
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  position: relative;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div:nth-child(1) > label {
+  margin-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div:nth-child(1) > input {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div:nth-child(1) > button {
+  position: absolute;
+  right: 0px;
+  top: 34px;
+  height: 52px;
+  width: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #356CD2;
+  color: #FFFFFF;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div.extra-div {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div.extra-div > input {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div.extra-div > button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: transparent;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.trustee > div.extra-div > button > span {
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div:nth-child(1) {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div:nth-child(1) > label {
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div:nth-child(1) > input {
+  margin-top: 10px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div:nth-child(1) > button {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  height: 52px;
+  width: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #356CD2;
+  color: #FFFFFF;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div.relative_div {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div.relative_div > input {
+  margin-top: 10px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/100 */
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div.relative_div > button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  border: none;
+  background: transparent;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.relatives > div > div.relative_div > button > span {
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information {
+  height: 97.2%;
+  overflow: scroll;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div {
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div:nth-child(1) > label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div:nth-child(1) > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div:nth-child(1) > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 27px;
+  right: 0;
+  width: 42px;
+  height: 52px;
+  border: none;
+  color: #FFFFFF;
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div.extra-friend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div.extra-friend > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div.extra-friend > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div:nth-child(1) > label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div:nth-child(1) > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div:nth-child(1) > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 27px;
+  right: 0;
+  width: 42px;
+  height: 52px;
+  border: none;
+  color: #FFFFFF;
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div.extra-business {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div.extra-business > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div.extra-business > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div:nth-child(1) > label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div:nth-child(1) > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div:nth-child(1) > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 27px;
+  right: 0;
+  width: 42px;
+  height: 52px;
+  border: none;
+  color: #FFFFFF;
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div.extra-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div.extra-work > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div.extra-work > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div:nth-child(1) > label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div:nth-child(1) > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div:nth-child(1) > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 27px;
+  right: 0;
+  width: 42px;
+  height: 52px;
+  border: none;
+  color: #FFFFFF;
+  background: #356CD2;
+  border-radius: 0px 8px 8px 0px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div.extra-relative {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 80px;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div.extra-relative > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
+  gap: 237px;
+  width: 340px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 52px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div.extra-relative > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels {
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div, .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) button {
+  margin-top: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div:nth-child(1) {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div:nth-child(1) > label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div:nth-child(1) > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 355px;
+  width: 696px;
+  height: 80px;
+  /* Neutral/50 */
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div:nth-child(1) > span {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div.extra-hotels {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div.extra-hotels > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 355px;
+  width: 696px;
+  height: 80px;
+  /* Neutral/50 */
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div.extra-hotels > span {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 12px;
+  width: 136px;
+  height: 52px;
+  color: #FFFFFF;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant {
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div, .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) button {
+  margin-top: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div:nth-child(1) {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div:nth-child(1) > label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div:nth-child(1) > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 355px;
+  width: 696px;
+  height: 80px;
+  /* Neutral/50 */
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div:nth-child(1) > span {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div.extra-restaurant {
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div.extra-restaurant > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 355px;
+  width: 696px;
+  height: 80px;
+  /* Neutral/50 */
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div.extra-restaurant > span {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 12px;
+  width: 189px;
+  height: 52px;
+  color: #FFFFFF;
+  /* Primary/950 */
+  background: #356CD2;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies {
+  width: 100%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div:nth-child(1) > label {
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div:nth-child(1) > input {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+  width: 696px;
+  height: 107px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div.extra-hobbies {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div.extra-hobbies > input {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+  width: 696px;
+  height: 107px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div.extra-hobbies > button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 100%;
+  height: 124px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 80px;
+  flex-wrap: wrap;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button {
+  margin-bottom: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(1) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 144px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(1) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(1) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(2) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 150px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(2) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(2) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(3) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 105px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(3) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(3) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(4) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 100px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(4) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(4) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(5) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 158px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(5) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(5) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(6) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 158px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(6) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(6) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(7) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 174px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(7) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(7) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(8) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 107px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(8) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(8) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(9) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  width: 152px;
+  height: 32px;
+  /* Primary/950 */
+  border: 1px solid #356CD2;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(9) > span:nth-child(1) {
+  font-size: 16px;
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(9) > span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div {
+  width: 85%;
+  border-radius: 5px;
+  align-self: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #D1D1D1;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) {
+  display: flex;
+  box-sizing: content-box;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) > div:nth-child(1) {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 20px 0px 20px 20px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/700 */
+  color: #383838;
+  margin-bottom: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) > div:nth-child(2) {
+  width: 30%;
+  position: relative;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) > div:nth-child(2) > button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Primary/950 */
+  color: #356CD2;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(1) > div:nth-child(2) > button > span:nth-child(1) {
+  margin-right: 5px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div > div.preview-card > div:nth-child(2) {
+  width: 90%;
+  height: 300px;
+  align-self: center;
+  border-radius: 5px;
+  background: #F2F6FF;
+  margin-bottom: 15px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > button:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #ECECEC;
+  border-radius: 100px;
+  border: none;
+  color: #FFFFFF;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.right > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > button:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #356CD2;
+  border: none;
+  color: #FFFFFF;
+  /* Neutral/10 */
+  border-radius: 100px;
+}
+
+.card-payment {
+  width: 100%;
+  height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.card-payment > div.payment {
+  height: 532px;
+  width: 1128px;
+}
+.card-payment > div.payment > div.payment-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  height: 80px;
+  width: 338px;
+}
+.card-payment > div.payment > div.payment-header > div:nth-child(1) > div:nth-child(1) {
+  width: 155px;
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.card-payment > div.payment > div.payment-header > div:nth-child(1) > div:nth-child(2) {
+  width: 338px;
+  height: 16px;
+  /* Body/Caption 0/Regular */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.card-payment > div.payment > div.payment-body {
+  height: 452px;
+  display: flex;
+  border: 1px solid red;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+  width: 710px;
+  height: 452px;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-left > div.payment-body-left-footer {
+  width: 350px;
+  height: 16px;
+  /* Body/Caption 0/Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-left > div.payment-body-left-footer > span {
+  margin-left: 5px;
+  width: 311px;
+  height: 16px;
+  /* Body/Caption 0/Regular */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right {
+  width: 418px;
+  position: relative;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 330px;
+  height: 324px;
+  position: absolute;
+  right: 0px;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-top {
+  width: 156px;
+  height: 28px;
+  /* Heading/H6/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
+  width: 330px;
+  height: 256px;
+  /* Neutral/10 */
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 266px;
+  height: 112px;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-top > div:nth-child(1) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 40px;
+  width: 266px;
+  height: 56px;
+  /* Neutral/10 */
+  border-bottom: 1px solid #ECECEC;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-top > div:nth-child(1) > span:nth-child(1) {
+  display: flex;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-top > div:nth-child(1) > span:nth-child(1) > p:nth-child(1) {
+  width: 65px;
+  height: 24px;
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-top > div:nth-child(1) > span:nth-child(1) > p:nth-child(2) {
+  width: 84px;
+  height: 24px;
+  margin-left: 15px;
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/300 */
+  color: #959595;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-top > div:nth-child(2) {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 44px;
+  width: 266px;
+  height: 56px;
+  /* Neutral/10 */
+  border-bottom: 1px solid #ECECEC;
+}
+.card-payment > div.payment > div.payment-body > div.payment-body-right > div.payment-body-right-center > div.payment-body-right-center-body > div.payment-body-right-center-body-buttom > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+  color: white;
+  width: 266px;
+  height: 48px;
+  border: none;
+  /* Primary/950 */
+  background: #D1D1D1;
+  border-radius: 8px;
+}
+
+.payment-body-left-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+  width: 710px;
+  height: 452px;
+}
+.payment-body-left-two > div.payment-body-left-header {
+  display: flex;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  border: 1px solid red;
+}
+.payment-body-left-two > div.payment-body-left-header > div:nth-child(1) {
+  width: 129px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.payment-body-left-two > div.payment-body-left-header > a {
+  position: absolute;
+  right: 0px;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  text-decoration-line: underline;
+  /* Neutral/400 */
+  color: #7C7C7C;
+}
+.payment-body-left-two > div.payment-body-left-body {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+  padding: 0px;
+  width: 700px;
+  height: 352px;
+  overflow: scroll;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 305px;
+  height: 164px;
+  margin-top: 9px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 133px;
+  height: 24px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-header > input:nth-child(1) {
+  width: 20px;
+  height: 20px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-header > span:nth-child(2) {
+  margin-left: 16px;
+  height: 24px;
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-header > span:nth-child(3) {
+  color: #BA8C08;
+  margin-left: 5px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body {
+  box-sizing: border-box;
+  margin-top: 18px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 12px;
+  gap: 28px;
+  width: 305px;
+  height: 120px;
+  /* Primary/850 */
+  border: 2px solid #2462DC;
+  border-radius: 8px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 100px;
+  width: 281px;
+  height: 24px;
+  position: relative;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-top > div.card-example-body-top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 117px;
+  height: 24px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-top > div.card-example-body-top-left > span:nth-child(2) {
+  margin-left: 5px;
+  height: 24px;
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-top > div.card-example-body-top-left > span:nth-child(3) {
+  color: #BA8C08;
+  margin-left: 5px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-top > div.card-example-body-top-right {
+  font-size: 36px;
+  position: absolute;
+  right: 0px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-top > div.card-example-body-top-right > i {
+  color: #FFFFFF;
+  background-color: #020a1b;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 4px;
+  width: 141px;
+  height: 44px;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-body > div > p:nth-child(1) {
+  height: 20px;
+  /* Body/Subtitle 3/Regular */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/600 */
+  color: #565656;
+}
+.payment-body-left-two > div.payment-body-left-body > div.card-example > div.card-example-body > div.card-example-body-body > div > p:nth-child(2) {
+  height: 20px;
+  /* Body/Subtitle 3/Regular */
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/600 */
+  color: #565656;
+}
+
+.another-card {
+  display: flex;
+  gap: 40px;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+  flex-direction: column;
+  padding: 0px;
+  width: 700px;
+  height: 352px;
+}
+.another-card > div.another-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 266px;
+  width: 700px;
+  height: 24px;
+  position: relative;
+}
+.another-card > div.another-card-header > div.another-card-header-left {
+  width: 129px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #565656;
+}
+.another-card > div.another-card-header > a {
+  width: 145px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #7C7C7C;
+}
+.another-card > form.another-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 540px;
+  height: 344px;
+}
+.another-card > form.another-card-body > div {
+  margin-top: 15px;
+}
+.another-card > form.another-card-body > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 540px;
+  height: 80px;
+}
+.another-card > form.another-card-body > div:nth-child(1) > label {
+  width: 118px;
+  height: 20px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262626;
+}
+.another-card > form.another-card-body > div:nth-child(1) > input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 344px;
+  width: 540px;
+  height: 52px;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.another-card > form.another-card-body > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 540px;
+  height: 80px;
+}
+.another-card > form.another-card-body > div:nth-child(2) > label {
+  width: 90px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262626;
+}
+.another-card > form.another-card-body > div:nth-child(2) > input {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 344px;
+  width: 540px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.another-card > form.another-card-body > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 84px;
+  width: 540px;
+  height: 80px;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 316px;
+  height: 80px;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  width: 50%;
+  height: 80px;
+  position: relative;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > label {
+  width: 77px;
+  height: 20px;
+  /* Body/Subtitle 3/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Neutral/800 */
+  color: #262626;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > select {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 344px;
+  width: 140px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > select {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 344px;
+  width: 140px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 140px;
+  height: 80px;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(2) > label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 54px;
+  height: 20px;
+}
+.another-card > form.another-card-body > div:nth-child(3) > div:nth-child(2) > input {
+  box-sizing: border-box;
+  text-align: center;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 344px;
+  width: 140px;
+  height: 52px;
+  /* Neutral/100 */
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+
+/*function Created_Saved_Bought_Cards//////////////////////////////////*/
+.created-saved-bought-main {
+  height: 758px;
+  display: flex;
+  justify-content: center;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 65px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 24px;
+  width: 285px;
+  height: 496px;
+  border: 1px solid #EFEFEF;
+  border-radius: 12px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 245px;
+  height: 256px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) > span:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) > span:nth-child(1) > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) > span:nth-child(1) > label {
+  position: absolute;
+  right: 5px;
+  top: 140px;
+  width: 40px;
+  height: 40px;
+  background-color: #356CD2;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) > span:nth-child(1) > label > input {
+  display: none;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) > span:nth-child(2) {
+  width: 126px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #262626;
+  overflow: hidden;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(1) > span:nth-child(3) {
+  width: 103px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #B7B7B7;
+  overflow: hidden;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-profile > div:nth-child(2) {
+  width: 245px;
+  border: 1px solid #D1D1D1;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 245px;
+  height: 176px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+  width: 245px;
+  height: 48px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(1) > span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  color: #565656;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(1) > span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 61px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #565656;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+  width: 245px;
+  height: 48px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(2) > span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  color: #565656;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(2) > span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 111px;
+  height: 20px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #565656;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+  width: 245px;
+  height: 48px;
+  background: #2462DC;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(3) > span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-left > div.created-saved-bought-main-center-left-info > div > a:nth-child(3) > span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 111px;
+  height: 20px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 800px;
+  height: 690px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+  width: 798px;
+  height: 52px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #ECECEC;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(1) {
+  text-decoration: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 1px;
+  width: 121px;
+  height: 52px;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(1) > span {
+  width: 121px;
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #959595;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(2) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 1px;
+  width: 139px;
+  height: 52px;
+  text-decoration: none;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(2) > span {
+  width: 139px;
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #959595;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(3) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 1px;
+  width: 139px;
+  height: 52px;
+  text-decoration: none;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(3) > span {
+  width: 139px;
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #959595;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a.active {
+  border-bottom: 4px solid #2462DC;
+  color: #262626;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a.active > span {
+  color: #262626;
+}
+.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-body {
+  width: 798px;
+  height: 614px;
+}
+
+/*Saved_Card/////////////////////////////////////////*/
+.saved-card-main {
+  height: 612px;
+  width: 798px;
+}
+.saved-card-main > div.saved-card-main-header {
+  height: 126px;
+  width: 798px;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 462px;
+  height: 52px;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > a:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+  width: 162px;
+  height: 24px;
+  text-decoration: none;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
+  width: 126px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #959595;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
+  width: 24px;
+  height: 24px;
+  color: #356CD2;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(2) {
+  position: relative;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(2) > input {
+  width: 260px;
+  height: 52px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  height: 52px;
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0px 45px 0px 10px;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(2) > button {
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  background-color: transparent;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(2) {
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(2) > span {
+  width: 391px;
+  height: 21px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B7B7B7;
+}
+.saved-card-main > div.saved-card-main-body {
+  height: 488px;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.saved-card-main > div.saved-card-main-body > a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  height: 85px;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.saved-card-main > div.saved-card-main-body > a > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 391px;
+  height: 53px;
+}
+.saved-card-main > div.saved-card-main-body > a > div:nth-child(1) > span:nth-child(1) {
+  width: 391px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #565656;
+  overflow: hidden;
+}
+.saved-card-main > div.saved-card-main-body > a > div:nth-child(1) > span:nth-child(2) {
+  width: 391px;
+  height: 21px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B7B7B7;
+  overflow: hidden;
+}
+.saved-card-main > div.saved-card-main-body > a > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.saved-card-main > div.saved-card-main-body > a > div:nth-child(2) > span {
+  color: #959595;
+}
+
+.created-card-main {
+  height: 612px;
+  width: 798px;
+}
+.created-card-main > div.created-card-main-header {
+  height: 126px;
+  width: 798px;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 462px;
+  height: 52px;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > a:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+  width: 162px;
+  height: 24px;
+  text-decoration: none;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
+  width: 126px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #959595;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
+  width: 24px;
+  height: 24px;
+  color: #356CD2;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(2) {
+  position: relative;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(2) > input {
+  width: 260px;
+  height: 52px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  height: 52px;
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0px 45px 0px 10px;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(2) > button {
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  background-color: transparent;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(2) {
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(2) > span {
+  width: 391px;
+  height: 21px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B7B7B7;
+}
+.created-card-main > div.created-card-main-body {
+  height: 488px;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.created-card-main > div.created-card-main-body > a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  height: 85px;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.created-card-main > div.created-card-main-body > a > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 391px;
+  height: 53px;
+}
+.created-card-main > div.created-card-main-body > a > div:nth-child(1) > span:nth-child(1) {
+  width: 391px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #565656;
+  overflow: hidden;
+}
+.created-card-main > div.created-card-main-body > a > div:nth-child(1) > span:nth-child(2) {
+  width: 391px;
+  height: 21px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B7B7B7;
+  overflow: hidden;
+}
+.created-card-main > div.created-card-main-body > a > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.created-card-main > div.created-card-main-body > a > div:nth-child(2) > span {
+  color: #959595;
+}
+
+.bought-card-main {
+  height: 612px;
+  width: 798px;
+}
+.bought-card-main > div.bought-card-main-header {
+  height: 126px;
+  width: 798px;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 462px;
+  height: 52px;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > a:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+  width: 162px;
+  height: 24px;
+  text-decoration: none;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
+  width: 126px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #959595;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
+  width: 24px;
+  height: 24px;
+  color: #356CD2;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(2) {
+  position: relative;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(2) > input {
+  width: 260px;
+  height: 52px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  height: 52px;
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0px 45px 0px 10px;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(2) > button {
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  background-color: transparent;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(2) {
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(2) > span {
+  width: 391px;
+  height: 21px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B7B7B7;
+}
+.bought-card-main > div.bought-card-main-body {
+  height: 488px;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.bought-card-main > div.bought-card-main-body > a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  height: 85px;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.bought-card-main > div.bought-card-main-body > a > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 391px;
+  height: 53px;
+}
+.bought-card-main > div.bought-card-main-body > a > div:nth-child(1) > span:nth-child(1) {
+  width: 391px;
+  height: 24px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #565656;
+  overflow: hidden;
+}
+.bought-card-main > div.bought-card-main-body > a > div:nth-child(1) > span:nth-child(2) {
+  width: 391px;
+  height: 21px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B7B7B7;
+  overflow: hidden;
+}
+.bought-card-main > div.bought-card-main-body > a > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.bought-card-main > div.bought-card-main-body > a > div:nth-child(2) > span {
+  color: #959595;
+}
+
+/*Card I saved//////////////////////////*/
+.card-i-bought-main {
+  height: 760px;
+  width: 1382px;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+.card-i-bought-main > div.card-i-bought-main-center {
+  margin-top: 44px;
+  margin-bottom: 148px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  width: 896px;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid #E1E1E1;
+  border-radius: 16px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  width: 816px;
+  height: 28px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(1) {
+  width: 285px;
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #262626;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 280px;
+  height: 28px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button {
+  border: none;
+  background: transparent;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 80px;
+  height: 28px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(1) > span:nth-child(1) {
+  font-size: 18px;
+  color: #2462DC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(1) > span:nth-child(2) {
+  width: 23px;
+  height: 16px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 80px;
+  height: 28px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(2) > span:nth-child(1) {
+  font-size: 18px;
+  color: #2462DC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(2) > span:nth-child(2) {
+  width: 23px;
+  height: 16px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 80px;
+  height: 28px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(3) > span:nth-child(1) {
+  font-size: 18px;
+  color: #2462DC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:nth-child(3) > span:nth-child(2) {
+  width: 23px;
+  height: 16px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-image {
+  width: 100%;
+  height: 400px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-image > img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 816px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  height: 60px;
+  gap: 10px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-name > div:nth-child(1) {
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-name > div:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(1) {
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) { /*Burda personal informationun css*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 816px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) > div {
+  display: flex;
+  gap: 6px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(2) > div:nth-child(1) {
+  width: 110px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(3) > div:nth-child(1) {
+  width: 110px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) > div:nth-child(1) {
+  width: 110px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(2) > div {
+  display: flex;
+}
+
+.card-created-by-me-main {
+  height: 760px;
+  width: 1382px;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center {
+  margin-top: 44px;
+  margin-bottom: 148px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  width: 896px;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid #E1E1E1;
+  border-radius: 16px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  width: 816px;
+  height: 28px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(1) {
+  width: 285px;
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #262626;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 280px;
+  height: 28px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button {
+  border: none;
+  background: transparent;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 80px;
+  height: 28px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(1) > span:nth-child(1) {
+  font-size: 18px;
+  color: #2462DC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(1) > span:nth-child(2) {
+  width: 23px;
+  height: 16px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 80px;
+  height: 28px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(2) > span:nth-child(1) {
+  font-size: 18px;
+  color: #2462DC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(2) > span:nth-child(2) {
+  width: 23px;
+  height: 16px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 80px;
+  height: 28px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(3) > span:nth-child(1) {
+  font-size: 18px;
+  color: #2462DC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) > button:nth-child(3) > span:nth-child(2) {
+  width: 23px;
+  height: 16px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-image {
+  width: 100%;
+  height: 400px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-image > img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 816px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  height: 60px;
+  gap: 10px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-name > div:nth-child(1) {
+  height: 28px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-name > div:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(1) {
+  /* Body/Subtitle 2/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) { /*Burda personal informationun css*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 816px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) > span:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) > span:nth-child(2) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) > div {
+  display: flex;
+  gap: 6px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) > div:nth-child(1) {
+  width: 110px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) > div:nth-child(1) {
+  width: 110px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(1) {
+  width: 110px;
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-family-infromation {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-family-infromation > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-family-infromation > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px;
+  gap: 8px;
+  width: 816px;
+  border-bottom: 1px solid #ECECEC;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(1) {
+  font-family: "Inter" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #565656;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) > div {
+  display: flex;
+}/*# sourceMappingURL=Cards.css.map */
