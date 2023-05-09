@@ -393,7 +393,7 @@ function Privacy_and_Security(){
     let navigate = useNavigate()
     return(
         <div className='privacy-security-main'>
-            <div className='privacy-security-main-header'>
+                <div className='privacy-security-main-header'>
                     <div className='privacy-security-main-icon'>
                         <NavLink to='' onClick={()=>navigate(-1)}><i class="material-icons">arrow_back</i></NavLink>
                     </div>
@@ -548,6 +548,23 @@ function SelectLanguage(){
 
 function SettingsMenu(){
     let navigate = useNavigate()
+    const setDarkmode = () =>{
+        document.querySelector("body").setAttribute("data-theme", "dark")
+        localStorage.setItem("selectedTheme", "dark")
+    }
+    const setLightmode = () =>{
+        document.querySelector("body").setAttribute("data-theme", "light")
+        localStorage.setItem("selectedTheme", "light")
+    }
+    let toggleTheme = (e) => {
+        if(e.target.checked) setDarkmode();
+        else setLightmode()
+        console.log('ss')
+    }
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if(selectedTheme==='dark'){
+        setDarkmode();
+    }
     return(
         <div className='settings-menu'>
             <div className='settings-menu-header'>
@@ -571,7 +588,7 @@ function SettingsMenu(){
             <NavLink to=''className='go-to-general-settings'><span class="material-symbols-outlined">settings</span><span>General Settings</span></NavLink>
             <NavLink to='account/' className='go-to-account' ><span class="material-symbols-outlined">key</span><span>Account</span></NavLink>
             <NavLink to='chat-background/' className='go-to-chat-wallpaper'><span class="material-symbols-outlined">imagesmode</span><span>Chat WallPaper</span></NavLink>
-            <div className='switch-night-mode'><span class="material-symbols-outlined">dark_mode</span><span>Night Mode</span><div><label><input type="checkbox"/><span className='slider'></span></label></div></div>
+            <div className='switch-night-mode'><span class="material-symbols-outlined">dark_mode</span><span>Night Mode</span><div><label><input type="checkbox" onChange={toggleTheme} defaultChecked={selectedTheme==='dark'}/><span className='slider'></span></label></div></div>
             <NavLink to='' className='go-to-linked-devices'><span class="material-symbols-outlined">link</span><span>Linked Devices</span></NavLink>
             <NavLink to='language/' className='go-to-language'><span class="material-symbols-outlined">language</span><span>Language</span></NavLink>
             <NavLink to='privacy-&-security' className='go-to-privacy-and-security'><span class="material-symbols-outlined">gpp_maybe</span><span>Privacy and Security</span></NavLink>

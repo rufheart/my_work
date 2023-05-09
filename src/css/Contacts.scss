@@ -20,7 +20,6 @@
             display: flex;
             align-items: center;  
             height: 68px;
-            border: 1px solid red;
             &>*{
                 margin: 5px;
             }  
@@ -56,7 +55,6 @@
             &>div.contacts-main-left-body-top{
                 height: 50%;
                 width: 100%;
-                border: 1px solid blue;
                 display: flex;
                 flex-direction: column;
                 overflow: scroll;
@@ -68,11 +66,9 @@
                     height: 72px;
                     padding: 8px 12px;
                     gap: 12px;   
-                    border: 1px solid blue;
                     text-decoration: none;
                     &>div:nth-child(1){
                         width: 79px;
-                        border: 1px solid red;
                         height: 100%;
                         display: flex;
                         align-items: center;
@@ -105,10 +101,6 @@
                         padding: 0px;
                         gap: 8px;                        
                         width: 213px;   
-                        border: 1px solid blue;
-                        >*{
-                            border: 1px solid red;
-                        }
                         &>img{
                             width: 56px;
                             height: 56px;
@@ -127,7 +119,6 @@
                     } 
                     &>div:nth-child(5){
                         width: 79px;
-                        border: 1px solid red;
                         height: 100%;
                         display: flex;
                         align-items: center;
@@ -155,7 +146,6 @@
             &>div.contacts-main-left-body-bottom{
                 height: 50%;
                 width: 100%;
-                border: 1px solid blue;
                 display: flex;
                 flex-direction: column;  
                 overflow: scroll; 
@@ -167,8 +157,7 @@
                     gap: 10px;                    
                     width: 100%;
                     height: 56px;
-                    background: #FFFFFF;    
-                    border: 1px solid red;   
+                    background: #FFFFFF;      
                     &>span{
                         font-family: 'Inter' sans-serif;
                         font-style: normal;
@@ -188,7 +177,6 @@
                         gap: 171px;                        
                         width: 100%;
                         height: 72px;  
-                        border: 1px solid red;
                         &>div:nth-child(1){
                             display: flex;
                             flex-direction: row;
@@ -196,7 +184,6 @@
                             padding: 0px;
                             gap: 8px;                            
                             width: 240px; 
-                            border: 1px solid red;
                             &>img{
                                 width: 56px;
                                 height: 56px;
@@ -216,7 +203,6 @@
                         } 
                         &>div:nth-child(2){
                             width: 60px;
-                            border: 1px solid red;
                             height: 100%;
                             display: flex;
                             align-items: center;
@@ -239,7 +225,6 @@
     &>div.contacts-main-right{
         width: 75%;
         background-color: rgb(240, 240, 240);
-        border: 1px solid blue;
         &>div.messages{
             height: 100%;
             display: flex;

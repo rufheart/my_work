@@ -5,12 +5,12 @@
 
 .main{
     height: 100%;
-    // border: 1px solid red;
 }
+
 .general-main{
     height: 100%;
     width: 100%;
-    border: 1px solid blue;
+
     &>div.general-main-outlet{
         width: 100%;
         height: 100%;
@@ -51,6 +51,7 @@
         }        
     }
 }
+
 .enterance{
     // border: 3px solid red;
     height: 100%;

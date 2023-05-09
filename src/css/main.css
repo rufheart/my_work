@@ -5,7 +5,6 @@
 .general-main {
   height: 100%;
   width: 100%;
-  border: 1px solid blue;
 }
 .general-main > div.general-main-outlet {
   width: 100%;

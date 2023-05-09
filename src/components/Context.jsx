@@ -16,7 +16,7 @@ let Provider = ({children})=>{
             text:'standart'
         },
         {
-            id:4,
+            id:3,
             username:'Asif',
             surname:'Ehmedov',
             image:"",

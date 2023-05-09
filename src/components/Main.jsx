@@ -9,10 +9,15 @@ import Contacts from './Contacts';
 
 function Messages(props){
     let data = props.data
+    
+    useEffect(()=>{
+        console.log('isledi')
+
+    }, [])
     // console.log(props,'zeta')   
-    if(data!=null){
-        console.log(data.id)
-    } 
+    // useEffect(()=>{
+    //     console.log(data.id)
+    // }, [])
     let {url} = useParams('url');
     let [deyer, setDeyer] = useState()
     return(
@@ -92,7 +97,8 @@ function Enterance(){
     useEffect(() => {
         ulRef.current.children[0].focus();
       }, []);
-    
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    console.log(selectedTheme)
     return(
         <div className="enterance">
             <div className="left">
@@ -109,7 +115,7 @@ function Enterance(){
                         {data.map((value, index)=>{
                             return(           
                                 <NavLink className='message-a' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} ref={ulRef} key={index}>
-                                    <div style={{"display":"none"}}>{send==true?<Messages data={value}/>:null}</div>                                    
+                                    {/* <div style={{"display":"none"}}>{send==true?<Messages data={value}/>:null}</div>                                     */}
                                     <div className="message-div">
                                         <div className="left">
                                             {/* <img src={require('../images/user1.jpeg')} alt="" /> */}                                            
@@ -168,6 +174,13 @@ function General(){
 }
 
 function Main(){
+    const selelctedTheme = localStorage.getItem("selectedTheme")
+    if(selelctedTheme==="dark"){
+        document.querySelector("body").setAttribute("data-theme","dark")
+    }
+    else{
+        document.querySelector("body").setAttribute("data-theme","light")
+    }
     return(
         <div className='main'>
             <Outlet/>
