@@ -550,10 +550,12 @@ function SettingsMenu(){
     let navigate = useNavigate()
     const setDarkmode = () =>{
         document.querySelector("body").setAttribute("data-theme", "dark")
+        document.querySelector("div").setAttribute("data-theme", "dark")
         localStorage.setItem("selectedTheme", "dark")
     }
     const setLightmode = () =>{
         document.querySelector("body").setAttribute("data-theme", "light")
+        document.querySelector("div").setAttribute("data-theme", "light")
         localStorage.setItem("selectedTheme", "light")
     }
     let toggleTheme = (e) => {
@@ -599,7 +601,7 @@ function SettingsMenu(){
  
 function SettingsCapsule(){
     return(
-        <div>
+        <div className='settings-capsule'>
             <Outlet/>
         </div>
     )

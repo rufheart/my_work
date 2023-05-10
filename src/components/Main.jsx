@@ -174,13 +174,6 @@ function General(){
 }
 
 function Main(){
-    const selelctedTheme = localStorage.getItem("selectedTheme")
-    if(selelctedTheme==="dark"){
-        document.querySelector("body").setAttribute("data-theme","dark")
-    }
-    else{
-        document.querySelector("body").setAttribute("data-theme","light")
-    }
     return(
         <div className='main'>
             <Outlet/>

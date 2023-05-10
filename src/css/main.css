@@ -1,3 +1,16 @@
+[data-theme=dark] {
+  --body-background: "red" ;
+}
+
+#root[data-theme=light] {
+  --link-color:black;
+}
+
+#root[data-theme=dark] {
+  --link-body:#212121;
+  --link-color:blue;
+}
+
 .main {
   height: 100%;
 }
@@ -13,6 +26,7 @@
 .general-main > div.general-main-absolute-menu {
   height: 8%;
   border: 1px solid white;
+  background-color: var(--body-background);
   border-top: 1px solid rgb(240, 240, 240);
   display: flex;
   width: 25%;
@@ -26,7 +40,7 @@
   justify-content: center;
   width: 20%;
   font-size: 20px;
-  color: black;
+  color: var(--link-color);
   text-decoration: none;
 }
 .general-main > div.general-main-absolute-menu > a > span {

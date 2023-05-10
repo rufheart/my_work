@@ -8,3 +8,7 @@
 body, html, #root, .app{
     height: 100%;
 }
+
+body[dark-theme="dark"]{
+    background-color: red;
+}

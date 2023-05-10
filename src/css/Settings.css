@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+#root[data-theme=light] {
+  --body-color:#FFFFFF
+  --link-color:#383838;
+  --toggle-color:#2196F3;
+  --header-color:#356CD2;
+}
+
+#root[data-theme=dark] {
+  --body-color:#212121;
+  --header-color:black;
+  --link-color:#FFFFFF;
+  --toggle-color:rgb(131,115,211);
+}
+
 .settings-main {
   height: 100%;
   width: 100%;
@@ -82,6 +96,7 @@
   height: 967px;
   position: absolute;
   width: 25%;
+  background: var(--body-color);
   border-right: 1px solid #EFEFEF;
 }
 .settings-menu > div.settings-menu-header {
@@ -92,7 +107,7 @@
   gap: 8px;
   height: 68px;
   /* Primary/950 */
-  background: #356CD2;
+  background: var(--header-color);
 }
 .settings-menu > div.settings-menu-header > div.go-back {
   width: 28px;
@@ -163,26 +178,21 @@
 }
 .settings-menu > a.go-to-profile > div:nth-child(2) > div > div:nth-child(1) {
   height: 28px;
-  /* Body/Subtitle 1/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* identical to box height, or 156% */
   text-align: center;
-  /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-profile > div:nth-child(2) > div > div:nth-child(2) {
   height: 20px;
-  /* Body/Subtitle 3/Regular */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
   text-align: center;
   /* Neutral/300 */
   color: #959595;
@@ -219,7 +229,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-general-settings {
   box-sizing: border-box;
@@ -253,7 +263,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-account {
   box-sizing: border-box;
@@ -288,7 +298,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-chat-wallpaper {
   box-sizing: border-box;
@@ -322,7 +332,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > div.switch-night-mode {
   box-sizing: border-box;
@@ -357,7 +367,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > div.switch-night-mode > div:nth-child(3) {
   width: 50px;
@@ -402,7 +412,7 @@
   border-radius: 50px;
 }
 .settings-menu > div.switch-night-mode > div:nth-child(3) > label input:checked + span {
-  background-color: #2196F3;
+  background-color: var(--toggle-color);
   border-radius: 50px;
 }
 .settings-menu > div.switch-night-mode > div:nth-child(3) > label input:focus + span {
@@ -443,7 +453,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-language {
   box-sizing: border-box;
@@ -477,7 +487,7 @@
   /* identical to box height, or 150% */
   text-align: center;
   /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-privacy-and-security {
   box-sizing: border-box;
@@ -510,8 +520,7 @@
   line-height: 24px;
   /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 .settings-menu > a.go-to-help {
   box-sizing: border-box;
@@ -544,8 +553,7 @@
   line-height: 24px;
   /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/700 */
-  color: #383838;
+  color: var(--link-color);
 }
 
 .language-main {
