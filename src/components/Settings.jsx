@@ -220,6 +220,13 @@ function My_Profile(){
 
 function Account_Main(){
     let navigate = useNavigate()
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if(selectedTheme==='dark'){
+        document.querySelector("div").setAttribute("data-theme", "dark")
+    }
+    else{
+        document.querySelector("div").setAttribute("data-theme", "light")
+    }    
     return(
         <div className='account-main'>
             <div className='account-main-header'>
@@ -391,6 +398,7 @@ function Privacy_and_Security_Phone_Number(){
 
 function Privacy_and_Security(){
     let navigate = useNavigate()
+
     return(
         <div className='privacy-security-main'>
                 <div className='privacy-security-main-header'>
@@ -455,6 +463,13 @@ function Privacy_and_Security(){
 }
 
 function Privacy_Security_Capsule(){
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if(selectedTheme==='dark'){
+        document.querySelector("div").setAttribute("data-theme", "dark")
+    }
+    else{
+        document.querySelector("div").setAttribute("data-theme", "light")
+    }   
     return(
         <div className='privacy-security-capsule'>
             <Outlet/>
@@ -464,6 +479,7 @@ function Privacy_Security_Capsule(){
 
 function SelectLanguage(){
     let navigate = useNavigate()
+
     return(
         <div className='language-main'>
             <div className='language-main-header'>
@@ -566,6 +582,9 @@ function SettingsMenu(){
     const selectedTheme = localStorage.getItem("selectedTheme")
     if(selectedTheme==='dark'){
         setDarkmode();
+    }
+    else{
+        setLightmode();
     }
     return(
         <div className='settings-menu'>
