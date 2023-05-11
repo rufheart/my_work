@@ -14,6 +14,11 @@
   --settings-privacy-main-up:#262626;
   --settings-privacy-main-choose:#686767;
   --privacy-security-icon:#E1E1E1;
+  --privacy-last-seen-text:#262626;
+  --privacy-phone-number:#262626
+  --privacy-who-can-call:#262626;
+  --language-main:#262626;
+  --chat-background:#262626;
 }
 
 #root[data-theme=dark] {
@@ -26,6 +31,11 @@
   --settings-privacy-main-up:#FFFFFF;
   --settings-privacy-main-choose:#686767;
   --privacy-security-icon:#FFFFFF;
+  --privacy-last-seen-text:#FFFFFF;
+  --privacy-phone-number:#FFFFFF;
+  --privacy-who-can-call:#FFFFFF;
+  --language-main:#FFFFFF;
+  --chat-background:#FFFFFF;
 }
 
 .settings-main {
@@ -595,6 +605,7 @@
   display: flex;
   flex-direction: column;
   border-right: 1px solid #EFEFEF;
+  background-color: var(--body-color);
 }
 .language-main > div.language-main-header {
   display: flex;
@@ -603,8 +614,7 @@
   padding: 16px;
   gap: 12px;
   height: 68px;
-  /* Primary/950 */
-  background: #356CD2;
+  background: var(--header-color);
 }
 .language-main > div.language-main-header > div.go-back-main-settings-icon {
   display: flex;
@@ -647,7 +657,6 @@
 }
 .language-main > div.language-main-body > div.select-language {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -656,7 +665,6 @@
   gap: 312px;
   height: 56px;
   position: relative;
-  /* Neutral/00 */
   border-bottom: 1px solid #F5F5F5;
 }
 .language-main > div.language-main-body > div.select-language > div:nth-child(1) {
@@ -665,10 +673,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
+  color: var(--language-main);
 }
 
 .privacy-security-main {
@@ -1009,6 +1015,7 @@
   left: 0px;
   top: 0px;
   border-right: 1px solid #EFEFEF;
+  background-color: var(--body-color);
 }
 .privacy-phone-number > div.privacy-phone-number-header {
   display: flex;
@@ -1018,8 +1025,7 @@
   gap: 12px;
   width: 100%;
   height: 68px;
-  /* Primary/950 */
-  background: #356CD2;
+  background: var(--header-color);
 }
 .privacy-phone-number > div.privacy-phone-number-header > div.privacy-phone-number-header-icon {
   display: flex;
@@ -1034,13 +1040,11 @@
 .privacy-phone-number > div.privacy-phone-number-header > div.privacy-phone-number-header-text {
   width: 129px;
   height: 28px;
-  /* Body/Subtitle 1/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* Solid/White */
   color: #FFFFFF;
 }
 .privacy-phone-number > div.privacy-phone-who-can-call-me {
@@ -1055,19 +1059,18 @@
 .privacy-phone-number > div.privacy-phone-who-can-call-me > span {
   width: 273px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  /* Primary/950 */
   color: #356CD2;
+}
+.privacy-phone-number > label > span {
+  color: var(--privacy-phone-number);
 }
 .privacy-phone-number > label.privacy-phone-select-everybody {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1076,22 +1079,17 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-phone-number > label.privacy-phone-select-everybody > span {
   width: 82px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-phone-number > label.privacy-phone-select-everybody > input {
   width: 24px;
@@ -1100,7 +1098,6 @@
 }
 .privacy-phone-number > label.privacy-phone-select-my-contacts {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1109,22 +1106,17 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-phone-number > label.privacy-phone-select-my-contacts > span {
   width: 98px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-phone-number > label.privacy-phone-select-my-contacts > input {
   width: 24px;
@@ -1136,7 +1128,6 @@
 }
 .privacy-phone-number > label.privacy-phone-select-nobody {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1145,22 +1136,17 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-phone-number > label.privacy-phone-select-nobody > span {
   width: 61px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-phone-number > label.privacy-phone-select-nobody > input {
   display: none;
@@ -1187,6 +1173,7 @@
   left: 0px;
   top: 0px;
   border-right: 1px solid #EFEFEF;
+  background-color: var(--body-color);
 }
 .privacy-last-seen > div.privacy-last-seen-header {
   display: flex;
@@ -1194,7 +1181,7 @@
   align-items: center;
   padding: 16px;
   gap: 12px;
-  background: #356CD2;
+  background: var(--header-color);
   width: 100%;
   height: 68px;
 }
@@ -1215,13 +1202,11 @@
 .privacy-last-seen > div.privacy-last-seen-header > div.privacy-last-seen-header-text > span {
   width: 177px;
   height: 28px;
-  /* Body/Subtitle 1/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* Solid/White */
   color: #FFFFFF;
 }
 .privacy-last-seen > div.privacy-last-seen-first-body {
@@ -1240,19 +1225,18 @@
 .privacy-last-seen > div.privacy-last-seen-first-body > div:nth-child(1) > span {
   width: 273px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  /* Primary/950 */
   color: #356CD2;
+}
+.privacy-last-seen > div.privacy-last-seen-first-body > label > span {
+  color: var(--privacy-last-seen-text);
 }
 .privacy-last-seen > div.privacy-last-seen-first-body > label:nth-child(2) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1261,26 +1245,20 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-last-seen > div.privacy-last-seen-first-body > label:nth-child(2) > span {
   width: 82px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-last-seen > div.privacy-last-seen-first-body > label:nth-child(3) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1289,26 +1267,20 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-last-seen > div.privacy-last-seen-first-body > label:nth-child(3) > span {
   width: 98px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-last-seen > div.privacy-last-seen-first-body > label:nth-child(4) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1317,22 +1289,17 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-last-seen > div.privacy-last-seen-first-body > label:nth-child(4) > span {
   width: 61px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-last-seen > div.privacy-last-seen-second-body {
   display: flex;
@@ -1351,19 +1318,18 @@
 .privacy-last-seen > div.privacy-last-seen-second-body > div:nth-child(1) > span {
   width: 273px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  /* Primary/950 */
   color: #356CD2;
+}
+.privacy-last-seen > div.privacy-last-seen-second-body > label > span {
+  color: var(--privacy-last-seen-text);
 }
 .privacy-last-seen > div.privacy-last-seen-second-body > label:nth-child(2) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1372,26 +1338,20 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-last-seen > div.privacy-last-seen-second-body > label:nth-child(2) > span:nth-child(1) {
   width: 82px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-last-seen > div.privacy-last-seen-second-body > label:nth-child(3) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1400,26 +1360,20 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-last-seen > div.privacy-last-seen-second-body > label:nth-child(3) > span {
   width: 98px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-last-seen > div.privacy-last-seen-second-body > label:nth-child(4) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1428,22 +1382,17 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-last-seen > div.privacy-last-seen-second-body > label:nth-child(4) > span {
   width: 61px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 
 /* Privacy_and_Security_Profile_Photo*/
@@ -1516,6 +1465,9 @@
   /* Primary/950 */
   color: #356CD2;
 }
+.privacy-profile-photo > label > span {
+  color: var(--link-color);
+}
 .privacy-profile-photo > label:nth-child(3) {
   box-sizing: border-box;
   display: flex;
@@ -1558,10 +1510,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-profile-photo > label:nth-child(5) {
   box-sizing: border-box;
@@ -1580,16 +1529,12 @@
 .privacy-profile-photo > label:nth-child(5) > span {
   width: 61px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 
 /*Who Can Call Me*/
@@ -1604,8 +1549,7 @@
   height: 968px;
   left: 0px;
   top: 0px;
-  /* Solid/White */
-  background: #FFFFFF;
+  background: var(--body-color);
 }
 .privacy-who-can-call > div.privacy-who-can-call-header {
   display: flex;
@@ -1615,8 +1559,7 @@
   gap: 12px;
   width: 100%;
   height: 68px;
-  /* Primary/950 */
-  background: #356CD2;
+  background: var(--header-color);
 }
 .privacy-who-can-call > div.privacy-who-can-call-header > div:nth-child(1) {
   display: flex;
@@ -1635,14 +1578,11 @@
 .privacy-who-can-call > div.privacy-who-can-call-header > div:nth-child(2) > span {
   width: 85px;
   height: 28px;
-  /* Body/Subtitle 1/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* identical to box height, or 156% */
-  /* Solid/White */
   color: #FFFFFF;
 }
 .privacy-who-can-call > div:nth-child(2) {
@@ -1657,19 +1597,18 @@
 .privacy-who-can-call > div:nth-child(2) > span {
   width: 273px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  /* Primary/950 */
   color: #356CD2;
+}
+.privacy-who-can-call > label > span {
+  color: var(--privacy-who-can-call);
 }
 .privacy-who-can-call > label:nth-child(3) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1678,26 +1617,20 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-who-can-call > label:nth-child(3) > span {
   width: 82px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-who-can-call > label:nth-child(4) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1706,26 +1639,20 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-who-can-call > label:nth-child(4) > span {
   width: 98px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  /* Neutral/800 */
-  color: #262626;
 }
 .privacy-who-can-call > label:nth-child(5) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1734,21 +1661,17 @@
   gap: 312px;
   width: 100%;
   height: 64px;
-  /* Neutral/0 */
   border-bottom: 1px solid #EFEFEF;
 }
 .privacy-who-can-call > label:nth-child(5) > span {
   width: 65px;
   height: 24px;
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   text-align: center;
-  color: #262626;
 }
 
 /* Settings==>Account Design*/
@@ -2415,6 +2338,7 @@
   width: 25%;
   height: 967px;
   border-right: 1px solid #EFEFEF;
+  background-color: var(--body-color);
 }
 .chat-background > div.chat-background-header {
   display: flex;
@@ -2459,7 +2383,6 @@
   margin-top: 20px;
   width: 100%;
   height: 188px;
-  background: #FFFFFF;
 }
 .chat-background > div.chat-background-middle > label:nth-child(1) {
   box-sizing: border-box;

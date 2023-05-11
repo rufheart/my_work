@@ -398,7 +398,6 @@ function Privacy_and_Security_Phone_Number(){
 
 function Privacy_and_Security(){
     let navigate = useNavigate()
-
     return(
         <div className='privacy-security-main'>
                 <div className='privacy-security-main-header'>
@@ -462,14 +461,7 @@ function Privacy_and_Security(){
     )
 }
 
-function Privacy_Security_Capsule(){
-    const selectedTheme = localStorage.getItem("selectedTheme")
-    if(selectedTheme==='dark'){
-        document.querySelector("div").setAttribute("data-theme", "dark")
-    }
-    else{
-        document.querySelector("div").setAttribute("data-theme", "light")
-    }   
+function Privacy_Security_Capsule(){ 
     return(
         <div className='privacy-security-capsule'>
             <Outlet/>
@@ -627,6 +619,13 @@ function SettingsCapsule(){
 }
 
 function SettingsMain(){
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if(selectedTheme==='dark'){
+        document.querySelector("div").setAttribute("data-theme", "dark")
+    }
+    else{
+        document.querySelector("div").setAttribute("data-theme", "light")
+    }  
     return(
         <div className='settings-main'>
             <div className='settings-main-left'>
