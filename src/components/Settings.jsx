@@ -149,7 +149,7 @@ function Chat_Background_Menu(){
 }
 function Chat_Background_Main(){
     return(
-        <div>
+        <div >
             <Outlet/>
         </div>
     )
@@ -572,12 +572,12 @@ function SettingsMenu(){
         console.log('ss')
     }
     const selectedTheme = localStorage.getItem("selectedTheme")
-    if(selectedTheme==='dark'){
-        setDarkmode();
-    }
-    else{
-        setLightmode();
-    }
+    // if(selectedTheme==='dark'){
+    //     setDarkmode();
+    // }
+    // else{
+    //     setLightmode();
+    // }
     return(
         <div className='settings-menu'>
             <div className='settings-menu-header'>
@@ -622,9 +622,11 @@ function SettingsMain(){
     const selectedTheme = localStorage.getItem("selectedTheme")
     if(selectedTheme==='dark'){
         document.querySelector("div").setAttribute("data-theme", "dark")
+        document.querySelector("body").setAttribute("data-theme", "dark")
     }
     else{
         document.querySelector("div").setAttribute("data-theme", "light")
+        document.querySelector("body").setAttribute("data-theme", "light")
     }  
     return(
         <div className='settings-main'>
