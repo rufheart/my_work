@@ -9,17 +9,17 @@ import Contacts from './Contacts';
 
 function Messages(props){
     let data = props.data
-    
-    useEffect(()=>{
-        console.log('isledi')
-
-    }, [])
-    // console.log(props,'zeta')   
-    // useEffect(()=>{
-    //     console.log(data.id)
-    // }, [])
+    let [icon_change, setIconChange] = useState('mic')
     let {url} = useParams('url');
     let [deyer, setDeyer] = useState()
+    let IconChanger = (e)=>{
+        if(e.target.value){
+            setIconChange('send')
+        }
+        else{
+            setIconChange('mic')
+        }
+    }
     return(
         <div className="messages">
             <div className="head">
@@ -39,6 +39,9 @@ function Messages(props){
                 </div>
             </div>
             <div className="main">
+                <div>
+                    
+                </div>
                 <div className="all-messages">
                     <div className="read-messages">
                         
@@ -60,8 +63,11 @@ function Messages(props){
                                             
                     </div>
                     <div className="write-messages">
-                        <textarea name="" id="" cols="30" rows="10" placeholder='Messages'></textarea>
-                        <i className="fa-solid fa-microphone"></i>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>
+                            <button><span class="material-symbols-outlined"> attach_file </span></button>
+                        </div>
+                        <span class="material-symbols-outlined"> {icon_change} </span>
                     </div>
                 </div>
             </div>
@@ -97,16 +103,12 @@ function Enterance(){
     useEffect(() => {
         ulRef.current.children[0].focus();
       }, []);
-    const selectedTheme = localStorage.getItem("selectedTheme")
-    console.log(selectedTheme)
     return(
         <div className="enterance">
             <div className="left">
                 <div className="header">
                     <div className="button">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <span class="material-symbols-outlined"> menu </span>
                     </div>
                     <input type="text" placeholder='Search'/>
                 </div>
@@ -174,6 +176,15 @@ function General(){
 }
 
 function Main(){
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if(selectedTheme==='dark'){
+        document.querySelector("div").setAttribute("data-theme", "dark")
+        document.querySelector("body").setAttribute("data-theme", "dark")
+    }
+    else{
+        document.querySelector("div").setAttribute("data-theme", "light")
+        document.querySelector("body").setAttribute("data-theme", "light")
+    }     
     return(
         <div className='main'>
             <Outlet/>

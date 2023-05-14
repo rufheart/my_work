@@ -1,18 +1,31 @@
-[data-theme="dark"]{
-    --body-background: "red"
-}
-
 @mixin size($height, $color){
     height: $height;
     border: 1px solid $color;
 }
 #root[data-theme="light"]{
-    --link-color:black;
+    --body-color:#FFFFFF;
+    --link-hover:#E1E1E1;
+    --main-header-color:#FFFFFF;
+    --dark-mode-text-username:rgb(50, 50, 50);
+    --mesage-component-top-text:#959595;
+    --tab-menu-icon-color: rgb(50, 50, 50);
+    --tab-menu-icon-color-active-background-color:#D2ECFF;
+    --main-icon-color:#959595;
+    --main-message-input-background:#FFFFFF;
+    --main-message-input-text-color:black;
 }
 
 #root[data-theme="dark"]{
-    --link-body:#212121;
-    --link-color:blue;
+    --body-color:#202c33;
+    --link-hover:#1f1f1f;
+    --dark-mode-text-username:#FFFFFF; 
+    --mesage-component-top-text:#959595;   
+    --main-header-color:#202c33;
+    --tab-menu-icon-color:#FFFFFF;
+    --tab-menu-icon-color-active-background-color:#FFFFFF;
+    --main-icon-color:#FFFFFF;
+    --main-message-input-background:#2a3942;
+    --main-message-input-text-color:#E1E1E1;
 }
 .main{
     height: 100%;
@@ -21,10 +34,11 @@
 .general-main{
     height: 100%;
     width: 100%;
-
+    background-color: var(--body-color);
     &>div.general-main-outlet{
         width: 100%;
         height: 100%;
+        background-color: var(--body-color);
     }
     &>div.general-main-absolute-menu{
         @include size(8%, white);
@@ -41,23 +55,24 @@
             justify-content: center;
             width: 20%;
             font-size: 20px;
-            color: var(--link-color);
+            color: var(--body-color);
             text-decoration: none;
             // border: 1px solid red;
             &>span{
                 padding: 15px;
                 border-radius: 10px;
-                color: rgb(50, 50, 50);
+                color: var(--tab-menu-icon-color);
                 cursor: pointer;
                 
                 &:hover{
-                    background-color: #D2ECFF;
+                    background-color: var(--tab-menu-icon-color-active-background-color);
+                    color:rgb(100, 100, 100);
                 }
             }
         }
         &>a.active{
             &>span{
-                background-color: #D2ECFF;
+                background-color: var(--tab-menu-icon-color-active-background-color);
                 color:#356CD2;
             }
         }        
@@ -65,50 +80,42 @@
 }
 
 .enterance{
-    // border: 3px solid red;
+    background-color: var(--body-color);
     height: 100%;
     display: flex;
     >div.left{
         width: 25%;
         border-right: 1px solid rgb(230, 230, 230);
+        background-color:var(--body-color);
         >div.header{
-          @include size(6%, rgb(240, 240, 240));
-          background-color: #ECECEC;
-          background-color: white;
+          @include size(6%, rgb(240, 240, 240));          
           display: flex;
           align-items: center;
-
+          background-color:var(--main-header-color);
           >*{
             margin: 5px;
           }
-          div.button{
-            width: 30px;
-            padding: 5px;
-            background-color: white;
+          &>div.button{
+            width: 40px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: max-content;
-            >div{
-                width: 90%;
-                border: 1px solid rgb(50, 50, 50);
-                margin: 2px;
-            }
+            color:var(--main-icon-color);
+          }
+          &>div.button:hover{
+            cursor: pointer;
           }
           input{
             flex-grow: 1;
             padding: 7px;
             border:none;
-            background-color: rgb(240, 240, 240);
             border-radius: 3px;
           }
         }
         // messages and contact
         >div.center{
             @include size(86%, transparent);
-            background-color: #ECECEC;
-            background-color: white;
             >div.messages{ 
                 border: 1px solid red;
                 a{
@@ -145,14 +152,13 @@
                           }
                           >.username{
                                 font-size: 15px;
-                                color: rgb(50, 50, 50);
-                                // color: blue;
+                                color: var(--dark-mode-text-username);
                           }
                           >.last-message{
                                 font-size: 13px;
                                 color: rgb(150, 150, 150);
                                 padding-top: 10px;
-                                text-overflow: ellipsis;
+                                text-overflow:ellipsis;
                                 overflow: hidden; 
                                 width: 200px; 
                                 white-space: nowrap;
@@ -191,20 +197,13 @@
                            
                         }
                     }
-                    &:hover{
-                        background-color: #F5F5F5;
-                        background-color: #356CD2;
-                        *{
-                            color: white !important ;
-                        }
-                        .messages{
-                            background-color: #ECECEC !important;
-                            color: #356CD2 !important;
-                        }
-                        
-                    }
                 }
-                    
+                &>a:hover{
+                    -webkit-transition: background-color 1s ease-out;
+                    -moz-transition: background-color 1s ease-out;
+                    -o-transition: background-color 1s ease-out;
+                    background-color: var(--link-hover)
+                }   
             }
             
         }
@@ -249,6 +248,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: var(--body-color);
             >*{
                 display: flex;
                 justify-content: center;
@@ -272,18 +272,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: var(--body-color);
             >div.head{
-                border: 1px solid red;
                 height: 6%;
                 width: 100%;
                 display: flex;
-                background-color: white;
                 padding: 0 10px;
+                background-color: var(--main-header-color);
+                border-bottom: 1px solid #E1E1E1;
                 >div.left{
                     flex-grow: 1;
                     display: flex;
                     div.image-div{
-                        // border: 1px solid red;
                         width: 5%;
                         padding: 5px;
                         display: flex;
@@ -308,17 +308,18 @@
                         }
                         >div.username{
                             font-size: 13px;
-                            // font-weight: bold;
+                            color:var(--dark-mode-text-username)
                         }
                         >div.date-ago{
                             font-size: 12px;
-                            color: #959595;
+                            color: var(--mesage-component-top-text);
                         }
                     }
                 }
                 >div.right{
                     display: flex;
                     align-items: center;
+                    color: var(--mesage-component-top-text);
                     >div{
                         margin: 15px;
                         cursor: pointer;
@@ -333,8 +334,17 @@
                 height: 94%;
                 display: flex;
                 justify-content: center;
-                background-image: url('../images/back.png');
+                // background-image: url('../images/back.png');
                 background-repeat: repeat;
+                position: relative;
+                &>div:nth-child(1){
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background:var(--image);
+                    filter:contrast(70%);
+                    filter: brightness(40%);
+                }
                 >div.all-messages{
                     width: 70%;
                     position: relative;
@@ -380,15 +390,39 @@
                             padding: 10px;
                             margin: 5px;
                         }
-                        >textarea{
+                        &>div{
                             width: 100%;
-                            height: 40px;
-                            resize: none;
-                            border-radius: 10px;
-                            border: none;
+                            position: relative;
+                            display: flex;
+                            >textarea{
+                                width: 100%;
+                                height: 40px;
+                                resize: none;
+                                border-radius: 10px;
+                                border: none;
+                                box-sizing: border-box;
+                                padding: 10px;
+                                background-color:var(--main-message-input-background);
+                                color:var(--main-message-input-text-color);
+                            }
+                            &>button{
+                                height: 40px;
+                                width: 60px;
+                                border-top-right-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                position: absolute;
+                                right: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                &>span{
+                                    // right: 20px;
+                                    // top: 18px;
+                                    transform: rotate(45deg);
+                                }                                
+                            }
                         }
-                        
-                        >i{
+                        >span{
                             background-color: #356CD2;
                             color: white;
                             display: flex;

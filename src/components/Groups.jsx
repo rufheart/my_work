@@ -64,6 +64,15 @@ function Groups_Capsule(){
 }
 
 function Groups_Main(){
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if(selectedTheme==='dark'){
+        document.querySelector("div").setAttribute("data-theme", "dark")
+        document.querySelector("body").setAttribute("data-theme", "dark")
+    }
+    else{
+        document.querySelector("div").setAttribute("data-theme", "light")
+        document.querySelector("body").setAttribute("data-theme", "light")
+    }   
     return(
         <div className='group-main'>
             <div className='group-main-left'>
