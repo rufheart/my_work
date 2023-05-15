@@ -1,3 +1,22 @@
+#root[data-theme='light']{
+    --all-card-body-color:#FFFFFF;
+    --all-card-header-color:#FFFFFF;
+    --all-card-input-background-color:#FFFFFF;
+    --all-card-input-text-color:#959595;
+    --all-card-icon-color:#959595;
+    --all-card-text-color:#262626;
+    --all-cards-header-select-color:#686767;
+}
+#root[data-theme='dark']{
+    --all-card-body-color:#111b21;
+    --all-card-header-color:#202c33;
+    --all-card-input-background-color:#2a3942;
+    --all-card-input-text-color:#FFFFFF;
+    --all-card-icon-color:#FFFFFF;
+    --all-card-text-color:#FFFFFF;
+    --all-cards-header-select-color:#FFFFFF;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,6 +38,7 @@
         justify-content: center;
         height: 138px;
         border-top: 1px solid #ECECEC;
+        background-color: var(--all-card-header-color);
         &>div{
             width: 68%;
             &>div{
@@ -52,7 +72,7 @@
                 }
                 &>div:nth-child(2){
                     display: flex;
-                    justify-content: right;                    
+                    justify-content: right;                   
                     &>select{
                         display: flex;
                         flex-direction: row;
@@ -66,7 +86,7 @@
                         margin-right: 40px;
                         width: 220px;
                         height: 40px;   
-                        border-radius: 100px; 
+                        border-radius: 10px; 
                         &>select option{
                             color:blue
                         }  
@@ -99,9 +119,6 @@
                     font-size: 12px;
                     line-height: 16px;
                     text-decoration: none;
-                    /* identical to box height, or 133% */
-                    
-                    /* Neutral/400 */
                     color: #7C7C7C;                    
                 }
             }        
@@ -109,13 +126,15 @@
     }
 }
 
-.all-cards-start{   
+.all-cards-start{ 
+    background-color: var(--all-card-body-color);  
     &>div{
         &>div.header{
             display: flex;
             justify-content: center;        
             height: 80px;
             border-bottom: 1px solid #D1D1D1;
+            background-color: var(--all-card-header-color);
             &>div{
                 width: 90%;
                 display: flex;
@@ -143,7 +162,7 @@
                             font-weight: 500;
                             font-size: 24px;
                             line-height: 32px;
-                            color: #959595;                            
+                            color: var(--all-card-input-text-color);                            
                         }
                         &>div:nth-child(2){
                             position: relative;
@@ -174,11 +193,14 @@
                                 font-weight: 400;
                                 font-size: 16px;
                                 line-height: 24px;
-                                color: #959595;               
+                                color: var(--all-card-input-text-color); 
+                                outline: none;
+                                background-color: var(--all-card-input-background-color);              
                             }
                             &>span{
                                 position: absolute;
                                 right: 8px;
+                                color:var(--all-card-icon-color)
                             }
                         }
                         &>a{
@@ -196,12 +218,7 @@
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 24px;
-                            
-                            /* identical to box height, or 150% */
-                            
-                            /* Neutral/800 */
-                            color: #262626;                            
-                            // background-color: transparent;
+                            color: var(--all-card-text-color);                                                        
                             &>span{
                                 margin-left: 10px;
                                 color: #356CD2;
@@ -223,7 +240,7 @@
                         padding-left: 15px;
                         border: none;
                         border: 1px solid #959595;
-                        color: #686767;
+                        color: var(--all-cards-header-select-color);
                         border-radius: 8px;
                         background-color: transparent;
                     }
@@ -283,10 +300,6 @@
                                 font-weight: 500;
                                 font-size: 20px;
                                 line-height: 28px;
-                                
-                                /* identical to box height, or 140% */
-                                
-                                /* Neutral/800 */
                                 color: #262626;                            
                             }
                             &>div:nth-child(2){
@@ -318,7 +331,6 @@
                     }
                     &>div:nth-child(2){
                         height: 60px;
-                        // border: 1px solid blue;
                         overflow: scroll;
                         box-sizing: border-box;
                         padding: 10px;
