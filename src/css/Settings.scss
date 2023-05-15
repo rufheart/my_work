@@ -9,7 +9,7 @@
     --toggle-color:#2196F3;
     --settings-header-color:#356CD2;
     --right-img-color:#FFFFFF;
-    --link-hover:#E1E1E1;
+    --settings-link-hover:#F5F6F6;
     --settings-privacy-main-up:#262626; 
     --settings-privacy-main-choose:#686767; 
     --privacy-security-icon:#E1E1E1;
@@ -29,7 +29,7 @@
     --link-color:#FFFFFF;
     --toggle-color:rgb(131,115,211);
     --right-img-color:#E1E1E1;
-    --link-hover:#1f1f1f;
+    --settings-link-hover:#202c33;
     --settings-privacy-main-up:#FFFFFF; 
     --settings-privacy-main-choose:#686767; 
     --privacy-security-icon:#FFFFFF;
@@ -100,7 +100,7 @@
                 &>div:nth-child(2){
                     width: 538px;
                     height: 48px;
-                    font-family: 'Inter';
+                    font-family: 'Inter' sans-serif;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
@@ -123,21 +123,13 @@
     border-right: 1px solid #EFEFEF;  
     border: 1px solid red;
     &>a:hover{
-        background-color:var(--link-hover);
-        -webkit-transition: background-color 1s ease-out;
-        -moz-transition: background-color 1s ease-out;
-        -o-transition: background-color 1s ease-out;
-        border-radius: 10px;
+        background-color:var(--settings-link-hover);
     } 
     &>a:nth-child(2):hover{
         background-color: transparent;
     } 
     &>div:hover{
-        background-color:var(--link-hover);
-        -webkit-transition: background-color 1s ease-out;
-        -moz-transition: background-color 1s ease-out;
-        -o-transition: background-color 1s ease-out;
-        border-radius: 10px;
+        background-color:var(--settings-link-hover);
     }
     &>div:nth-child(1){
         background-color: transparent;
@@ -620,10 +612,7 @@
         overflow-x: hidden;
         overflow-y: scroll;
         &>div:hover{
-            -webkit-transition: background-color 1s ease-out;
-            -moz-transition: background-color 1s ease-out;
-            -o-transition: background-color 1s ease-out;
-            background-color: var(--link-hover);
+            background-color: var(--settings-link-hover);
         }
         &>div.select-language{
             box-sizing: border-box;
@@ -968,11 +957,8 @@
             }        
         }
         &>div{
-            &>a:hover{
-                -webkit-transition: background-color 1s ease-out;
-                -moz-transition: background-color 1s ease-out;
-                -o-transition: background-color 1s ease-out;                
-                background-color: var(--link-hover)
+            &>a:hover{              
+                background-color: var(--settings-link-hover)
                 
             }
         }
@@ -1137,7 +1123,7 @@
         }
     } 
     &>label:hover{
-        background-color: var(--link-hover);
+        background-color: var(--settings-link-hover);
     }       
 }
 /*Privacy_and_Security_Last_Seen*/
@@ -1379,7 +1365,7 @@
     }
     &>div{
         &>label:hover{
-            background-color: var(--link-hover);
+            background-color: var(--settings-link-hover);
         }
     }
 }
@@ -1519,10 +1505,7 @@
         }        
     }
     &>label:hover{
-        background-color:var(--link-hover);
-        -webkit-transition: background-color 1s ease-out;
-        -moz-transition: background-color 1s ease-out;
-        -o-transition: background-color 1s ease-out;
+        background-color:var(--settings-link-hover);
     }
 }
 /*Who Can Call Me*/
@@ -1663,7 +1646,7 @@
         }        
     } 
     &>label:hover{
-        background-color:var(--link-hover);
+        background-color:var(--settings-link-hover);
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;        
@@ -1820,7 +1803,7 @@
             }               
         }
         &>a:hover{
-            background-color: var(--link-hover);
+            background-color: var(--settings-link-hover);
         }
     }
 }
@@ -2433,10 +2416,7 @@
             }
         }  
         &>a:hover, label:hover{
-            -webkit-transition: background-color 1s ease-out;
-            -moz-transition: background-color 1s ease-out;
-            -o-transition: background-color 1s ease-out;
-            background-color: var(--link-hover);
+            background-color: var(--settings-link-hover);
         }  
     }
     &>div.chat-background-bottom{
@@ -2468,10 +2448,7 @@
             }            
         }  
         &>div:nth-child(1):hover{
-            -webkit-transition: background-color 1s ease-out;
-            -moz-transition: background-color 1s ease-out;
-            -o-transition: background-color 1s ease-out;
-            background-color: var(--link-hover);            
+            background-color: var(--settings-link-hover);            
         }
         &>div:nth-child(2){
             display: flex;

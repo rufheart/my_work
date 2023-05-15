@@ -107,16 +107,19 @@ function Enterance(){
         <div className="enterance">
             <div className="left">
                 <div className="header">
-                    <div className="button">
+                    <button className="button">
                         <span class="material-symbols-outlined"> menu </span>
+                    </button>
+                    <div>
+                        <input type="text" placeholder='Search'/>
+                        <button><span class="material-symbols-outlined"> search </span></button>
                     </div>
-                    <input type="text" placeholder='Search'/>
                 </div>
-                <div className="center">
+                <NavLink to='' >
                     <div className="messages">
                         {data.map((value, index)=>{
                             return(           
-                                <NavLink className='message-a' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} ref={ulRef} key={index}>
+                                <NavLink htmlFor='zz' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} ref={ulRef} key={index}>
                                     {/* <div style={{"display":"none"}}>{send==true?<Messages data={value}/>:null}</div>                                     */}
                                     <div className="message-div">
                                         <div className="left">
@@ -139,7 +142,7 @@ function Enterance(){
                         })}
                     </div>
                     <div className="contact"></div>
-                </div>               
+                </NavLink>               
             </div>
             <div className="right">
                 <Outlet />

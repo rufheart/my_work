@@ -4,7 +4,8 @@
 }
 #root[data-theme="light"]{
     --body-color:#FFFFFF;
-    --link-hover:#E1E1E1;
+    --main-link-hover:#F5F6F6;
+    --main-link-active:#f0f2f5;
     --main-header-color:#FFFFFF;
     --dark-mode-text-username:rgb(50, 50, 50);
     --mesage-component-top-text:#959595;
@@ -16,8 +17,9 @@
 }
 
 #root[data-theme="dark"]{
-    --body-color:#202c33;
-    --link-hover:#1f1f1f;
+    --body-color:#111b21;
+    --main-link-hover:#202c33;
+    --main-link-active:#2a3942;
     --dark-mode-text-username:#FFFFFF; 
     --mesage-component-top-text:#959595;   
     --main-header-color:#202c33;
@@ -92,29 +94,57 @@
           display: flex;
           align-items: center;
           background-color:var(--main-header-color);
+          border: 1px solid red;
           >*{
             margin: 5px;
           }
-          &>div.button{
+          &>button.button{            
             width: 40px;
+            height: 40px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: max-content;
-            color:var(--main-icon-color);
+            align-items: center;            
+            color:var(-main-icon-color);
+            border: none;
+            background: transparent;
           }
-          &>div.button:hover{
+          &>button.button:hover{
             cursor: pointer;
+            border-radius: 100%;
+            background-color: var(--main-link-hover);
           }
-          input{
-            flex-grow: 1;
-            padding: 7px;
-            border:none;
-            border-radius: 3px;
-          }
+          &>div:nth-child(2){
+            width: 90%;
+            // border: 1px solid red;
+            position: relative;
+            &>input{
+                outline: none;
+                width: 100%;
+                flex-grow: 1;
+                padding: 7px;
+                border:none;
+                border: 1px solid #E1E1E1;
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding-left: 45px;
+            }
+            &>button{
+                width: 40px;
+                position: absolute;
+                left: 0px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border: none;
+                height: 100%;
+                &>span{
+                    color: #959595;
+                }                
+            }
+        } 
         }
         // messages and contact
-        >div.center{
+        >a{
+            text-decoration: none;
             @include size(86%, transparent);
             >div.messages{ 
                 border: 1px solid red;
@@ -199,14 +229,14 @@
                     }
                 }
                 &>a:hover{
-                    -webkit-transition: background-color 1s ease-out;
-                    -moz-transition: background-color 1s ease-out;
-                    -o-transition: background-color 1s ease-out;
-                    background-color: var(--link-hover)
-                }   
+                    background-color: var(--main-link-hover);
+                } 
+                &>a.active{
+                    background-color: var(--main-link-active);
+                }  
             }
             
-        }
+        }       
         >div.footer{                                    /* menu secimi olan hisse */
             @include size(8%, white);
             border-top: 1px solid rgb(240, 240, 240);

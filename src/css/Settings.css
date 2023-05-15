@@ -10,7 +10,7 @@
   --toggle-color:#2196F3;
   --settings-header-color:#356CD2;
   --right-img-color:#FFFFFF;
-  --link-hover:#E1E1E1;
+  --settings-link-hover:#F5F6F6;
   --settings-privacy-main-up:#262626;
   --settings-privacy-main-choose:#686767;
   --privacy-security-icon:#E1E1E1;
@@ -30,7 +30,7 @@
   --link-color:#FFFFFF;
   --toggle-color:rgb(131,115,211);
   --right-img-color:#E1E1E1;
-  --link-hover:#1f1f1f;
+  --settings-link-hover:#202c33;
   --settings-privacy-main-up:#FFFFFF;
   --settings-privacy-main-choose:#686767;
   --privacy-security-icon:#FFFFFF;
@@ -105,7 +105,7 @@
 .settings-main > div.settings-main-right > div.settings-main-right-center > div.settings-main-right-center-text > div:nth-child(2) {
   width: 538px;
   height: 48px;
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -123,21 +123,13 @@
   border: 1px solid red;
 }
 .settings-menu > a:hover {
-  background-color: var(--link-hover);
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  border-radius: 10px;
+  background-color: var(--settings-link-hover);
 }
 .settings-menu > a:nth-child(2):hover {
   background-color: transparent;
 }
 .settings-menu > div:hover {
-  background-color: var(--link-hover);
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  border-radius: 10px;
+  background-color: var(--settings-link-hover);
 }
 .settings-menu > div:nth-child(1) {
   background-color: transparent;
@@ -616,10 +608,7 @@
   overflow-y: scroll;
 }
 .language-main > div.language-main-body > div:hover {
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 .language-main > div.language-main-body > div.select-language {
   box-sizing: border-box;
@@ -948,10 +937,7 @@
   color: var(--settings-privacy-main-choose);
 }
 .privacy-security-main > div.privacy-security-main-body > div > a:hover {
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 
 /* burdan settings phone dizani baslayir*/
@@ -1112,7 +1098,7 @@
   background-color: #356CD2;
 }
 .privacy-phone-number > label:hover {
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 
 /*Privacy_and_Security_Last_Seen*/
@@ -1349,7 +1335,7 @@
   text-align: center;
 }
 .privacy-last-seen > div > label:hover {
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 
 /* Privacy_and_Security_Profile_Photo*/
@@ -1485,10 +1471,7 @@
   text-align: center;
 }
 .privacy-profile-photo > label:hover {
-  background-color: var(--link-hover);
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
+  background-color: var(--settings-link-hover);
 }
 
 /*Who Can Call Me*/
@@ -1628,7 +1611,7 @@
   text-align: center;
 }
 .privacy-who-can-call > label:hover {
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
   -webkit-transition: background-color 1s ease-out;
   -moz-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
@@ -1787,7 +1770,7 @@
   color: var(--link-color);
 }
 .account-main > div.account-main-body > a:hover {
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 
 /*Settings My Profile*/
@@ -2391,10 +2374,7 @@
   margin-left: 10px;
 }
 .chat-background > div.chat-background-middle > a:hover, .chat-background > div.chat-background-middle label:hover {
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 .chat-background > div.chat-background-bottom {
   display: flex;
@@ -2426,10 +2406,7 @@
   color: var(--chat-background);
 }
 .chat-background > div.chat-background-bottom > div:nth-child(1):hover {
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  background-color: var(--link-hover);
+  background-color: var(--settings-link-hover);
 }
 .chat-background > div.chat-background-bottom > div:nth-child(2) {
   display: flex;
