@@ -1425,7 +1425,8 @@ function All_Cards(){
                                 <div className='like'>
                                     <div><button><span class="material-symbols-outlined">favorite</span></button><span>423</span></div>
                                     <button><span class="material-symbols-outlined">share</span></button>                            
-                                    <p>4.5</p>
+                                    <div><span>4.5</span><span class="material-symbols-outlined"> star </span></div>
+                                    <div></div>
                                     <p>243 comments</p>
                                     <button><span class="material-symbols-outlined">bookmark</span></button>
                                 </div>

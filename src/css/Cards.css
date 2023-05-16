@@ -6,6 +6,8 @@
   --all-card-icon-color:#959595;
   --all-card-text-color:#262626;
   --all-cards-header-select-color:#686767;
+  --all-cards-card-background:transparent;
+  --all-cards-card-header-text-color:#686767;
 }
 
 #root[data-theme=dark] {
@@ -16,6 +18,8 @@
   --all-card-icon-color:#FFFFFF;
   --all-card-text-color:#FFFFFF;
   --all-cards-header-select-color:#FFFFFF;
+  --all-cards-card-background:#202c33;
+  --all-cards-card-header-text-color:#FFFFFF;
 }
 
 * {
@@ -281,6 +285,7 @@
   margin: 10px;
   border-radius: 16px;
   border: 1px solid #D1D1D1;
+  background-color: var(--all-cards-card-background);
 }
 .all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) {
   height: 60px;
@@ -339,6 +344,7 @@
   padding: 10px;
   box-sizing: border-box;
   padding-left: 12px;
+  color: var(--all-cards-card-header-text-color);
 }
 .all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(3) {
   width: 95%;
@@ -356,7 +362,7 @@
   padding-left: 10px;
 }
 .all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(4) > div {
-  color: #686767;
+  color: var(--all-cards-card-header-text-color);
   border-radius: 8px;
   height: 32px;
   border: 1px solid #D1D1D1;
@@ -414,17 +420,39 @@
   background-color: transparent;
   color: #686767;
 }
-.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > p:nth-child(3) {
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(3) {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   position: absolute;
-  left: 150px;
+  left: 135px;
   color: #686767;
 }
-.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > p:nth-child(4) {
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(3) > span:nth-child(1) {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(3) > span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  margin-bottom: 3px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > div:nth-child(4) {
+  height: 15px;
+  border: 1px solid #E1E1E1;
   position: absolute;
   left: 190px;
+}
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > p:nth-child(5) {
+  position: absolute;
+  left: 200px;
   color: #686767;
 }
-.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > button:nth-child(5) {
+.all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(6) > div > button:nth-child(6) {
   position: absolute;
   right: 10px;
   border: none;
@@ -466,11 +494,15 @@
   width: 68%;
 }
 
+.add-card-main {
+  background-color: var(--all-card-body-color);
+}
 .add-card-main > div.add-card-header {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 70px;
+  background-color: var(--all-card-header-color);
 }
 .add-card-main > div.add-card-header > div {
   width: 80%;
@@ -614,7 +646,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  background-color: var(--all-card-header-color);
 }
 .add-card > div.add-card-top > div.add-card-header-center {
   width: 90%;
