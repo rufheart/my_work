@@ -9,6 +9,8 @@
   --all-cards-card-background:transparent;
   --all-cards-card-header-text-color:#686767;
   --all-cards-card-header-username:#959595;
+  --add-card-header-text-color:black;
+  --add-card-header-text-color-two:#D1D1D1;
 }
 
 #root[data-theme=dark] {
@@ -22,6 +24,8 @@
   --all-cards-card-background:#202c33;
   --all-cards-card-header-text-color:#FFFFFF;
   --all-cards-card-header-username:#FFFFFF;
+  --add-card-header-text-color:#D1D1D1;
+  --add-card-header-text-color-two:black;
 }
 
 * {
@@ -676,7 +680,7 @@
   color: #FFFFFF;
 }
 .add-card > div.add-card-top > div.add-card-header-center > span:nth-child(1) > span:nth-child(1) {
-  color: black;
+  color: var(--add-card-header-text-color);
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -695,8 +699,6 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
-  /* identical to box height, or 120% */
-  /* Neutral/100 */
   color: #D1D1D1;
   position: absolute;
   left: 395px;
