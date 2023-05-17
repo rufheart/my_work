@@ -8,6 +8,7 @@
     --all-cards-header-select-color:#686767;
     --all-cards-card-background:transparent;
     --all-cards-card-header-text-color:#686767;
+    --all-cards-card-header-username:#959595;
 }
 #root[data-theme='dark']{
     --all-card-body-color:#111b21;
@@ -19,6 +20,7 @@
     --all-cards-header-select-color:#FFFFFF;
     --all-cards-card-background:#202c33;
     --all-cards-card-header-text-color:#FFFFFF;
+    --all-cards-card-header-username:#FFFFFF;
 }
 
 *{
@@ -305,7 +307,7 @@
                                 font-weight: 500;
                                 font-size: 20px;
                                 line-height: 28px;
-                                color: #262626;                            
+                                color: var(--all-cards-card-header-username);                            
                             }
                             &>div:nth-child(2){
                                 display: flex;
@@ -777,8 +779,7 @@
             &>div.left{
                 width: 58%;
                 height: 100%;
-                overflow: scroll;
-                
+                overflow: scroll;                
                 &>div{
                     &>div.left-header{
                         width: 100%;
@@ -787,10 +788,6 @@
                         font-weight: 600;
                         font-size: 20px;
                         line-height: 28px;
-                        
-                        /* identical to box height, or 140% */
-                        
-                        /* Neutral/900 */
                         color: #131B20;                        
                     }
                     &>form.personal-information{
@@ -865,7 +862,7 @@
                                 width: 48.5%;
                                 height: 80px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -874,7 +871,9 @@
                                     padding: 5px 10px;
                                     border: none;
                                     height: 52px;
-                                    border: 1px solid #D1D1D1;  
+                                    border:1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }
                             &>div:nth-child(2){
@@ -892,6 +891,8 @@
                                     height: 52px;
                                     border: none;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }
                         }
@@ -915,6 +916,8 @@
                                     border: none;
                                     height: 52px;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }                        
                             &>div:nth-child(2){
@@ -932,6 +935,8 @@
                                     border: none;
                                     height: 52px;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }
                         }
@@ -956,6 +961,8 @@
                                     border: none;
                                     height: 52px;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }                        
                             &>div:nth-child(2){
@@ -973,6 +980,8 @@
                                     border: none;
                                     height: 52px;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }
                         }
@@ -999,6 +1008,8 @@
                                     border: none;
                                     height: 52px;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }                        
                             &>div:nth-child(2){
@@ -1016,6 +1027,8 @@
                                     border: none;
                                     height: 52px;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                             }
                         }
@@ -1038,6 +1051,8 @@
                                     box-sizing: border-box;
                                     border: none;
                                     border: 1px solid #D1D1D1;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                     padding: 12px 10px;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
@@ -1062,6 +1077,8 @@
                                     padding: 12px 10px;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
         
                                 }       
                                 &>button{
@@ -1127,6 +1144,8 @@
                                     padding: 12px 10px;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }                                                       
                             }                            
                             &>div.extra_home{
@@ -1147,6 +1166,8 @@
                                     padding: 12px 10px;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    color:var(--all-card-input-text-color);
+                                    background-color: var(--all-card-input-background-color); 
                                 }
                                 &>button{
                                     position: absolute;
@@ -1200,6 +1221,7 @@
                                     width: 180px;
                                     &>label{
                                         margin-bottom: 10px;
+                                        color:var(--all-card-input-text-color);
                                     }
                                     &>input{
                                         height: 52px;
@@ -1208,6 +1230,8 @@
                                         border-radius: 5px;
                                         border: none;
                                         border: 1px solid #D1D1D1;
+                                        color:var(--all-card-input-text-color);
+                                        background-color: var(--all-card-input-background-color); 
                                     }
                                 }
                                 &>div:nth-child(2){
@@ -1219,6 +1243,8 @@
                                         height: 52px;
                                         box-sizing: border-box;
                                         padding: 5px;
+                                        color:var(--all-card-input-text-color);
+                                        background-color: var(--all-card-input-background-color); 
                                     }
                                 }
                                 &>div:nth-child(3){
@@ -1229,7 +1255,9 @@
                                         height: 52px;
                                         width: 100%;
                                         box-sizing: border-box;
-                                        padding: 5px;                                    
+                                        padding: 5px;     
+                                        color:var(--all-card-input-text-color);
+                                        background-color: var(--all-card-input-background-color);                                
                                     }
                                 }  
                                 &>div:nth-child(4){
@@ -1240,7 +1268,9 @@
                                         width: 100%;
                                         height: 52px;
                                         box-sizing: border-box;
-                                        padding: 5px;                                    
+                                        padding: 5px;      
+                                        color:var(--all-card-input-text-color);
+                                        background-color: var(--all-card-input-background-color);                               
                                     }
                                 }  
                                 &>button{

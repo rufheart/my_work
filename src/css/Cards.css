@@ -8,6 +8,7 @@
   --all-cards-header-select-color:#686767;
   --all-cards-card-background:transparent;
   --all-cards-card-header-text-color:#686767;
+  --all-cards-card-header-username:#959595;
 }
 
 #root[data-theme=dark] {
@@ -20,6 +21,7 @@
   --all-cards-header-select-color:#FFFFFF;
   --all-cards-card-background:#202c33;
   --all-cards-card-header-text-color:#FFFFFF;
+  --all-cards-card-header-username:#FFFFFF;
 }
 
 * {
@@ -310,7 +312,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: #262626;
+  color: var(--all-cards-card-header-username);
 }
 .all-cards-start > div > div.middle > div.middle-center > div.card > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
   display: flex;
@@ -762,8 +764,6 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  /* identical to box height, or 140% */
-  /* Neutral/900 */
   color: #131B20;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information {
@@ -841,7 +841,7 @@
   height: 80px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(1) > label {
-  color: #565656;
+  color: var(--all-card-input-text-color);
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(1) > input {
@@ -851,6 +851,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(2) {
   width: 48.5%;
@@ -868,6 +870,8 @@
   height: 52px;
   border: none;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four {
   display: flex;
@@ -891,6 +895,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(2) {
   width: 48.5%;
@@ -908,6 +914,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five {
   display: flex;
@@ -931,6 +939,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(2) {
   width: 48.5%;
@@ -948,6 +958,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six {
   display: flex;
@@ -973,6 +985,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(2) {
   margin-left: 10px;
@@ -990,6 +1004,8 @@
   border: none;
   height: 52px;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven {
   display: flex;
@@ -1012,6 +1028,8 @@
   box-sizing: border-box;
   border: none;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
   padding: 12px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -1035,6 +1053,8 @@
   padding: 12px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office > button {
   position: absolute;
@@ -1098,6 +1118,8 @@
   padding: 12px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home {
   width: 98.3%;
@@ -1118,6 +1140,8 @@
   padding: 12px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > button {
   position: absolute;
@@ -1171,6 +1195,7 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(1) > label {
   margin-bottom: 10px;
+  color: var(--all-card-input-text-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(1) > input {
   height: 52px;
@@ -1179,6 +1204,8 @@
   border-radius: 5px;
   border: none;
   border: 1px solid #D1D1D1;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(2) {
   width: 180px;
@@ -1190,6 +1217,8 @@
   height: 52px;
   box-sizing: border-box;
   padding: 5px;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(3) {
   width: 124px;
@@ -1201,6 +1230,8 @@
   width: 100%;
   box-sizing: border-box;
   padding: 5px;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > div:nth-child(4) {
   width: 124px;
@@ -1212,6 +1243,8 @@
   height: 52px;
   box-sizing: border-box;
   padding: 5px;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-nine > div > button {
   margin-top: 15px;
