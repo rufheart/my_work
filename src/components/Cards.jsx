@@ -1214,7 +1214,6 @@ function AddCardMiddle(){
                                             {extra_business.map((value,index)=>{
                                                 return(
                                                     <div className='extra-business'>
-                                                        <label htmlFor="business-partner">Business Partner</label>
                                                         <input type="text" name="" id="business-partner" value={value} onChange={e=>handleInputExtraBusiness(e,index)} />
                                                         <button onClick={()=>handeleDeleteExtraBusiness(index)}><span class="material-symbols-outlined">close</span></button>  
                                                     </div>                                                    
@@ -1232,7 +1231,6 @@ function AddCardMiddle(){
                                             {extra_work.map((value,index)=>{
                                                 return(
                                                     <div className='extra-work'>
-                                                        <label htmlFor="work-colleague">Work Colleague</label>
                                                         <input type="text" name="" id="work-colleague" value={value} onChange={e=>handleInputExtraWork(e,index)} />     
                                                         <button onClick={()=>handleDeleteExtraWork(index)}><span class="material-symbols-outlined">close</span></button>                                             
                                                     </div>
@@ -1248,7 +1246,6 @@ function AddCardMiddle(){
                                             {extra_relative_person.map((value,index)=>{
                                                 return(
                                                     <div className='extra-relative'>
-                                                        <label htmlFor="work-colleague">Relative Person</label>
                                                         <input type="text" name="" id="work-colleague" value={value} onChange={e=>handleInputExtraRelativePerson(e,index)}/>
                                                         <button onClick={()=>handleDeleteExtraRelativePerson(index)}><span class="material-symbols-outlined">close</span></button>  
                                                     </div>                                                    

@@ -1302,6 +1302,7 @@
                                 }
                                 &>input{
                                     height: 100px;
+                                    background-color: var(--all-card-input-background-color);
                                 }
                                 &>button{
                                     display: flex;
@@ -1334,6 +1335,7 @@
                                 }
                                 &>input{
                                     height: 100px;
+                                    background-color: var(--all-card-input-background-color);
                                 }
                                 &>button{
                                     display: flex;
@@ -1387,10 +1389,8 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
+                                        background-color: var(--all-card-input-background-color);
+                                        color: var(--all-card-input-text-color);                                     
                                     }
                                     &>button{
                                         position: absolute;
@@ -1433,10 +1433,8 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
+                                        background-color: var(--all-card-input-background-color);
+                                        color: var(--all-card-input-text-color);                                        
                                     }
                                     &>button{
                                         position: absolute;
@@ -1483,10 +1481,8 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
+                                        background-color: var(--all-card-input-background-color);
+                                        color: var(--all-card-input-text-color);                                    
                                     }
                                     &>button{
                                         position: absolute;
@@ -1500,7 +1496,6 @@
                                         width: 52px;
                                         height: 52px;
                                         color: white;
-                                        /* Primary/950 */
                                         background: #356CD2;
                                         border-radius: 0px 8px 8px 0px;                                        
                                     }
@@ -1529,10 +1524,8 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
+                                        background-color: var(--all-card-input-background-color);
+                                        color: var(--all-card-input-text-color);                                         
                                     }
                                     &>button{
                                         position: absolute;
@@ -1578,10 +1571,8 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
+                                        background-color: var(--all-card-input-background-color);
+                                        color: var(--all-card-input-text-color);                                       
                                     }
                                     &>button{
                                         position: absolute;
@@ -1624,10 +1615,8 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
+                                        background-color: var(--all-card-input-background-color);
+                                        color: var(--all-card-input-text-color);                                        
                                     }
                                     &>button{
                                         position: absolute;
@@ -1764,13 +1753,15 @@
                                 }                                                            
                             }
                             &>div.children-trustee{
-                                display: flex;
                                 width: 100%;
+                                display: flex;
+                                gap: 10px;
                                 &>div.children{
                                     display: flex;
                                     flex-direction: column;
                                     width: 48%;
                                     position: relative;
+                                    background-color: black;
                                     &>div{
                                         margin-top: 10px;
                                     }                                    
@@ -1797,9 +1788,7 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
                                             
                                             /* Neutral/100 */
@@ -1810,16 +1799,12 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;
-                                            
-                                            /* identical to box height, or 150% */
-                                            
-                                            /* Neutral/100 */
                                             color: #D1D1D1;                                                                                    
                                         }
                                         &>button{
                                             position: absolute;
                                             right: 0px;
-                                            top:34px;
+                                            top:35px;
                                             height: 52px;
                                             width: 42px;
                                             display: flex;
@@ -1844,19 +1829,13 @@
                                             gap: 237px;
                                             width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;    
                                             font-family: 'Inter', sans-serif;
                                             font-style: normal;
                                             font-weight: 400;
                                             font-size: 16px;
-                                            line-height: 24px;
-                                            
-                                            /* identical to box height, or 150% */
-                                            
-                                            /* Neutral/100 */
+                                            line-height: 24px;                                        
                                             color: #D1D1D1;                                                                                                                             
                                         }  
                                         &>button{
@@ -1876,7 +1855,6 @@
                                     flex-direction: column;
                                     width: 48%;
                                     position: relative;
-                                    margin-left: 10px;
                                     &>div{
                                         margin-top: 10px;
                                     }
@@ -1905,7 +1883,7 @@
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
                                             
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
                                             
                                             /* Neutral/100 */
@@ -1925,7 +1903,7 @@
                                         &>button{
                                             position: absolute;
                                             right: 0px;
-                                            top:34px;
+                                            top:35px;
                                             height: 52px;
                                             width: 42px;
                                             display: flex;
@@ -1949,7 +1927,7 @@
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
                                             
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
                                             
                                             /* Neutral/100 */
@@ -2010,7 +1988,7 @@
                                             padding: 0px 0px 0px 16px;
 
                                             
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
                                             
                                             /* Neutral/100 */
@@ -2034,7 +2012,6 @@
                                             height: 52px;
                                             width: 42px;
                                             display: flex;
-                                            // display: none;
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;   
@@ -2100,11 +2077,13 @@
                                 align-items: flex-start;
                                 width: 100%;
                                 border: 1px solid;
+                                gap: 10px;
                                 &>div:nth-child(1){
                                     display: flex;
                                     flex-direction: column;
-                                    justify-content: space-between;             
+                                    justify-content: space-between;            
                                     width: 340px;
+                                    gap: 30px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2130,10 +2109,9 @@
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
                                             
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
+                                            background-color: var(--all-card-input-background-color);
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2144,10 +2122,10 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 27px;
-                                            right: 0;
+                                            top: 29px;
+                                            right: 1px;
                                             width: 42px;
-                                            height: 52px;
+                                            height: 50px;
                                             border: none;
                                             color: #FFFFFF;
                                             background: #356CD2;
@@ -2159,7 +2137,7 @@
                                         flex-direction: column;
                                         justify-content: space-between;             
                                         width: 340px;
-                                        height: 80px;
+                                        height: 52px;
                                         position: relative;
                                         &>input{
                                             display: flex;
@@ -2167,15 +2145,13 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
-                                            width: 340px;
+                                            gap: 237px;                                            
+                                            width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
+                                            background-color: var(--all-card-input-background-color);
                                         }  
                                         &>button{
                                             position: absolute;
@@ -2183,7 +2159,7 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 35px;
+                                            top: 3px;
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
@@ -2197,7 +2173,7 @@
                                     flex-direction: column;
                                     justify-content: space-between;             
                                     width: 340px;
-                                    margin-left: 10px;
+                                    gap: 30px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2220,15 +2196,13 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
-                                            width: 340px;
+                                            gap: 237px;                                            
+                                            width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
+                                            background-color: var(--all-card-input-background-color);
                                         }  
                                         &>button{
                                             position: absolute;
@@ -2236,10 +2210,10 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 27px;
-                                            right: 0;
+                                            top: 29px;
+                                            right: 1px;
                                             width: 42px;
-                                            height: 52px;
+                                            height: 50px;
                                             border: none;
                                             color: #FFFFFF;
                                             background: #356CD2;
@@ -2251,7 +2225,7 @@
                                         flex-direction: column;
                                         justify-content: space-between;             
                                         width: 340px;
-                                        height: 80px;
+                                        height: 52px;
                                         position: relative;
                                         &>input{
                                             display: flex;
@@ -2259,15 +2233,10 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
-                                            border-radius: 8px;                                     
-                                            height: 52px;
+                                            border-radius: 8px;                                                                                 
                                         }  
                                         &>button{
                                             position: absolute;
@@ -2275,11 +2244,11 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 35px;
+                                            top: 3px;
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
-                                            color: #D1D1D1;                                   
+                                            color: #D1D1D1;                                    
                                         }                                        
                                     }                                                                  
                                 }                                
@@ -2294,6 +2263,7 @@
                                     flex-direction: column;
                                     justify-content: space-between;             
                                     width: 340px;
+                                    gap: 30px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2320,8 +2290,7 @@
                                             
                                             width: 340px;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
+                                            background-color: var(--all-card-input-background-color);
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2332,10 +2301,10 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 27px;
-                                            right: 0;
+                                            top: 29px;
+                                            right: 1px;
                                             width: 42px;
-                                            height: 52px;
+                                            height: 50px;
                                             border: none;
                                             color: #FFFFFF;
                                             background: #356CD2;
@@ -2347,7 +2316,7 @@
                                         flex-direction: column;
                                         justify-content: space-between;             
                                         width: 340px;
-                                        height: 80px;
+                                        height: 52px;
                                         position: relative;
                                         &>input{
                                             display: flex;
@@ -2371,7 +2340,7 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 35px;
+                                            top: 3px;
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
@@ -2386,6 +2355,7 @@
                                     justify-content: space-between;             
                                     width: 340px;
                                     margin-left: 10px;
+                                    gap: 30px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2410,10 +2380,9 @@
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
                                             
-                                            width: 340px;
+                                            width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
+                                            background-color: var(--all-card-input-background-color);
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2424,10 +2393,10 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 27px;
-                                            right: 0;
+                                            top: 29px;
+                                            right: 1px;
                                             width: 42px;
-                                            height: 52px;
+                                            height: 50px;
                                             border: none;
                                             color: #FFFFFF;
                                             background: #356CD2;
@@ -2439,7 +2408,7 @@
                                         flex-direction: column;
                                         justify-content: space-between;             
                                         width: 340px;
-                                        height: 80px;
+                                        height: 52px;
                                         position: relative;
                                         &>input{
                                             display: flex;
@@ -2463,7 +2432,7 @@
                                             flex-direction: row;
                                             justify-content: center;
                                             align-items: center;
-                                            top: 35px;
+                                            top: 3px;
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
