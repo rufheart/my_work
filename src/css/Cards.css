@@ -11,6 +11,7 @@
   --all-cards-card-header-username:#959595;
   --add-card-header-text-color:black;
   --add-card-header-text-color-two:#D1D1D1;
+  --ad-card-label-color:#565656;
 }
 
 #root[data-theme=dark] {
@@ -26,6 +27,7 @@
   --all-cards-card-header-username:#FFFFFF;
   --add-card-header-text-color:#D1D1D1;
   --add-card-header-text-color-two:black;
+  --ad-card-label-color:#FFFFFF;
 }
 
 * {
@@ -1276,9 +1278,11 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > label {
   margin-bottom: 10px;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > input {
   height: 100px;
+  border-radius: 10px;
   background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > button {
@@ -1308,9 +1312,11 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div > label {
   margin-bottom: 10px;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div > input {
   height: 100px;
+  border-radius: 10px;
   background-color: var(--all-card-input-background-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div > button {
@@ -1721,7 +1727,6 @@
   flex-direction: column;
   width: 48%;
   position: relative;
-  background-color: black;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.family-composition > div > div.children-trustee > div.children > div {
   margin-top: 10px;
@@ -2030,7 +2035,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(1) > div:nth-child(1) > input {
   display: flex;
@@ -2116,7 +2121,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.friends-business > div:nth-child(2) > div:nth-child(1) > input {
   display: flex;
@@ -2204,7 +2209,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(1) > div:nth-child(1) > input {
   display: flex;
@@ -2252,7 +2257,6 @@
   gap: 237px;
   width: 340px;
   height: 52px;
-  /* Neutral/100 */
   border: 1px solid #D1D1D1;
   border-radius: 8px;
   height: 52px;
@@ -2291,7 +2295,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.work > div:nth-child(2) > div:nth-child(1) > input {
   display: flex;
@@ -2339,7 +2343,6 @@
   gap: 237px;
   width: 340px;
   height: 52px;
-  /* Neutral/100 */
   border: 1px solid #D1D1D1;
   border-radius: 8px;
   height: 52px;
@@ -2376,12 +2379,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div:nth-child(1) > input {
   margin-top: 10px;
   box-sizing: border-box;
-  /* Auto layout */
+  background-color: var(--all-card-input-background-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2398,6 +2401,7 @@
   position: absolute;
   right: 15px;
   top: 45px;
+  color: var(--all-card-input-text-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div.extra-hotels {
   position: relative;
@@ -2405,7 +2409,6 @@
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > div.extra-hotels > input {
   margin-top: 10px;
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2414,7 +2417,7 @@
   gap: 355px;
   width: 696px;
   height: 80px;
-  /* Neutral/50 */
+  background-color: var(--all-card-input-background-color);
   border: 1px solid #E1E1E1;
   border-radius: 8px;
 }
@@ -2422,6 +2425,7 @@
   position: absolute;
   right: 15px;
   top: 25px;
+  color: var(--all-card-input-text-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hotels > div:nth-child(1) > button {
   display: flex;
@@ -2433,7 +2437,6 @@
   width: 136px;
   height: 52px;
   color: #FFFFFF;
-  /* Primary/950 */
   background: #356CD2;
   border-radius: 8px;
 }
@@ -2457,21 +2460,20 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div:nth-child(1) > input {
   margin-top: 10px;
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 16px;
   gap: 355px;
+  background-color: var(--all-card-input-background-color);
   width: 696px;
   height: 80px;
-  /* Neutral/50 */
   border: 1px solid #E1E1E1;
   border-radius: 8px;
 }
@@ -2479,6 +2481,7 @@
   position: absolute;
   right: 15px;
   top: 45px;
+  color: var(--all-card-input-text-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div.extra-restaurant {
   position: relative;
@@ -2486,16 +2489,15 @@
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > div.extra-restaurant > input {
   margin-top: 10px;
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 16px;
   gap: 355px;
+  background-color: var(--all-card-input-background-color);
   width: 696px;
   height: 80px;
-  /* Neutral/50 */
   border: 1px solid #E1E1E1;
   border-radius: 8px;
 }
@@ -2503,6 +2505,7 @@
   position: absolute;
   right: 15px;
   top: 25px;
+  color: var(--all-card-input-text-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.restaurant > div:nth-child(1) > button {
   display: flex;
@@ -2514,7 +2517,6 @@
   width: 189px;
   height: 52px;
   color: #FFFFFF;
-  /* Primary/950 */
   background: #356CD2;
   border-radius: 8px;
 }
@@ -2536,22 +2538,19 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-  /* Neutral/600 */
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div:nth-child(1) > input {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 16px;
   gap: 8px;
+  background-color: var(--all-card-input-background-color);
   width: 696px;
   height: 107px;
-  /* Neutral/100 */
   border: 1px solid #D1D1D1;
   border-radius: 8px;
 }
@@ -2563,7 +2562,6 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.hobbies > div > div.extra-hobbies > input {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2572,7 +2570,6 @@
   gap: 8px;
   width: 696px;
   height: 107px;
-  /* Neutral/100 */
   border: 1px solid #D1D1D1;
   border-radius: 8px;
 }
@@ -2603,8 +2600,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  /* identical to box height, or 140% */
-  /* Neutral/800 */
   color: #262626;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div {
@@ -2619,7 +2614,6 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(1) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2642,13 +2636,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-  /* Neutral/300 */
   color: #959595;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(2) {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2672,8 +2663,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-  /* Neutral/300 */
   color: #959595;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.other-information > div > div.additional > div > button:nth-child(3) {

@@ -737,6 +737,7 @@ function AddCardMiddle(){
     let [fb_dynamic, setFbDynamic] = useState([])
     let [trustee_div, setTrustee] = useState([])
     let [children_div, setChildren] = useState([])
+    let [phone_number, setPhoneNumber] = useState([])
     let [relatives_div, setRelativeDiv] = useState([])
     let [instagram_dynamic, setInstagramDynamic] = useState([])
     let [twitter_dynamic, setTwitterDynamic] = useState([])
@@ -780,6 +781,10 @@ function AddCardMiddle(){
         let home = [...home_div,[]]
         setHomeDiv(home)
     }
+    function AddPhoneNumber(){
+        let phonediv=[...phone_number, []]
+        setPhoneNumber(phonediv)
+    }
     function AddFacebookDynamic(){
         let fbdiv = [...fb_dynamic, []]
         setFbDynamic(fbdiv)
@@ -808,6 +813,9 @@ function AddCardMiddle(){
         let home_input = [...home_div]
         home_input[index] = onChangeValue.target.value;
         setHomeDiv(home_input)
+    }
+    let handlePhoneNumber = (e,index)=>{
+        console.log()
     }
     let handleInputFacebook = (e,index) =>{
         let input_value = [...fb_dynamic]
@@ -860,6 +868,9 @@ function AddCardMiddle(){
         setExtraHobbies(div_extra_hobbies)
     }
     /* Burdan asagi Delete Funksiyalardi*/
+    let handleDeletePhoneNumber=(e,index)=>{
+        console.log()
+    }
     let handleDeleteFacebook = (index)=>{
         let div_facebook = [...fb_dynamic]
         div_facebook.splice(index,1)
@@ -1056,8 +1067,16 @@ function AddCardMiddle(){
                                         <div>
                                             <label htmlFor="">Phone Number</label>
                                             <input type="text" />
-                                            <button>Save</button>                                            
+                                            <button onClick={AddPhoneNumber}>add</button>                                            
                                         </div>
+                                        {phone_number.map((value,index)=>{
+                                            return(
+                                                <div>
+                                                    <input type="text" value={value} onChange={e=>handlePhoneNumber(e,index)}/>
+                                                    <button onClick={()=>handleDeletePhoneNumber(index)}>add</button>                                            
+                                                </div>
+                                            )
+                                        })}
                                     </div>
                                     <div className='contact-three'>
                                         <div>

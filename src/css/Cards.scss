@@ -11,6 +11,7 @@
     --all-cards-card-header-username:#959595;
     --add-card-header-text-color:black;
     --add-card-header-text-color-two:#D1D1D1;
+    --ad-card-label-color:#565656;
 }
 #root[data-theme='dark']{
     --all-card-body-color:#111b21;
@@ -25,6 +26,7 @@
     --all-cards-card-header-username:#FFFFFF;
     --add-card-header-text-color:#D1D1D1;
     --add-card-header-text-color-two:black;
+    --ad-card-label-color:#FFFFFF;
 }
 
 *{
@@ -1299,9 +1301,11 @@
                                 width: 98.3%;
                                 &>label{
                                     margin-bottom: 10px;
+                                    color:var(--ad-card-label-color); 
                                 }
                                 &>input{
                                     height: 100px;
+                                    border-radius: 10px;
                                     background-color: var(--all-card-input-background-color);
                                 }
                                 &>button{
@@ -1322,8 +1326,7 @@
                             }
                         }
                         &>div.contact-three{
-                            margin-top: 20px;
-                            
+                            margin-top: 20px;                            
                             height: 196px;
                             &>div{
                                 display: flex;
@@ -1332,9 +1335,11 @@
                                 width: 98.3%;
                                 &>label{
                                     margin-bottom: 10px;
+                                    color:var(--ad-card-label-color); 
                                 }
                                 &>input{
                                     height: 100px;
+                                    border-radius: 10px;
                                     background-color: var(--all-card-input-background-color);
                                 }
                                 &>button{
@@ -1761,7 +1766,6 @@
                                     flex-direction: column;
                                     width: 48%;
                                     position: relative;
-                                    background-color: black;
                                     &>div{
                                         margin-top: 10px;
                                     }                                    
@@ -2097,9 +2101,7 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-
-                                            color: #565656; 
+                                            color:var(--ad-card-label-color); 
                                         }
                                         &>input{
                                             display: flex;
@@ -2187,8 +2189,7 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            color: #565656; 
+                                            color:var(--ad-card-label-color); 
                                         }                                        
                                         &>input{
                                             display: flex;
@@ -2277,8 +2278,7 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            color: #565656; 
+                                            color:var(--ad-card-label-color); 
                                         }                                        
                                         &>input{
                                             display: flex;
@@ -2287,7 +2287,6 @@
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
-                                            
                                             width: 340px;
                                             height: 52px;
                                             background-color: var(--all-card-input-background-color);
@@ -2324,12 +2323,9 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
+                                            gap: 237px;                                            
                                             width: 340px;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2369,8 +2365,7 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            color: #565656; 
+                                            color:var(--ad-card-label-color);  
                                         }
                                         &>input{
                                             display: flex;
@@ -2379,7 +2374,6 @@
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
-                                            
                                             width: 100%;
                                             height: 52px;
                                             background-color: var(--all-card-input-background-color);
@@ -2417,11 +2411,8 @@
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
-                                            
                                             width: 340px;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2459,14 +2450,12 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            color: #565656; 
+                                            color:var(--ad-card-label-color); 
                                         }
                                         &>input{
                                             margin-top: 10px;
                                             box-sizing: border-box;
-    
-                                            /* Auto layout */
+                                            background-color: var(--all-card-input-background-color);
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
@@ -2484,7 +2473,8 @@
                                         &>span{
                                             position: absolute;
                                             right: 15px;
-                                            top:45px
+                                            top:45px;
+                                            color:var(--all-card-input-text-color);
                                         }                                 
                                     }
                                     &>div.extra-hotels{
@@ -2492,26 +2482,23 @@
                                         &>input{
                                             margin-top: 10px;
                                             box-sizing: border-box;
-    
-                                            /* Auto layout */
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: flex-start;
                                             padding: 16px;
-                                            gap: 355px;
-                                            
+                                            gap: 355px;                                            
                                             width: 696px;
                                             height: 80px;
-                                            
-                                            /* Neutral/50 */
+                                            background-color: var(--all-card-input-background-color);
                                             border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
                                         }       
                                         &>span{
                                             position: absolute;
                                             right: 15px;
-                                            top:25px
+                                            top:25px;
+                                            color: var(--all-card-input-text-color);
                                         }                                 
                                     }
                                     &>button{
@@ -2520,12 +2507,10 @@
                                         justify-content: center;
                                         align-items: center;
                                         padding: 14px 16px;
-                                        gap: 12px;
-                                        
+                                        gap: 12px;                                        
                                         width: 136px;
                                         height: 52px;
                                         color: #FFFFFF;
-                                        /* Primary/950 */
                                         background: #356CD2;
                                         border-radius: 8px;                                        
                                     }    
@@ -2549,32 +2534,28 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            color: #565656; 
+                                            color:var(--ad-card-label-color); 
                                         }
                                         &>input{
                                             margin-top: 10px;
                                             box-sizing: border-box;
-    
-                                            /* Auto layout */
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: flex-start;
                                             padding: 16px;
                                             gap: 355px;
-                                            
+                                            background-color: var(--all-card-input-background-color);
                                             width: 696px;
                                             height: 80px;
-                                            
-                                            /* Neutral/50 */
                                             border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
                                         }       
                                         &>span{
                                             position: absolute;
                                             right: 15px;
-                                            top:45px
+                                            top:45px;
+                                            color:var(--all-card-input-text-color)
                                         }                                 
                                     }
                                     &>div.extra-restaurant{
@@ -2582,26 +2563,23 @@
                                         &>input{
                                             margin-top: 10px;
                                             box-sizing: border-box;
-    
-                                            /* Auto layout */
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: flex-start;
                                             padding: 16px;
                                             gap: 355px;
-                                            
+                                            background-color: var(--all-card-input-background-color);
                                             width: 696px;
                                             height: 80px;
-                                            
-                                            /* Neutral/50 */
                                             border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
                                         }       
                                         &>span{
                                             position: absolute;
                                             right: 15px;
-                                            top:25px
+                                            top:25px;
+                                            color: var(--all-card-input-text-color);
                                         }                                 
                                     }
                                     &>button{
@@ -2610,12 +2588,10 @@
                                         justify-content: center;
                                         align-items: center;
                                         padding: 14px 16px;
-                                        gap: 12px;
-                                        
+                                        gap: 12px;                                        
                                         width: 189px;
                                         height: 52px;
                                         color: #FFFFFF;
-                                        /* Primary/950 */
                                         background: #356CD2;
                                         border-radius: 8px;                                        
                                     }    
@@ -2627,7 +2603,6 @@
                                 &>div{
                                     display: flex;
                                     flex-direction: column; 
-
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2638,27 +2613,19 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            /* identical to box height, or 143% */
-                                            
-                                            /* Neutral/600 */
-                                            color: #565656;                                            
+                                            color:var(--ad-card-label-color);                                            
                                         }
                                         &>input{
                                             box-sizing: border-box;
-
-                                            /* Auto layout */
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: flex-start;
                                             padding: 16px;
                                             gap: 8px;
-                                            
+                                            background-color: var(--all-card-input-background-color);
                                             width: 696px;
                                             height: 107px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                            
                                         }
@@ -2670,19 +2637,14 @@
                                         margin-top: 10px;
                                         &>input{
                                             box-sizing: border-box;
-
-                                            /* Auto layout */
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: flex-start;
                                             padding: 16px;
-                                            gap: 8px;
-                                            
+                                            gap: 8px;                                            
                                             width: 696px;
                                             height: 107px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                            
                                         }
@@ -2710,17 +2672,12 @@
                                 gap: 16px;
                                 width: 100%;
                                 height: 124px; 
-                                &>span{
-                                    
+                                &>span{                                    
                                     font-family: 'Inter', sans-serif;
                                     font-style: normal;
                                     font-weight: 500;
                                     font-size: 20px;
                                     line-height: 28px;
-                                    
-                                    /* identical to box height, or 140% */
-                                    
-                                    /* Neutral/800 */
                                     color: #262626;                                    
                                 }
                                 &>div{
@@ -2734,8 +2691,6 @@
                                     }       
                                     &>button:nth-child(1){
                                         box-sizing: border-box;
-
-                                        /* Auto layout */
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: center;
@@ -2759,17 +2714,11 @@
                                             font-weight: 400;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            /* identical to box height, or 143% */
-                                            
-                                            /* Neutral/300 */
                                             color: #959595;                                            
                                         }                                     
                                     } 
                                     &>button:nth-child(2){
                                         box-sizing: border-box;
-
-                                        /* Auto layout */
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: center;
@@ -2794,10 +2743,6 @@
                                             font-weight: 400;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            /* identical to box height, or 143% */
-                                            
-                                            /* Neutral/300 */
                                             color: #959595;                                            
                                         }                                                                            
                                     }  
