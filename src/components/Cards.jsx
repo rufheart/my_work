@@ -738,6 +738,7 @@ function AddCardMiddle(){
     let [trustee_div, setTrustee] = useState([])
     let [children_div, setChildren] = useState([])
     let [phone_number, setPhoneNumber] = useState([])
+    let [mail_address, setMailAddress] = useState([])
     let [relatives_div, setRelativeDiv] = useState([])
     let [instagram_dynamic, setInstagramDynamic] = useState([])
     let [twitter_dynamic, setTwitterDynamic] = useState([])
@@ -815,7 +816,9 @@ function AddCardMiddle(){
         setHomeDiv(home_input)
     }
     let handlePhoneNumber = (e,index)=>{
-        console.log()
+        let phone_div = [...phone_number]
+        phone_div[index] = e.target.value
+        setPhoneNumber(phone_div)
     }
     let handleInputFacebook = (e,index) =>{
         let input_value = [...fb_dynamic]
@@ -869,7 +872,9 @@ function AddCardMiddle(){
     }
     /* Burdan asagi Delete Funksiyalardi*/
     let handleDeletePhoneNumber=(e,index)=>{
-        console.log()
+        let phone_div = [...phone_number]
+        phone_div.splice(index,1)
+        setPhoneNumber(phone_div)
     }
     let handleDeleteFacebook = (index)=>{
         let div_facebook = [...fb_dynamic]
@@ -1071,9 +1076,9 @@ function AddCardMiddle(){
                                         </div>
                                         {phone_number.map((value,index)=>{
                                             return(
-                                                <div>
+                                                <div className='contac-extra-phone-number'>
                                                     <input type="text" value={value} onChange={e=>handlePhoneNumber(e,index)}/>
-                                                    <button onClick={()=>handleDeletePhoneNumber(index)}>add</button>                                            
+                                                    <button onClick={()=>handleDeletePhoneNumber(index)}> <span class="material-symbols-outlined">close</span></button>                                            
                                                 </div>
                                             )
                                         })}
@@ -1082,8 +1087,16 @@ function AddCardMiddle(){
                                         <div>
                                             <label htmlFor="">Mail Address</label>
                                             <input type="text" />
-                                            <button>Save</button>                                            
+                                            <button onClick={()=>{let mail_div=[...mail_address, []]; setMailAddress(mail_div)}}>add</button>                                            
                                         </div>
+                                        {mail_address.map((value, index)=>{
+                                            return(
+                                                <div className=''>
+                                                    <input type="text" />
+                                                    {/* <button onClick={()=>handleDeletePMailAddress(index)}> <span class="material-symbols-outlined">close</span></button> */}
+                                                </div>
+                                            )
+                                        })}
                                     </div>    
                                     <div className='contact-four'>
                                         <div className='facebook'>

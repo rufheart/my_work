@@ -1110,7 +1110,7 @@
   position: relative;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div:nth-child(1) > label {
-  color: #565656;
+  color: var(--ad-card-label-color);
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div:nth-child(1) > input {
@@ -1132,7 +1132,7 @@
   position: relative;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > label {
-  color: #565656;
+  color: var(--ad-card-label-color);
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > input {
@@ -1265,27 +1265,36 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form {
   height: 98.3%;
+  border: 1px solid red;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second {
-  margin-top: 20px;
-  height: 196px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid red;
 }
-.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div {
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 98.3%;
+  margin-bottom: 43px;
 }
-.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > label {
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div:nth-child(1) > label {
   margin-bottom: 10px;
   color: var(--ad-card-label-color);
 }
-.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > input {
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div:nth-child(1) > input {
   height: 100px;
   border-radius: 10px;
   background-color: var(--all-card-input-background-color);
 }
-.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div > button {
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div:nth-child(1) > button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1300,9 +1309,35 @@
   background: #356CD2;
   border-radius: 8px;
 }
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div.contac-extra-phone-number {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 98.3%;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div.contac-extra-phone-number > input {
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--all-card-input-background-color);
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div.contac-extra-phone-number > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div.contac-extra-phone-number > button > span {
+  color: var(--all-card-input-text-color);
+}
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three {
-  margin-top: 20px;
   height: 196px;
+  border: 1px solid red;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div {
   display: flex;
@@ -1336,7 +1371,6 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four {
   height: 212px;
-  margin-top: 20px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-four > div {
   margin-top: 10px;
