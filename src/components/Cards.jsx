@@ -733,6 +733,7 @@ function AddCardHeader(){
 
 function AddCardMiddle(){
     let [extra_office, setExtraOffice] = useState([])
+    let [car_plate, setCarPlate] = useState([])
     let [home_div, setHomeDiv] = useState([])
     let [fb_dynamic, setFbDynamic] = useState([])
     let [trustee_div, setTrustee] = useState([])
@@ -795,6 +796,11 @@ function AddCardMiddle(){
         inputdata[index] = onChangeValue.target.value;
         setExtraOffice(inputdata) 
     }
+    let handleInputExtraMailAddress= (e,index)=>{
+        let mail_div = [...mail_address]
+        mail_div[index] = e.target.value
+        setMailAddress(mail_div)
+    }
     let handleInputChildren=(e,index)=>{
         let value_input = [...children_div]
         value_input[index]=e.target.value
@@ -810,10 +816,15 @@ function AddCardMiddle(){
         inputdata[index] = e.target.value;
         setRelativeDiv(inputdata)        
     }
-    let handelHomeDiv = (onChangeValue, index)=>{
+    let handleHomeDiv = (onChangeValue, index)=>{
         let home_input = [...home_div]
         home_input[index] = onChangeValue.target.value;
         setHomeDiv(home_input)
+    }
+    let handleInputCarPlate = (e,index)=>{
+        let car_plate_div = [...car_plate]
+        car_plate_div[index] = e.target.value
+        setCarPlate(car_plate_div)
     }
     let handlePhoneNumber = (e,index)=>{
         let phone_div = [...phone_number]
@@ -871,7 +882,17 @@ function AddCardMiddle(){
         setExtraHobbies(div_extra_hobbies)
     }
     /* Burdan asagi Delete Funksiyalardi*/
-    let handleDeletePhoneNumber=(e,index)=>{
+    let handleDeletePMailAddress = (index)=>{
+        let mail_div=[...mail_address]
+        mail_div.splice(index, 1)
+        setMailAddress(mail_div)
+    }
+    let handleDeleteExtraCarPlate = (index)=>{
+        let car_plate_div = [...car_plate]
+        car_plate_div.splice(index,1)
+        setCarPlate(car_plate_div)
+    }
+    let handleDeletePhoneNumber=(index)=>{
         let phone_div = [...phone_number]
         phone_div.splice(index,1)
         setPhoneNumber(phone_div)
@@ -1043,7 +1064,7 @@ function AddCardMiddle(){
                                     {home_div.map((value,index)=>{
                                         return(
                                             <div className='extra_home'>
-                                                <input type="text" name="" id="" value={value} onChange={e=>handelHomeDiv(e,index)}/>  
+                                                <input type="text" name="" id="" value={value} onChange={e=>handleHomeDiv(e,index)}/>  
                                                 <button onClick={()=>handleDeleteHome(index)}><span class="material-symbols-outlined">close</span></button>
                                             </div> 
                                         )                                   
@@ -1053,14 +1074,28 @@ function AddCardMiddle(){
                                 <div className='left-nine'>
                                     <div>
                                         <div>
-                                            <label htmlFor="">Car Plate</label>
-                                            <input type="text" placeholder='Car No  '/>
+                                            <label htmlFor="card-car-plate">Car Plate</label>
+                                            <input type="text" placeholder='Car No' id='card-car-plate'/>
                                         </div>
                                         <div><select name="" id=""><option value="">Car Model</option></select></div>
                                         <div><select name="" id=""><option value="">Year</option></select></div>
                                         <div><select name="" id=""><option value="">Color</option></select></div>
-                                        <button ><span class="material-symbols-outlined">add</span></button>
+                                        <button onClick={()=>{let car_plate_div=[...car_plate, []]; setCarPlate(car_plate_div)}}><span class="material-symbols-outlined">add</span></button>
                                     </div>
+                                    {car_plate.map((value, index)=>{
+                                        return(
+                                            <div className='card-extra-car-plate'>
+                                                <div>
+                                                    <label htmlFor="">Car Plate</label>
+                                                    <input type="text" placeholder='Car No' id='' value={value} onChange={e=>handleInputCarPlate(e,index)}/>
+                                                </div>
+                                                <div><select name="" id=""><option value="">Car Model</option></select></div>
+                                                <div><select name="" id=""><option value="">Year</option></select></div>
+                                                <div><select name="" id=""><option value="">Color</option></select></div>
+                                                <button onClick={()=>handleDeleteExtraCarPlate(index)}><span class="material-symbols-outlined">close</span></button>
+                                            </div>                                            
+                                        )
+                                    })}
                                 </div>                                                                          
                             </form>
                         </div>:null}                          
@@ -1071,32 +1106,34 @@ function AddCardMiddle(){
                                     <div className='contact-second'>
                                         <div>
                                             <label htmlFor="">Phone Number</label>
-                                            <input type="text" />
-                                            <button onClick={AddPhoneNumber}>add</button>                                            
+                                            <input type="text" />                                           
                                         </div>
                                         {phone_number.map((value,index)=>{
                                             return(
-                                                <div className='contac-extra-phone-number'>
+                                                <div className='contact-extra-phone-number'>
                                                     <input type="text" value={value} onChange={e=>handlePhoneNumber(e,index)}/>
                                                     <button onClick={()=>handleDeletePhoneNumber(index)}> <span class="material-symbols-outlined">close</span></button>                                            
                                                 </div>
                                             )
                                         })}
+                                        <div className='contact-second-button'><button onClick={AddPhoneNumber}>add</button></div>
                                     </div>
                                     <div className='contact-three'>
                                         <div>
                                             <label htmlFor="">Mail Address</label>
-                                            <input type="text" />
-                                            <button onClick={()=>{let mail_div=[...mail_address, []]; setMailAddress(mail_div)}}>add</button>                                            
+                                            <input type="text" />                                           
                                         </div>
                                         {mail_address.map((value, index)=>{
                                             return(
-                                                <div className=''>
-                                                    <input type="text" />
-                                                    {/* <button onClick={()=>handleDeletePMailAddress(index)}> <span class="material-symbols-outlined">close</span></button> */}
+                                                <div className='add-card-extra-mail-address'>
+                                                    <input type="text" value={value} onChange={e=>handleInputExtraMailAddress(e,index)}/>
+                                                    <button onClick={()=>handleDeletePMailAddress(index)}> <span class="material-symbols-outlined">close</span></button>
                                                 </div>
                                             )
                                         })}
+                                        <div className='contact-three-button'>
+                                            <button onClick={()=>{let mail_div=[...mail_address, []]; setMailAddress(mail_div)}}>add</button> 
+                                        </div>
                                     </div>    
                                     <div className='contact-four'>
                                         <div className='facebook'>
@@ -1201,13 +1238,13 @@ function AddCardMiddle(){
                                         <div>
                                             <div>
                                                 <label htmlFor="">Relative's Name</label>
-                                                <input type="text" name="" id="" placeholder='relatives'/>
+                                                <input type="text" name="" id="" placeholder='Relatives'/>
                                                 <button onClick={()=>{let input_div=[...relatives_div,[]];setRelativeDiv(input_div)}}><span class="material-symbols-outlined">add</span></button>
                                             </div>  
                                             {relatives_div.map((value,index)=>{
                                                 return(
                                                     <div className='relative_div'>
-                                                        <input type="text" name="" id="" placeholder='relatives' value={value} onChange={e=>handleInputRelative(e,index)}/>  
+                                                        <input type="text" name="" id="" placeholder='Relatives' value={value} onChange={e=>handleInputRelative(e,index)}/>  
                                                         <button onClick={()=>handleDeleteRelative(index)}><span class="material-symbols-outlined">close</span></button>                                          
                                                     </div>
                                                 )
@@ -1290,13 +1327,12 @@ function AddCardMiddle(){
                                             <div>
                                                 <label htmlFor="">Most Visted Hotels</label>
                                                 <input type="text" name="" id="" />
-                                                <span class="material-symbols-outlined">close</span>
                                             </div>
                                             {extra_hotels.map((value,index)=>{
                                                 return(
                                                     <div className='extra-hotels'>
                                                         <input type="text" name="" id="" value={value} onChange={e=>handleInputExtraHotels(e,index)}/>
-                                                        <span class="material-symbols-outlined" onClick={()=>handleDeleteExtraHotels(index)}>close</span>
+                                                        <button><span class="material-symbols-outlined" onClick={()=>handleDeleteExtraHotels(index)}>close</span></button>
                                                     </div>                                                    
                                                 )
                                             })}
@@ -1307,14 +1343,13 @@ function AddCardMiddle(){
                                         <div>
                                             <div>
                                                 <label htmlFor="">Most Visted Restaurant</label>
-                                                <input type="text" name="" id="" />  
-                                                <span class="material-symbols-outlined">close</span>                                              
+                                                <input type="text" name="" id="" />                                              
                                             </div>
                                             {extra_restaurant.map((value,index)=>{
                                                 return(
                                                     <div className='extra-restaurant'>                                                
                                                         <input type="text" name="" id="" value={value} onChange={e=>handleInputExtraRestaurant(e,index)}/>    
-                                                        <span class="material-symbols-outlined" onClick={()=>handleDeleteExtraRestaurant(index)}>close</span>                                          
+                                                        <button><span class="material-symbols-outlined" onClick={()=>handleDeleteExtraRestaurant(index)}>close</span></button>                                          
                                                     </div>                                                    
                                                 )
                                             })}

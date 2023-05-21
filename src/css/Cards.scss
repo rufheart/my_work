@@ -1,6 +1,7 @@
 #root[data-theme='light']{
     --all-card-body-color:#FFFFFF;
     --all-card-header-color:#FFFFFF;
+    --all-card-hover-color:#F5F6F6;
     --all-card-input-background-color:#FFFFFF;
     --all-card-input-text-color:#959595;
     --all-card-icon-color:#959595;
@@ -12,10 +13,15 @@
     --add-card-header-text-color:black;
     --add-card-header-text-color-two:#D1D1D1;
     --ad-card-label-color:#565656;
+    --add-card-preview-color-header:#383838;
+    --add-card-my-card-active-color:#262626;
+    --add-card-my-card-inactive-color:#686767;
+
 }
 #root[data-theme='dark']{
     --all-card-body-color:#111b21;
     --all-card-header-color:#202c33;
+    --all-card-hover-color:#202c33;
     --all-card-input-background-color:#2a3942;
     --all-card-input-text-color:#FFFFFF;
     --all-card-icon-color:#FFFFFF;
@@ -27,6 +33,9 @@
     --add-card-header-text-color:#D1D1D1;
     --add-card-header-text-color-two:black;
     --ad-card-label-color:#FFFFFF;
+    --add-card-preview-color-header:#FFFFFF;
+    --add-card-my-card-active-color:#FFFFFF;
+    --add-card-my-card-inactive-color:rgb(156, 148, 148);
 }
 
 *{
@@ -42,7 +51,6 @@
     background: #FFFFFF;
     border: 1px solid blue;
     &>div:nth-child(1){
-        // border: 1px solid red;
         height: 830px;
     }
     &>div.footer{
@@ -853,7 +861,6 @@
                         &>div.left-three{
                             display: flex;
                             width: 100%;
-                            border: 1px solid red;
                             &>div{
                                 display: flex;
                                 flex-direction: column;
@@ -881,7 +888,7 @@
                                 height: 80px;
                                 margin-left: 10px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -906,7 +913,7 @@
                                 width: 48.5%;
                                 height: 80px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -925,7 +932,7 @@
                                 height: 80px;
                                 margin-left: 10px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -951,7 +958,7 @@
                                 width: 48.5%;
                                 height: 80px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -971,7 +978,7 @@
                                 margin-left: 10px;
                                 &>label{
                                     margin-bottom: 5px;
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                 }
                                 &>input{
                                     box-sizing: border-box;
@@ -986,9 +993,8 @@
                             }
                         }
                         &>div.left-six{
-                            display: flex   ;
+                            display: flex;
                             width: 100%;
-                            border: 1px solid red;
                             &>div{
                                 display: flex;
                                 flex-direction: column;
@@ -997,7 +1003,7 @@
                                 width: 48.5%;
                                 height: 80px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                     
                                 }
@@ -1017,7 +1023,7 @@
                                 width: 48.5%;
                                 height: 80px;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -1042,7 +1048,7 @@
                                 position: relative;
                                 width: 98.3%;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -1065,7 +1071,7 @@
                                 position: relative;
                                 width: 98.3%;
                                 &>label{
-                                    color: #565656;
+                                    color: var(--all-card-input-text-color);
                                     margin-bottom: 5px;
                                 }
                                 &>input{
@@ -1094,7 +1100,7 @@
                                     background: transparent;
                                     &>span{
                                         font-size: 22px;
-                                        color:#686767;
+                                        color:var(--all-card-icon-color);
                                     }
                                 }                     
                             }
@@ -1113,9 +1119,6 @@
                                 line-height: 24px;
                                 border-radius: 5px;
                                 background: #356CD2;
-                                /* identical to box height, or 150% */
-                                
-                                /* Solid/White */
                                 color: #FFFFFF;  
                                 &>span{
                                     margin-left: 5px;
@@ -1182,7 +1185,7 @@
                                     background: transparent;
                                     &>span{
                                         font-size: 22px;
-                                        color:#686767;
+                                        color:var(--all-card-icon-color);
                                     }
                                 }                                                        
                             }
@@ -1201,9 +1204,6 @@
                                 line-height: 24px;
                                 border-radius: 5px;
                                 background: #356CD2;
-                                /* identical to box height, or 150% */
-                                
-                                /* Solid/White */
                                 color: #FFFFFF;  
                                 &>span{
                                     margin-left: 5px;
@@ -1212,6 +1212,8 @@
                         }  
                         &>div.left-nine{
                             display: flex;
+                            flex-direction: column;
+                            gap: 10px;
                             &>div{
                                 display: flex;
                                 align-items: center;
@@ -1219,11 +1221,15 @@
                                 height: 100%;
                                 &>div:nth-child(1){
                                     width: 180px;
+                                    align-self: flex-end;
+                                    display: flex;
+                                    flex-direction: column;
                                     &>label{
                                         margin-bottom: 10px;
                                         color:var(--all-card-input-text-color);
                                     }
                                     &>input{
+                                        outline: none;
                                         height: 52px;
                                         width: 100%;
                                         padding: 6px;
@@ -1237,8 +1243,9 @@
                                 &>div:nth-child(2){
                                     width: 180px;
                                     margin-left: 10px;
-                                    margin-top: 15px;
+                                    margin-top: 25px;
                                     &>select{
+                                        border-radius: 5px;
                                         width: 100%;
                                         height: 52px;
                                         box-sizing: border-box;
@@ -1250,8 +1257,9 @@
                                 &>div:nth-child(3){
                                     width: 124px;
                                     margin-left: 10px;
-                                    margin-top: 15px;
+                                    margin-top: 25px;
                                     &>select{
+                                        border-radius: 5px;
                                         height: 52px;
                                         width: 100%;
                                         box-sizing: border-box;
@@ -1263,8 +1271,9 @@
                                 &>div:nth-child(4){
                                     width: 124px;
                                     margin-left: 10px;
-                                    margin-top: 15px;
+                                    margin-top: 25px;
                                     &>select{
+                                        border-radius: 5px;
                                         width: 100%;
                                         height: 52px;
                                         box-sizing: border-box;
@@ -1274,7 +1283,7 @@
                                     }
                                 }  
                                 &>button{
-                                    margin-top: 15px;
+                                    margin-top: 25px;
                                     margin-left: 10px;
                                     border-radius: 100px;
                                     width: 52px;
@@ -1287,6 +1296,11 @@
                                     border: 1px solid #7C7C7C;
                                 }                                                     
                             }
+                            &>div.card-extra-car-plate{
+                                &>button{
+                                    background-color: red;
+                                }
+                            }
                         }                  
                     } 
                     &>form.contact-form{
@@ -1296,18 +1310,17 @@
                         overflow-x: hidden;
                         display: flex;
                         flex-direction: column;
-                        gap: 20px;
+                        gap: 60px;
                         &>div.contact-second{
                             display: flex;
                             flex-direction: column;
-                            gap: 30px;
+                            gap: 10px;
                             border: 1px solid red;
                             &>div:nth-child(1){
                                 display: flex;
                                 flex-direction: column;
                                 position: relative;
-                                width: 98.3%;
-                                margin-bottom: 43px;                                
+                                width: 98.3%;                              
                                 &>label{
                                     margin-bottom: 10px;
                                     color:var(--ad-card-label-color); 
@@ -1316,6 +1329,7 @@
                                     height: 100px;
                                     border-radius: 10px;
                                     background-color: var(--all-card-input-background-color);
+                                    color: var(--all-card-input-text-color);
                                 }
                                 &>button{
                                     display: flex;
@@ -1328,12 +1342,11 @@
                                     top: 140px;
                                     right: 0px;
                                     color: #FFFFFF;
-                                    /* Primary/950 */
                                     background: #356CD2;
                                     border-radius: 8px;                                   
                                 }
                             }
-                            &>div.contac-extra-phone-number{
+                            &>div.contact-extra-phone-number{
                                 display: flex;
                                 flex-direction: column;
                                 position: relative;
@@ -1342,6 +1355,7 @@
                                     height: 100px;
                                     border-radius: 10px;
                                     background-color: var(--all-card-input-background-color);
+                                    color: var(--all-card-input-text-color);
                                 }
                                 &>button{
                                     display: flex;
@@ -1355,16 +1369,36 @@
                                     width: 30px;
                                     height: 30px;
                                     &>span{
-                                        color: var(--all-card-input-text-color);
+                                        color: var(--all-card-icon-color);
                                     }
+                                }
+                            }
+                            &>div.contact-second-button{
+                                width: 100%;
+                                height: 55px;
+                                position: relative;
+                                width: 98.3%;
+                                &>button{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    width: 100px;
+                                    height: 52px;
+                                    right: 0px;
+                                    color: #FFFFFF;
+                                    background: #356CD2;
+                                    border-radius: 8px;                                    
                                 }
                             }
                         }
                         &>div.contact-three{
-                            // margin-top: 20px;                            
-                            height: 196px;
                             border: 1px solid red;
-                            &>div{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            &>div:nth-child(1),div.add-card-extra-mail-address{
                                 display: flex;
                                 flex-direction: column;
                                 position: relative;
@@ -1377,7 +1411,32 @@
                                     height: 100px;
                                     border-radius: 10px;
                                     background-color: var(--all-card-input-background-color);
+                                    color:var(--all-card-input-text-color)
                                 }
+                            }
+                            &>div.add-card-extra-mail-address{
+                                position: relative;
+                                &>button{
+                                    position: absolute;
+                                    width: 30px;
+                                    height: 30px;
+                                    right: 15px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    top:3px;
+                                    background-color: transparent;
+                                    border: none;
+                                    &>span{
+                                        color: var(--all-card-icon-color);
+                                    }
+                                }
+                            }
+                            &>div.contact-three-button{
+                                width: 100%;
+                                height: 55px;
+                                position: relative;
+                                width: 98.3%;
                                 &>button{
                                     display: flex;
                                     flex-direction: row;
@@ -1386,10 +1445,8 @@
                                     position: absolute;
                                     width: 100px;
                                     height: 52px;
-                                    top: 140px;
                                     right: 0px;
                                     color: #FFFFFF;
-                                    /* Primary/950 */
                                     background: #356CD2;
                                     border-radius: 8px;                                    
                                 }
@@ -1408,7 +1465,6 @@
                                 }
                                 &>div.facebook-static{
                                     height: 52px;
-                                    // border: 1px solid red;
                                     display: flex;
                                     flex-direction: column;
                                     position: relative;
@@ -1420,6 +1476,8 @@
                                         font-size: 24px;
                                     }
                                     &>input{
+                                        border: none;
+                                        border: 1px solid #D1D1D1;
                                         height: 52px;
                                         border-radius: 8px;
                                         box-sizing: border-box;
@@ -1430,29 +1488,29 @@
                                         font-size: 12px;
                                         line-height: 16px;
                                         padding-right: 53px;
+                                        outline: none;
                                         background-color: var(--all-card-input-background-color);
                                         color: var(--all-card-input-text-color);                                     
                                     }
                                     &>button{
                                         position: absolute;
                                         right: 0px;
-                                        height: 52px;
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: center;
                                         align-items: center;
                                         border: none;
                                         width: 52px;
-                                        height: 52px;
+                                        height: 50px;
+                                        top: 1px;
+                                        right: 1px;
                                         color: white;
-                                        /* Primary/950 */
                                         background: #356CD2;
                                         border-radius: 0px 8px 8px 0px;                                        
                                     }
                                 }
                                 &>div.facebook-dynamic{
-                                    height: 52px;
-                                    // border: 1px solid red;
+                                    height: 52px;                                    
                                     display: flex;
                                     flex-direction: column;
                                     position: relative;
@@ -1464,7 +1522,10 @@
                                         font-size: 24px;
                                     }
                                     &>input{
+                                        border: none;
+                                        border: 1px solid #D1D1D1;
                                         height: 52px;
+                                        outline: none;
                                         border-radius: 8px;
                                         box-sizing: border-box;
                                         padding-left: 50px;
@@ -1488,7 +1549,6 @@
                                         border: none;
                                         color: #D1D1D1;
                                         background: transparent;
-                                        /* Primary/950 */
                                         border-radius: 0px 8px 8px 0px;                                        
                                     }
                                 }                                
@@ -1500,7 +1560,6 @@
                                 }
                                 &>div.instagram-static{
                                     height: 52px;
-                                    // border: 1px solid red;
                                     display: flex;
                                     flex-direction: column;
                                     position: relative;
@@ -1513,6 +1572,9 @@
                                     }
                                     &>input{
                                         height: 52px;
+                                        border: none;
+                                        outline: none;
+                                        border: 1px solid #D1D1D1;
                                         border-radius: 8px;
                                         box-sizing: border-box;
                                         padding-left: 50px;
@@ -1528,14 +1590,15 @@
                                     &>button{
                                         position: absolute;
                                         right: 0px;
-                                        height: 52px;
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: center;
                                         align-items: center;
                                         border: none;
                                         width: 52px;
-                                        height: 52px;
+                                        height: 50px;
+                                        top: 1px;
+                                        right: 1px;
                                         color: white;
                                         background: #356CD2;
                                         border-radius: 0px 8px 8px 0px;                                        
@@ -1590,7 +1653,6 @@
                                 }
                                 &>div.twitter-static{
                                     height: 52px;
-                                    // border: 1px solid red;
                                     display: flex;
                                     flex-direction: column;
                                     position: relative;
@@ -1602,7 +1664,10 @@
                                         font-size: 24px;
                                     }
                                     &>input{
+                                        outline: none;
                                         height: 52px;
+                                        border: none;
+                                        border: 1px solid #D1D1D1;
                                         border-radius: 8px;
                                         box-sizing: border-box;
                                         padding-left: 50px;
@@ -1618,16 +1683,16 @@
                                     &>button{
                                         position: absolute;
                                         right: 0px;
-                                        height: 52px;
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: center;
                                         align-items: center;
                                         border: none;
                                         width: 52px;
-                                        height: 52px;
+                                        height: 50px;
+                                        top: 1px;
+                                        right: 1px;
                                         color: white;
-                                        /* Primary/950 */
                                         background: #356CD2;
                                         border-radius: 0px 8px 8px 0px;                                        
                                     }
@@ -1673,63 +1738,20 @@
                                         /* Primary/950 */
                                         border-radius: 0px 8px 8px 0px;                                          
                                     }
-                                }        
-                                &>div.twitter-static{
-                                    height: 52px;
-                                    // border: 1px solid red;
-                                    display: flex;
-                                    flex-direction: column;
-                                    position: relative;
-                                    &>i{
-                                        position: absolute;
-                                        color: #B7B7B7;
-                                        top: 12.5px;
-                                        left: 15px;
-                                        font-size: 24px;
-                                    }
-                                    &>input{
-                                        height: 52px;
-                                        border-radius: 8px;
-                                        box-sizing: border-box;
-                                        padding-left: 50px;
-                                        font-family: 'Inter', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        font-size: 12px;
-                                        line-height: 16px;
-                                        padding-right: 53px;
-                                        /* identical to box height, or 133% */
-                                        
-                                        /* Neutral/800 */
-                                        color: #262626;                                        
-                                    }
-                                    &>button{
-                                        position: absolute;
-                                        right: 0px;
-                                        height: 52px;
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: center;
-                                        align-items: center;
-                                        border: none;
-                                        width: 52px;
-                                        height: 52px;
-                                        color: white;
-                                        /* Primary/950 */
-                                        background: #356CD2;
-                                        border-radius: 0px 8px 8px 0px;                                        
-                                    }
-                                }                         
+                                }                                
                             }                                                    
                         }                       
                     }
                     &>form.family-composition{
-                        height: 97.2%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        border: 1px solid blue;
                         &>div{
-                            margin-top: 15px;
-                            &>div{
-                                margin:10px 0px;
-                            }
+                            display: flex;
+                            flex-direction: column;
+                            border: 1px solid red;
+                            gap: 10px;
                             &>div.wife-husband{
                                 display: flex;
                                 width: 100%;
@@ -1737,18 +1759,19 @@
                                 &>div:nth-child(1){
                                     display: flex;
                                     flex-direction: column;
+                                    gap: 5px;
                                     width: 48%;
                                     height: 80px;
                                     &>label{
-                                        padding-bottom: 5px;
                                         font-family: 'Inter', sans-serif;
                                         font-style: normal;
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 20px;
-                                        color: #565656;                                        
+                                        color: var(--ad-card-label-color);                                      
                                     }
                                     &>input{
+                                        outline: none;
                                         height: 52px;
                                         border: 1px solid #D1D1D1;
                                         border-radius: 8px;                                        
@@ -1759,26 +1782,28 @@
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 20px;
-                                        color: #565656;                                                                                
+                                        background-color: var(--all-card-input-background-color);                                                                               
+                                        color: var(--all-card-input-text-color);
                                     }
 
                                 }   
                                 &>div:nth-child(2){
                                     display: flex;
                                     flex-direction: column;
+                                    gap: 5px;
                                     width: 48%;
                                     height: 80px;
                                     margin: 0px 10px;
                                     &>label{
-                                        padding-bottom: 5px;
                                         font-family: 'Inter', sans-serif;
                                         font-style: normal;
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 20px;
-                                        color: #565656;                                        
+                                        color: var(--ad-card-label-color);                                       
                                     }                                  
                                     &>input{
+                                        outline: none;
                                         height: 52px;
                                         border: 1px solid #D1D1D1;
                                         border-radius: 8px; 
@@ -1789,7 +1814,8 @@
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 20px;
-                                        color: #565656;                                                                                                                 
+                                        background-color: var(--all-card-input-background-color);
+                                        color:var(--all-card-input-text-color)                                                                                                              
                                     }
                                 }                                                            
                             }
@@ -1802,26 +1828,23 @@
                                     flex-direction: column;
                                     width: 48%;
                                     position: relative;
-                                    &>div{
-                                        margin-top: 10px;
-                                    }                                    
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
+                                        gap: 5px;
                                         &>label{
-                                            margin-bottom: 5px;
                                             font-family: 'Inter', sans-serif;
                                             font-style: normal;
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            /* identical to box height, or 143% */
-                                            
-                                            /* Neutral/600 */
-                                            color: #565656;                                            
+                                            color: var(--ad-card-label-color);                                          
                                         }                                        
                                         &>input{
+                                            outline: none;
+                                            border: none;
+                                            border: 1ox solid #D1D1D1;
                                             height: 52px;
                                             display: flex;
                                             flex-direction: row;
@@ -1830,8 +1853,6 @@
                                             padding: 0px 0px 0px 16px;
                                             width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;    
                                             font-family: 'Inter', sans-serif;
@@ -1839,13 +1860,15 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;
-                                            color: #D1D1D1;                                                                                    
+                                            background-color: var(--all-card-input-background-color);
+                                            color: var(--add-card-header-text-color);                                                                                    
                                         }
                                         &>button{
                                             position: absolute;
                                             right: 0px;
-                                            top:35px;
-                                            height: 52px;
+                                            top:26px;
+                                            right: 1px;
+                                            height: 50px;
                                             width: 42px;
                                             display: flex;
                                             flex-direction: row;
@@ -1860,6 +1883,7 @@
                                     &>div.extra-div{
                                         position: relative;
                                         &>input{
+                                            outline: none;
                                             height: 52px;
                                             display: flex;
                                             flex-direction: row;
@@ -1876,7 +1900,8 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;                                        
-                                            color: #D1D1D1;                                                                                                                             
+                                            background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color)                                                                                                                          
                                         }  
                                         &>button{
                                             position: absolute;
@@ -1885,7 +1910,7 @@
                                             border: none;
                                             background: transparent;
                                             &>span{
-                                                color: #D1D1D1;
+                                                color: var(--all-cards-card-header-text-color);
                                             }
                                         }                                     
                                     }                                      
@@ -1895,38 +1920,31 @@
                                     flex-direction: column;
                                     width: 48%;
                                     position: relative;
-                                    &>div{
-                                        margin-top: 10px;
-                                    }
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
+                                        position: relative;
+                                        gap: 5px;
                                         &>label{
-                                            margin-bottom: 5px;
                                             font-family: 'Inter', sans-serif;
                                             font-style: normal;
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            /* identical to box height, or 143% */
-                                            
-                                            /* Neutral/600 */
-                                            color: #565656;                                            
+                                            color: var(--ad-card-label-color);                                            
                                         }
                                         &>input{
+                                            outline: none;
                                             height: 52px;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
+                                            gap: 237px;                                            
                                             width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;  
                                             font-family: 'Inter', sans-serif;
@@ -1934,17 +1952,15 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;
-                                            
-                                            /* identical to box height, or 150% */
-                                            
-                                            /* Neutral/100 */
-                                            color: #D1D1D1;                                                                                      
+                                            background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color)                                                                                      
                                         }
                                         &>button{
                                             position: absolute;
                                             right: 0px;
-                                            top:35px;
-                                            height: 52px;
+                                            top:26px;
+                                            right: 1px;
+                                            height: 50px;
                                             width: 42px;
                                             display: flex;
                                             flex-direction: row;
@@ -1959,18 +1975,16 @@
                                     &>div.extra-div{
                                         position: relative;
                                         &>input{
+                                            outline: none;
                                             height: 52px;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
-                                            
+                                            gap: 237px;                                            
                                             width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;    
                                             font-family: 'Inter', sans-serif;
@@ -1978,11 +1992,8 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;
-                                            
-                                            /* identical to box height, or 150% */
-                                            
-                                            /* Neutral/100 */
-                                            color: #D1D1D1;                                                                                                                             
+                                            background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);                                                                                                                            
                                         }  
                                         &>button{
                                             position: absolute;
@@ -1991,7 +2002,7 @@
                                             border: none;
                                             background: transparent;
                                             &>span{
-                                                color: #D1D1D1;
+                                                color: var(--all-card-input-text-color)
                                             }
                                         }                                     
                                     }                                                                  
@@ -2012,13 +2023,10 @@
                                             font-weight: 500;
                                             font-size: 14px;
                                             line-height: 20px;
-                                            
-                                            /* identical to box height, or 143% */
-                                            
-                                            /* Neutral/600 */
-                                            color: #565656; 
+                                            color: var(--ad-card-label-color);
                                         }
                                         &>input{ 
+                                            outline: none;
                                             margin-top: 10px;                                           
                                             height: 52px;
                                             display: flex;
@@ -2026,12 +2034,8 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-
-                                            
                                             width: 100%;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;  
                                             font-family: 'Inter', sans-serif;
@@ -2039,17 +2043,15 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;
-                                            
-                                            /* identical to box height, or 150% */
-                                            
-                                            /* Neutral/100 */
-                                            color: #D1D1D1;                                                                                      
+                                            background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color)                                                                                    
                                         }
                                         &>button{
                                             position: absolute;
                                             right: 0px;
-                                            top:30px;
-                                            height: 52px;
+                                            top:31px;
+                                            right: 1px;
+                                            height: 50px;
                                             width: 42px;
                                             display: flex;
                                             flex-direction: row;
@@ -2064,6 +2066,7 @@
                                     &>div.relative_div{
                                         position: relative;
                                         &>input{ 
+                                            outline: none;
                                             margin-top: 10px;                                           
                                             height: 52px;
                                             display: flex;
@@ -2071,12 +2074,8 @@
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-
-                                            
                                             width: 340px;
                                             height: 52px;
-                                            
-                                            /* Neutral/100 */
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;  
                                             font-family: 'Inter', sans-serif;
@@ -2084,11 +2083,8 @@
                                             font-weight: 400;
                                             font-size: 16px;
                                             line-height: 24px;
-                                            
-                                            /* identical to box height, or 150% */
-                                            
-                                            /* Neutral/100 */
-                                            color: #D1D1D1;                                                                                      
+                                            background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color)                                                                                    
                                         }    
                                         &>button{
                                             position: absolute;
@@ -2097,7 +2093,7 @@
                                             border: none;
                                             background: transparent;
                                             &>span{
-                                                color: #D1D1D1;
+                                                color: var(--all-card-input-text-color)
                                             }
                                         }                                                                             
                                     }                                                                       
@@ -2123,7 +2119,7 @@
                                     flex-direction: column;
                                     justify-content: space-between;            
                                     width: 340px;
-                                    gap: 30px;
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2146,10 +2142,13 @@
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
                                             gap: 237px;
-                                            
+                                            outline: none;
+                                            border: none;
+                                            border: 1px solid #D1D1D1;
                                             width: 100%;
                                             height: 52px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2178,6 +2177,7 @@
                                         height: 52px;
                                         position: relative;
                                         &>input{
+                                            outline: none;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
@@ -2190,6 +2190,7 @@
                                             border-radius: 8px;                                     
                                             height: 52px;
                                             background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color)  
                                         }  
                                         &>button{
                                             position: absolute;
@@ -2201,7 +2202,7 @@
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
-                                            color: #D1D1D1;                                   
+                                            color: var(--all-card-icon-color);                                   
                                         }                                        
                                     }
                                                                                                     
@@ -2211,7 +2212,7 @@
                                     flex-direction: column;
                                     justify-content: space-between;             
                                     width: 340px;
-                                    gap: 30px;
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2228,18 +2229,21 @@
                                             color:var(--ad-card-label-color); 
                                         }                                        
                                         &>input{
+                                            outline: none;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: center;
-                                            padding: 0px 0px 0px 16px;
-                                            gap: 237px;                                            
+                                            padding: 0px 0px 0px 16px; 
+                                            outline: none;                                         
                                             width: 100%;
                                             height: 52px;
+                                            border:none;
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                         }  
                                         &>button{
                                             position: absolute;
@@ -2265,6 +2269,7 @@
                                         height: 52px;
                                         position: relative;
                                         &>input{
+                                            outline: none;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
@@ -2273,7 +2278,9 @@
                                             width: 100%;
                                             height: 52px;
                                             border: 1px solid #D1D1D1;
-                                            border-radius: 8px;                                                                                 
+                                            border-radius: 8px;  
+                                            background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color)                                                                               
                                         }  
                                         &>button{
                                             position: absolute;
@@ -2285,7 +2292,7 @@
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
-                                            color: #D1D1D1;                                    
+                                            color: var(--all-card-icon-color);                                    
                                         }                                        
                                     }                                                                  
                                 }                                
@@ -2300,7 +2307,7 @@
                                     flex-direction: column;
                                     justify-content: space-between;             
                                     width: 340px;
-                                    gap: 30px;
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2317,15 +2324,16 @@
                                             color:var(--ad-card-label-color); 
                                         }                                        
                                         &>input{
+                                            outline: none;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: center;
                                             padding: 0px 0px 0px 16px;
-                                            gap: 237px;
+                                            border: none;
                                             width: 340px;
-                                            height: 52px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2354,6 +2362,7 @@
                                         height: 52px;
                                         position: relative;
                                         &>input{
+                                            outline: none;
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
@@ -2362,7 +2371,10 @@
                                             gap: 237px;                                            
                                             width: 340px;
                                             height: 52px;
+                                            border: none;
                                             border: 1px solid #D1D1D1;
+                                            background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color);
                                             border-radius: 8px;                                     
                                             height: 52px;
                                         }  
@@ -2387,7 +2399,7 @@
                                     justify-content: space-between;             
                                     width: 340px;
                                     margin-left: 10px;
-                                    gap: 30px;
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
@@ -2412,7 +2424,10 @@
                                             gap: 237px;
                                             width: 100%;
                                             height: 52px;
+                                            outline: none;
                                             background-color: var(--all-card-input-background-color);
+                                            color:var(--all-card-input-text-color);
+                                            border: none;
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2449,6 +2464,9 @@
                                             gap: 237px;
                                             width: 340px;
                                             height: 52px;
+                                            background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
+                                            border: none;
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                     
                                             height: 52px;
@@ -2475,11 +2493,15 @@
                                     width: 100%;
                                     display: flex;
                                     flex-direction: column;
-                                    &>div,button{
-                                        margin-top: 5px;
-                                    }
+                                    gap: 10px;
+                                    // &>div,button{
+                                    //     margin-top: 5px;
+                                    // }
                                     &>div:nth-child(1){
                                         position: relative;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
                                         &>label{
                                             font-family: 'Inter', sans-serif;
                                             font-style: normal;
@@ -2489,20 +2511,19 @@
                                             color:var(--ad-card-label-color); 
                                         }
                                         &>input{
-                                            margin-top: 10px;
+                                            outline: none;
+                                            border: none;
                                             box-sizing: border-box;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: flex-start;
                                             padding: 16px;
                                             gap: 355px;
-                                            
                                             width: 696px;
                                             height: 80px;
-                                            
-                                            /* Neutral/50 */
                                             border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
                                         }       
@@ -2516,7 +2537,7 @@
                                     &>div.extra-hotels{
                                         position: relative;
                                         &>input{
-                                            margin-top: 10px;
+                                            outline: none;
                                             box-sizing: border-box;
                                             display: flex;
                                             flex-direction: row;
@@ -2527,14 +2548,20 @@
                                             width: 696px;
                                             height: 80px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
+                                            border: none;
                                             border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
                                         }       
-                                        &>span{
+                                        &>button{
                                             position: absolute;
                                             right: 15px;
-                                            top:25px;
-                                            color: var(--all-card-input-text-color);
+                                            top:15px;
+                                            background-color: transparent;
+                                            border: none;
+                                            &>span{
+                                                color: var(--all-card-icon-color);
+                                            }
                                         }                                 
                                     }
                                     &>button{
@@ -2559,11 +2586,12 @@
                                     width: 100%;
                                     display: flex;
                                     flex-direction: column;
-                                    &>div,button{
-                                        margin-top: 5px;
-                                    }
+                                    gap: 10px;
                                     &>div:nth-child(1){
                                         position: relative;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
                                         &>label{
                                             font-family: 'Inter', sans-serif;
                                             font-style: normal;
@@ -2573,7 +2601,6 @@
                                             color:var(--ad-card-label-color); 
                                         }
                                         &>input{
-                                            margin-top: 10px;
                                             box-sizing: border-box;
                                             display: flex;
                                             flex-direction: row;
@@ -2582,22 +2609,21 @@
                                             padding: 16px;
                                             gap: 355px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             width: 696px;
                                             height: 80px;
+                                            outline: none;
+                                            border: none;
                                             border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
-                                        }       
-                                        &>span{
-                                            position: absolute;
-                                            right: 15px;
-                                            top:45px;
-                                            color:var(--all-card-input-text-color)
-                                        }                                 
+                                        }                                       
                                     }
                                     &>div.extra-restaurant{
                                         position: relative;
                                         &>input{
-                                            margin-top: 10px;
+                                            outline: none;
+                                            border: none;
+                                            border: 1px solid #E1E1E1;
                                             box-sizing: border-box;
                                             display: flex;
                                             flex-direction: row;
@@ -2606,17 +2632,21 @@
                                             padding: 16px;
                                             gap: 355px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             width: 696px;
                                             height: 80px;
-                                            border: 1px solid #E1E1E1;
                                             border-radius: 8px;                                        
                                         }       
-                                        &>span{
+                                        &>button{
                                             position: absolute;
                                             right: 15px;
-                                            top:25px;
-                                            color: var(--all-card-input-text-color);
-                                        }                                 
+                                            top:15px;
+                                            background-color: transparent;
+                                            border: none;
+                                            &>span{
+                                                color: var(--all-card-icon-color);
+                                            }
+                                        }                               
                                     }
                                     &>button{
                                         display: flex;
@@ -2642,8 +2672,8 @@
                                     &>div:nth-child(1){
                                         display: flex;
                                         flex-direction: column;
+                                        gap: 10px;
                                         &>label{
-                                            margin-bottom: 10px;
                                             font-family: 'Inter', sans-serif;
                                             font-style: normal;
                                             font-weight: 500;
@@ -2660,8 +2690,11 @@
                                             padding: 16px;
                                             gap: 8px;
                                             background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             width: 696px;
                                             height: 107px;
+                                            outline: none;
+                                            border: none;
                                             border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                            
                                         }
@@ -2672,6 +2705,11 @@
                                         position: relative;
                                         margin-top: 10px;
                                         &>input{
+                                            outline: none;
+                                            border: none;
+                                            border: 1px solid #D1D1D1;
+                                            background-color: var(--all-card-input-background-color);
+                                            color: var(--all-card-input-text-color);
                                             box-sizing: border-box;
                                             display: flex;
                                             flex-direction: row;
@@ -2681,7 +2719,6 @@
                                             gap: 8px;                                            
                                             width: 696px;
                                             height: 107px;
-                                            border: 1px solid #D1D1D1;
                                             border-radius: 8px;                                            
                                         }
 
@@ -2695,7 +2732,9 @@
                                             right: 15px;
                                             border: none;
                                             background-color: transparent;   
-                                            color: #D1D1D1;                                   
+                                            &>span{
+                                                color:var(--all-card-icon-color);
+                                            }                                
                                         } 
                                     }
                                 }                                
@@ -2714,7 +2753,7 @@
                                     font-weight: 500;
                                     font-size: 20px;
                                     line-height: 28px;
-                                    color: #262626;                                    
+                                    color: var(--all-card-input-text-color);                                    
                                 }
                                 &>div{
                                     display: flex;
@@ -3061,11 +3100,7 @@
                                     font-weight: 600;
                                     font-size: 16px;
                                     line-height: 24px;
-                                    
-                                    /* identical to box height, or 150% */
-                                    
-                                    /* Neutral/700 */
-                                    color: #383838;   
+                                    color: var(--add-card-preview-color-header);   
                                     margin-bottom: 5px;                                 
                                 }
                                 &>div:nth-child(2){
@@ -3074,13 +3109,7 @@
                                     font-weight: 400;
                                     font-size: 12px;
                                     line-height: 16px;
-                                    
-                                    /* or 133% */
-                                    
-                                    /* Neutral/300 */
-                                    color: #959595;
-                                    
-                                    
+                                    color: var(--all-card-input-text-color);  
                                 }
                             }
                             &>div:nth-child(2){
@@ -3891,6 +3920,7 @@
             height: 496px;
             border: 1px solid #EFEFEF;
             border-radius: 12px;     
+            background-color: var(--all-card-header-color);
             &>div.created-saved-bought-main-center-left-profile{
                 &>div:nth-child(1){
                     display: flex;
@@ -3979,7 +4009,7 @@
                         &>span:nth-child(1){
                             display: flex;
                             align-items: center;
-                            color: #565656;
+                            color: var(--ad-card-label-color);
                         }   
                         &>span:nth-child(2){
                             display: flex;
@@ -3993,7 +4023,7 @@
                             line-height: 20px;
                             display: flex;
                             align-items: center;
-                            color: #565656;
+                            color: var(--ad-card-label-color);
                         }                                           
                     }  
                     &>a:nth-child(2){
@@ -4008,8 +4038,8 @@
                         text-decoration: none; 
                         &>span:nth-child(1){
                             display: flex;
-                              align-items: center;
-                            color: #565656;
+                            align-items: center;
+                            color: var(--ad-card-label-color);
                         }   
                         &>span:nth-child(2){
                             display: flex;
@@ -4023,7 +4053,7 @@
                             line-height: 20px;
                             display: flex;
                             align-items: center;
-                            color: #565656;
+                            color: var(--ad-card-label-color);
                         }                                             
                     } 
                     &>a:nth-child(3){
@@ -4078,7 +4108,6 @@
                 gap: 25px;               
                 width: 798px;
                 height: 52px;
-                background: #FFFFFF;
                 border-bottom: 1px solid #ECECEC;    
                 &>a:nth-child(1){
                     text-decoration: none;
@@ -4098,7 +4127,7 @@
                         font-weight: 500;
                         font-size: 20px;
                         line-height: 28px;   
-                        color: #959595;                                           
+                        color: var(--add-card-my-card-inactive-color);                                      
                     }             
                 } 
                 &>a:nth-child(2){
@@ -4119,7 +4148,7 @@
                         font-weight: 500;
                         font-size: 20px;
                         line-height: 28px;
-                        color: #959595;                     
+                        color: var(--add-card-my-card-inactive-color);                         
                     }                                       
                 }   
                 &>a:nth-child(3){
@@ -4140,14 +4169,20 @@
                         font-weight: 500;
                         font-size: 20px;
                         line-height: 28px;
-                        color: #959595;                     
+                        color: var(--add-card-my-card-inactive-color);                        
                     }                                       
-                }                         
+                }   
+                &>a{
+                    position: relative;
+                    &>span{
+                        position: absolute;
+                        top: 10px;
+                    }
+                }                      
                 &>a.active{
                     border-bottom: 4px solid #2462DC;
-                    color: #262626;
                     &>span{
-                        color: #262626;  
+                        color: var(--add-card-my-card-active-color);
                     }
                 }
             }
@@ -4202,6 +4237,7 @@
             &>div:nth-child(2){ 
                 position: relative;
                 &>input{
+                    outline: none;
                     width: 260px;
                     height: 52px;
                     box-sizing: border-box;
@@ -4214,7 +4250,9 @@
                     border: 1px solid #E1E1E1;
                     border-radius: 8px;  
                     box-sizing: border-box;
-                    padding: 0px 45px 0px 10px;                     
+                    padding: 0px 45px 0px 10px;  
+                    background-color: var(--all-card-input-background-color);
+                    color:var(--all-card-input-text-color)                   
                 }  
                 &>button{
                     height: 100%;
@@ -4224,6 +4262,9 @@
                     top:0px;
                     border: none;
                     background-color: transparent;
+                    &>span{
+                        color:var(--all-card-icon-color)
+                    }
                 }            
             }
         }
@@ -4252,6 +4293,9 @@
         align-items: flex-start;
         padding: 0px;
         gap: 12px;
+        &>a:hover{
+            background-color: var(--all-card-hover-color);
+        }
         &>a{
             box-sizing: border-box;
             display: flex;
