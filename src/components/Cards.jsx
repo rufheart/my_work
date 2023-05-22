@@ -125,7 +125,7 @@ function Bought_Cards(){
         <div className='bought-card-main'>
             <div className='bought-card-main-header'>
                 <div>
-                    <NavLink to=''><span>Create new card</span><span class="material-symbols-outlined"> add_circle </span></NavLink>
+                    <div><NavLink to=''><span>Create new card</span><span class="material-symbols-outlined"> add_circle </span></NavLink></div>
                     <div>
                         <input type="text" />
                         <button><span class="material-symbols-outlined"> search </span></button>
@@ -317,7 +317,7 @@ function Created_Card(){
         <div className='created-card-main'>
             <div className='created-card-main-header'>
                 <div>
-                    <NavLink to=''><span>Create new card</span><span class="material-symbols-outlined"> add_circle </span></NavLink>
+                    <div><NavLink to=''><span>Create new card</span><span class="material-symbols-outlined"> add_circle </span></NavLink></div>
                     <div>
                         <input type="text" />
                         <button><span class="material-symbols-outlined"> search </span></button>
@@ -394,7 +394,7 @@ function Saved_Card(){
         <div className='saved-card-main'>
             <div className='saved-card-main-header'>
                 <div>
-                    <NavLink to=''><span>Create new card</span><span class="material-symbols-outlined"> add_circle </span></NavLink>
+                <div><NavLink to=''><span>Create new card</span><span class="material-symbols-outlined"> add_circle </span></NavLink></div>
                     <div>
                         <input type="text" />
                         <button><span class="material-symbols-outlined"> search </span></button>

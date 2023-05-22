@@ -856,6 +856,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(1) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -875,6 +876,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-three > div:nth-child(2) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -900,6 +902,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(1) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -919,6 +922,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-four > div:nth-child(2) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -944,6 +948,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(1) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -963,6 +968,7 @@
   color: var(--all-card-input-text-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-five > div:nth-child(2) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -989,6 +995,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(1) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -1008,6 +1015,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-six > div:nth-child(2) > input {
+  outline: none;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 5px 10px;
@@ -1033,6 +1041,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div:nth-child(1) > input {
+  outline: none;
   width: 100%;
   height: 52px;
   box-sizing: border-box;
@@ -1055,6 +1064,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-seven > div.extra_office > input {
+  outline: none;
   width: 100%;
   height: 52px;
   box-sizing: border-box;
@@ -1118,6 +1128,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div:nth-child(1) > input {
+  outline: none;
   width: 100%;
   height: 52px;
   box-sizing: border-box;
@@ -1140,6 +1151,7 @@
   margin-bottom: 5px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.personal-information > div.left-eight > div.extra_home > input {
+  outline: none;
   width: 100%;
   height: 52px;
   box-sizing: border-box;
@@ -1303,6 +1315,7 @@
   color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div:nth-child(1) > input {
+  outline: none;
   height: 100px;
   border-radius: 10px;
   background-color: var(--all-card-input-background-color);
@@ -1329,6 +1342,7 @@
   width: 98.3%;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div.contact-extra-phone-number > input {
+  outline: none;
   height: 100px;
   border-radius: 10px;
   background-color: var(--all-card-input-background-color);
@@ -1385,6 +1399,7 @@
   color: var(--ad-card-label-color);
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three > div:nth-child(1) > input, .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three div.add-card-extra-mail-address > input {
+  outline: none;
   height: 100px;
   border-radius: 10px;
   background-color: var(--all-card-input-background-color);
@@ -4030,8 +4045,23 @@
   gap: 40px;
   width: 462px;
   height: 52px;
+  position: relative;
 }
-.saved-card-main > div.saved-card-main-header > div:nth-child(1) > a:nth-child(1) {
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(1):hover {
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(1):hover > a {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(1) {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  left: 0px;
+}
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4041,7 +4071,7 @@
   height: 24px;
   text-decoration: none;
 }
-.saved-card-main > div.saved-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
   width: 126px;
   height: 24px;
   font-family: "Inter" sans-serif;
@@ -4051,7 +4081,7 @@
   line-height: 24px;
   color: #959595;
 }
-.saved-card-main > div.saved-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
+.saved-card-main > div.saved-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
   width: 24px;
   height: 24px;
   color: #356CD2;
@@ -4116,6 +4146,9 @@
 }
 .saved-card-main > div.saved-card-main-body > a:hover {
   background-color: var(--all-card-hover-color);
+}
+.saved-card-main > div.saved-card-main-body > a:hover > div:nth-child(1) > span:nth-child(1) {
+  color: #FFFFFF;
 }
 .saved-card-main > div.saved-card-main-body > a {
   box-sizing: border-box;
@@ -4185,8 +4218,23 @@
   gap: 40px;
   width: 462px;
   height: 52px;
+  position: relative;
 }
-.created-card-main > div.created-card-main-header > div:nth-child(1) > a:nth-child(1) {
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(1):hover {
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(1):hover > a {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(1) {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  left: 0px;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4196,7 +4244,7 @@
   height: 24px;
   text-decoration: none;
 }
-.created-card-main > div.created-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
   width: 126px;
   height: 24px;
   font-family: "Inter" sans-serif;
@@ -4206,7 +4254,7 @@
   line-height: 24px;
   color: #959595;
 }
-.created-card-main > div.created-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
   width: 24px;
   height: 24px;
   color: #356CD2;
@@ -4215,6 +4263,9 @@
   position: relative;
 }
 .created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(2) > input {
+  outline: none;
+  color: var(--all-card-input-text-color);
+  background-color: var(--all-card-input-background-color);
   width: 260px;
   height: 52px;
   box-sizing: border-box;
@@ -4237,6 +4288,9 @@
   top: 0px;
   border: none;
   background-color: transparent;
+}
+.created-card-main > div.created-card-main-header > div:nth-child(1) > div:nth-child(2) > button > span {
+  color: var(--all-card-input-text-color);
 }
 .created-card-main > div.created-card-main-header > div:nth-child(2) {
   height: 74px;
@@ -4262,6 +4316,12 @@
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
+}
+.created-card-main > div.created-card-main-body > a:hover {
+  background-color: var(--all-card-hover-color);
+}
+.created-card-main > div.created-card-main-body > a:hover > div:nth-child(1) > span:nth-child(1) {
+  color: #FFFFFF;
 }
 .created-card-main > div.created-card-main-body > a {
   box-sizing: border-box;
@@ -4331,8 +4391,23 @@
   gap: 40px;
   width: 462px;
   height: 52px;
+  position: relative;
 }
-.bought-card-main > div.bought-card-main-header > div:nth-child(1) > a:nth-child(1) {
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(1):hover {
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(1):hover > a {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(1) {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  left: 0px;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4342,7 +4417,7 @@
   height: 24px;
   text-decoration: none;
 }
-.bought-card-main > div.bought-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
   width: 126px;
   height: 24px;
   font-family: "Inter" sans-serif;
@@ -4352,7 +4427,7 @@
   line-height: 24px;
   color: #959595;
 }
-.bought-card-main > div.bought-card-main-header > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(2) {
   width: 24px;
   height: 24px;
   color: #356CD2;
@@ -4361,6 +4436,9 @@
   position: relative;
 }
 .bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(2) > input {
+  outline: none;
+  background-color: var(--all-card-input-background-color);
+  color: var(--all-card-input-text-color);
   width: 260px;
   height: 52px;
   box-sizing: border-box;
@@ -4383,6 +4461,9 @@
   top: 0px;
   border: none;
   background-color: transparent;
+}
+.bought-card-main > div.bought-card-main-header > div:nth-child(1) > div:nth-child(2) > button > span {
+  color: var(--all-card-input-text-color);
 }
 .bought-card-main > div.bought-card-main-header > div:nth-child(2) {
   height: 74px;
@@ -5050,7 +5131,7 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #262626;
+  color: var(--all-card-text-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-header > div:nth-child(2) {
   display: flex;
@@ -5172,7 +5253,7 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-name > div:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -5194,14 +5275,13 @@
   border-bottom: 1px solid #ECECEC;
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(1) {
-  /* Body/Subtitle 2/Medium */
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) { /*Burda personal informationun css*/
   display: flex;
@@ -5224,7 +5304,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -5247,7 +5327,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -5270,7 +5350,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -5293,7 +5373,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -5316,7 +5396,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -5339,7 +5419,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) {
   display: flex;
@@ -5359,7 +5439,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) {
   display: flex;
@@ -5379,7 +5459,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) {
   display: flex;
@@ -5407,7 +5487,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) {
   display: flex;
@@ -5423,7 +5503,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) {
   display: flex;
@@ -5433,7 +5513,7 @@
   gap: 4px;
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) > span {
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5454,7 +5534,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) {
   display: flex;
@@ -5485,7 +5565,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) {
   display: flex;
@@ -5519,7 +5599,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-family-infromation > div:nth-child(2) {
   display: flex;
@@ -5545,7 +5625,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) {
   display: flex;
