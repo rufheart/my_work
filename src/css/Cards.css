@@ -5544,7 +5544,7 @@
   gap: 4px;
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) > span {
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5575,7 +5575,7 @@
   gap: 4px;
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > span {
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5638,4 +5638,7 @@
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) > div {
   display: flex;
+}
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) > div > div > span {
+  color: #FFFFFF;
 }/*# sourceMappingURL=Cards.css.map */
