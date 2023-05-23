@@ -731,6 +731,7 @@ function AddCardHeader(){
 }
 
 function AddCardMiddle(){
+    let [page_number_button, setPageNumberButton] = useState("black")
     let [extra_office, setExtraOffice] = useState([])
     let [car_plate, setCarPlate] = useState([])
     let [home_div, setHomeDiv] = useState([])
@@ -971,17 +972,22 @@ function AddCardMiddle(){
         div_extra_hobbies.splice(index,1)
         setExtraHobbies(div_extra_hobbies)
     }
+    useEffect(()=>{
+        if(localStorage['selectedTheme']=='dark'){
+            setPageNumberButton('#FFFFFF')
+        }
+    },[])
     return(
         <div className='add-card'>
             <div className='add-card-top'>
                 <div className='add-card-header-center'>
                     <span className='personal'>1<span>Personal Information</span></span>
                     <span className='personal-line'></span>
-                    <span className='contact' style={which_panel>=2?{"background":"#356CD2"}:null}>2<span style={which_panel>=2?{"color":"black"}:null}>Contact Information</span></span>
+                    <span className='contact' style={which_panel>=2?{"background":"#356CD2"}:null}>2<span style={which_panel>=2?{"color":page_number_button}:null}>Contact Information</span></span>
                     <span className='contact-line'></span>
-                    <span className='familt-composition' style={which_panel>=3?{"background":"#356CD2"}:null}>3<span style={which_panel>=3?{"color":"black"}:null}>Family Composition</span></span>
+                    <span className='familt-composition' style={which_panel>=3?{"background":"#356CD2"}:null}>3<span style={which_panel>=3?{"color":page_number_button}:null}>Family Composition</span></span>
                     <span className='familt-composition-line'></span>
-                    <span className='other-information' style={which_panel>=4?{"background":"#356CD2"}:null}>4<span style={which_panel>=4?{"color":"black"}:null}>Other Information</span></span>
+                    <span className='other-information' style={which_panel>=4?{"background":"#356CD2"}:null}>4<span style={which_panel>=4?{"color":page_number_button}:null}>Other Information</span></span>
                 </div>
             </div>
             <div className='add-card-middle'>
