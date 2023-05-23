@@ -16,6 +16,7 @@
   --add-card-preview-color-header:#383838;
   --add-card-my-card-active-color:#262626;
   --add-card-my-card-inactive-color:#686767;
+  --add-card-card-created-or-bought:black;
 }
 
 #root[data-theme=dark] {
@@ -36,6 +37,7 @@
   --add-card-preview-color-header:#FFFFFF;
   --add-card-my-card-active-color:#FFFFFF;
   --add-card-my-card-inactive-color:rgb(156, 148, 148);
+  --add-card-card-created-or-bought:rgb(156, 148, 148);
 }
 
 * {
@@ -1291,7 +1293,6 @@
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form {
   height: 98.3%;
-  border: 1px solid red;
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
@@ -1302,7 +1303,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid red;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-second > div:nth-child(1) {
   display: flex;
@@ -1383,7 +1383,6 @@
   border-radius: 8px;
 }
 .add-card > div.add-card-middle > div.add-card-middle-center > div.left > div > form.contact-form > div.contact-three {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -3953,13 +3952,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 12px 0px;
   gap: 1px;
   width: 121px;
   height: 52px;
 }
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(1) > span {
-  width: 121px;
   height: 28px;
   font-family: "Inter" sans-serif;
   font-style: normal;
@@ -3973,6 +3972,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 12px 0px;
   gap: 1px;
   width: 139px;
@@ -3980,7 +3980,6 @@
   text-decoration: none;
 }
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(2) > span {
-  width: 139px;
   height: 28px;
   font-family: "Inter" sans-serif;
   font-style: normal;
@@ -3994,6 +3993,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 12px 0px;
   gap: 1px;
   width: 139px;
@@ -4001,7 +4001,6 @@
   text-decoration: none;
 }
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a:nth-child(3) > span {
-  width: 139px;
   height: 28px;
   font-family: "Inter" sans-serif;
   font-style: normal;
@@ -4010,17 +4009,14 @@
   line-height: 28px;
   color: var(--add-card-my-card-inactive-color);
 }
-.created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a {
-  position: relative;
-}
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a > span {
-  position: absolute;
   top: 10px;
 }
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a.active {
   border-bottom: 4px solid #2462DC;
 }
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-header > a.active > span {
+  margin-bottom: -4px;
   color: var(--add-card-my-card-active-color);
 }
 .created-saved-bought-main > div.created-saved-bought-main-center > div.created-saved-bought-main-center-right > div.created-saved-bought-main-center-right-body {
@@ -4148,7 +4144,7 @@
   background-color: var(--all-card-hover-color);
 }
 .saved-card-main > div.saved-card-main-body > a:hover > div:nth-child(1) > span:nth-child(1) {
-  color: #FFFFFF;
+  color: var(--add-card-header-text-color);
 }
 .saved-card-main > div.saved-card-main-body > a {
   box-sizing: border-box;
@@ -4157,7 +4153,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  width: 100%;
+  width: 97.5%;
   height: 85px;
   border: 1px solid #EFEFEF;
   border-radius: 8px;
@@ -4321,7 +4317,7 @@
   background-color: var(--all-card-hover-color);
 }
 .created-card-main > div.created-card-main-body > a:hover > div:nth-child(1) > span:nth-child(1) {
-  color: #FFFFFF;
+  color: var(--add-card-header-text-color);
 }
 .created-card-main > div.created-card-main-body > a {
   box-sizing: border-box;
@@ -4330,7 +4326,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  width: 100%;
+  width: 97.5%;
   height: 85px;
   border: 1px solid #EFEFEF;
   border-radius: 8px;
@@ -4490,6 +4486,12 @@
   padding: 0px;
   gap: 12px;
 }
+.bought-card-main > div.bought-card-main-body > a:hover {
+  background-color: var(--all-card-hover-color);
+}
+.bought-card-main > div.bought-card-main-body > a:hover > div:nth-child(1) > span:nth-child(1) {
+  color: var(--add-card-header-text-color);
+}
 .bought-card-main > div.bought-card-main-body > a {
   box-sizing: border-box;
   display: flex;
@@ -4497,7 +4499,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  width: 100%;
+  width: 97.5%;
   height: 85px;
   border: 1px solid #EFEFEF;
   border-radius: 8px;
@@ -4582,16 +4584,20 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #262626;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: right;
   padding: 0px;
   gap: 20px;
   width: 280px;
   height: 28px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button:hover {
+  border: 1px solid #D1D1D1;
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-header > div:nth-child(2) > button {
   border: none;
@@ -4704,7 +4710,7 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-name > div:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -4713,7 +4719,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info {
   box-sizing: border-box;
@@ -4726,14 +4732,13 @@
   border-bottom: 1px solid #ECECEC;
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(1) {
-  /* Body/Subtitle 2/Medium */
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) { /*Burda personal informationun css*/
   display: flex;
@@ -4756,7 +4761,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -4764,7 +4769,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) {
   display: flex;
@@ -4779,7 +4784,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -4787,7 +4792,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) {
   display: flex;
@@ -4802,7 +4807,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -4810,7 +4815,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) {
   display: flex;
@@ -4825,7 +4830,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -4833,7 +4838,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) {
   display: flex;
@@ -4848,7 +4853,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(5) > span:nth-child(2) {
   font-family: "Inter" sans-serif;
@@ -4856,7 +4861,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) {
   display: flex;
@@ -4871,12 +4876,13 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) {
   display: flex;
@@ -4891,12 +4897,13 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) {
   display: flex;
@@ -4911,7 +4918,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) {
   display: flex;
@@ -4921,6 +4928,7 @@
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) > div {
   display: flex;
   gap: 6px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information {
   box-sizing: border-box;
@@ -4939,7 +4947,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(2) {
   display: flex;
@@ -4955,7 +4963,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(2) > div:nth-child(2) {
   display: flex;
@@ -4970,7 +4978,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(3) {
   display: flex;
@@ -4986,7 +4994,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(3) > div:nth-child(2) {
   display: flex;
@@ -5001,7 +5009,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) {
   display: flex;
@@ -5017,7 +5025,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) {
   display: flex;
@@ -5026,13 +5034,14 @@
   padding: 0px;
   gap: 4px;
 }
-.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > span {
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > a {
+  text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation {
   box-sizing: border-box;
@@ -5051,7 +5060,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation > div:nth-child(2) {
   display: flex;
@@ -5059,6 +5068,16 @@
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation > div:nth-child(2) > div {
+  display: flex;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation > div:nth-child(2) > div > span:nth-child(1) {
+  color: var(--ad-card-label-color);
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-family-infromation > div:nth-child(2) > div > span:nth-child(2) {
+  color: var(--add-card-card-created-or-bought);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information {
   box-sizing: border-box;
@@ -5077,7 +5096,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #565656;
+  color: var(--ad-card-label-color);
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(2) {
   display: flex;
@@ -5090,6 +5109,13 @@
 }
 .card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(2) > div {
   display: flex;
+  gap: 8px;
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(2) > div > span {
+  color: var(--ad-card-label-color);
+}
+.card-i-bought-main > div.card-i-bought-main-center > div.card-i-bought-main-center-info > div.card-i-bought-main-center-info-other-information > div:nth-child(2) > div > div span {
+  color: var(--add-card-card-created-or-bought);
 }
 
 .card-created-by-me-main {
@@ -5262,7 +5288,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #959595;
+  color: var(--ad-card-label-color);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info {
   box-sizing: border-box;
@@ -5312,7 +5338,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(2) {
   display: flex;
@@ -5335,7 +5361,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(3) {
   display: flex;
@@ -5358,7 +5384,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(4) {
   display: flex;
@@ -5425,6 +5451,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(7) {
   display: flex;
@@ -5445,6 +5472,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) {
   display: flex;
@@ -5469,6 +5497,7 @@
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-personal-info > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) > div {
   display: flex;
   gap: 6px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information {
   box-sizing: border-box;
@@ -5518,7 +5547,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(3) {
   display: flex;
@@ -5549,7 +5578,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) {
   display: flex;
@@ -5574,13 +5603,13 @@
   padding: 0px;
   gap: 4px;
 }
-.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > span {
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-contact-information > div:nth-child(4) > div:nth-child(2) > a {
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 16px;
-  color: #959595;
+  color: var(--add-card-card-created-or-bought);
+  text-decoration: none;
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-family-infromation {
   box-sizing: border-box;
@@ -5607,6 +5636,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
+  color: var(--add-card-card-created-or-bought);
 }
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information {
   box-sizing: border-box;
@@ -5639,6 +5669,9 @@
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) > div {
   display: flex;
 }
+.card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) > div > span {
+  color: var(--ad-card-label-color);
+}
 .card-created-by-me-main > div.card-created-by-me-main-center > div.card-created-by-me-main-center-info > div.card-created-by-me-main-center-info-other-information > div:nth-child(2) > div > div > span {
-  color: #FFFFFF;
+  color: var(--add-card-card-created-or-bought);
 }/*# sourceMappingURL=Cards.css.map */

@@ -9,7 +9,6 @@ function Card_I_Bought(){
                 <div className='card-i-bought-main-center-header'>
                     <div>Name Surname Name-Card</div>
                     <div>
-                        <button><span class="material-symbols-outlined"> edit </span><span>Edit</span></button>
                         <button><span class="material-symbols-outlined"> delete </span><span>Delete</span></button>
                         <button><span class="material-symbols-outlined"> share </span><span>Share</span></button>    
                     </div>                    
@@ -101,7 +100,7 @@ function Card_I_Bought(){
                         <div>
                             <div><span>Friends:</span><div><span>Veliyev Mahir</span></div></div>
                             <div><span>Work Colleagues:</span><div><span>Valehov Asef</span></div></div>
-                            <div><span>Business Partner:s</span><div><span>Sadiqov Zahir</span></div></div>
+                            <div><span>Business Partners:</span><div><span>Sadiqov Zahir</span></div></div>
                             <div><span>Most visted restaurants:</span><div><span>Caykovski</span></div></div>
                             <div><span>Most visted hotels:</span><div><span>For Season</span></div></div>
                             <div><span>Hobbies:</span><div><span>Table Tennis</span><span>Football</span></div></div>
