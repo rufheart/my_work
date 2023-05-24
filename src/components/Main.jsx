@@ -67,6 +67,7 @@ function Messages(props){
                             <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>
                             <button><span class="material-symbols-outlined"> attach_file </span></button>
                         </div>
+                        {}
                         <span class="material-symbols-outlined"> {icon_change} </span>
                     </div>
                 </div>
