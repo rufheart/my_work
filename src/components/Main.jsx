@@ -97,6 +97,7 @@ function ListChat(){
 
 function Enterance(){ 
     let data = useContext(MyContext);
+    let [menu_or_arrow, setMenuArrow] = useState(false)
     let [send, setSend] = useState(false)      
     console.log(send) 
     let ulRef = useRef(null);
@@ -108,8 +109,9 @@ function Enterance(){
         <div className="enterance">
             <div className="left">
                 <div className="header">
-                    <button className="button">
-                        <span class="material-symbols-outlined"> menu </span>
+                    <button className="button" onClick={()=>setMenuArrow(!menu_or_arrow)}>
+                        {menu_or_arrow==false?<span class="material-symbols-outlined" style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.3s"}:{"transform":"rotate(0deg)","transition":"transform 0.3s"}}> menu </span>:
+                        <span class="material-symbols-outlined"> arrow_back </span>}
                     </button>
                     <div>
                         <input type="text" placeholder='Search'/>
