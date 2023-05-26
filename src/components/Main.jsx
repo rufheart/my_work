@@ -97,24 +97,39 @@ function ListChat(){
 
 function Enterance(){ 
     let data = useContext(MyContext);
+    let [sudo, setSudo] = useState(false)
     let [menu_or_arrow, setMenuArrow] = useState(false)
     let [send, setSend] = useState(false)      
-    console.log(send) 
-    let ulRef = useRef(null);
 
-    useEffect(() => {
-        ulRef.current.children[0].focus();
-      }, []);
+    let ulRef = useRef(null);
+    function Icon_Changer(e){
+        setMenuArrow(true)
+        setTimeout(Duration, 100)
+    }
+    function Reverse(){
+        setMenuArrow(false)
+        setTimeout(Duration, 100)
+    }
+    function Duration(){
+        console.log(sudo,'dura')
+        if(menu_or_arrow==false){
+            setSudo(!sudo)
+        }
+    }
+    console.log(sudo,'suddddddddddddoo')
+
     return(
         <div className="enterance">
             <div className="left">
                 <div className="header">
-                    <button className="button" onClick={()=>setMenuArrow(!menu_or_arrow)}>
-                        {menu_or_arrow==false?<span class="material-symbols-outlined" style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.3s"}:{"transform":"rotate(0deg)","transition":"transform 0.3s"}}> menu </span>:
-                        <span class="material-symbols-outlined"> arrow_back </span>}
+                    <button className="button">
+                        {sudo==false?<span class="material-symbols-outlined" style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.3s"}:{"transform":"rotate(0deg)","transition":"transform 0.1s"}}> menu </span>:
+                        <span class="material-symbols-outlined" onClick={Reverse} style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.1s"}:{"transform":"rotate(0deg)","transition":"transform 0.1s"}}> <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span> </span>}
                     </button>
                     <div>
-                        <input type="text" placeholder='Search'/>
+                        <input type="text" placeholder='Search' onClick={Icon_Changer} ref={ulRef}/>
                         <button><span class="material-symbols-outlined"> search </span></button>
                     </div>
                 </div>
@@ -122,7 +137,7 @@ function Enterance(){
                     <div className="messages">
                         {data.map((value, index)=>{
                             return(           
-                                <NavLink htmlFor='zz' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} ref={ulRef} key={index}>
+                                <NavLink htmlFor='zz' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} key={index}>
                                     {/* <div style={{"display":"none"}}>{send==true?<Messages data={value}/>:null}</div>                                     */}
                                     <div className="message-div">
                                         <div className="left">

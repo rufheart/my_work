@@ -10,6 +10,7 @@
   --main-icon-color:#959595;
   --main-message-input-background:#FFFFFF;
   --main-message-input-text-color:black;
+  --card-left-header-icon:black;
 }
 
 #root[data-theme=dark] {
@@ -24,6 +25,7 @@
   --main-icon-color:#FFFFFF;
   --main-message-input-background:#2a3942;
   --main-message-input-text-color:#E1E1E1;
+  --card-left-header-icon:#FFFFFF;
 }
 
 .main {
@@ -105,6 +107,7 @@
   color: var(-main-icon-color);
   border: none;
   background: transparent;
+  color: var(--card-left-header-icon);
 }
 .enterance > div.left > div.header > button.button:hover {
   cursor: pointer;
