@@ -100,36 +100,35 @@ function Enterance(){
     let [sudo, setSudo] = useState(false)
     let [menu_or_arrow, setMenuArrow] = useState(false)
     let [send, setSend] = useState(false)      
-
-    let ulRef = useRef(null);
+    let [hovered, setHovered] = useState(false);
+    let inputRef = useRef(null);
     function Icon_Changer(e){
         setMenuArrow(true)
         setTimeout(Duration, 100)
     }
     function Reverse(){
+        setSudo(false)
         setMenuArrow(false)
         setTimeout(Duration, 100)
+        console.log(menu_or_arrow,'reverse')
     }
     function Duration(){
-        console.log(sudo,'dura')
         if(menu_or_arrow==false){
             setSudo(!sudo)
         }
+        console.log(sudo,'duration')
     }
-    console.log(sudo,'suddddddddddddoo')
-
+    console.log(sudo,'*')
     return(
         <div className="enterance">
             <div className="left">
                 <div className="header">
                     <button className="button">
-                        {sudo==false?<span class="material-symbols-outlined" style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.3s"}:{"transform":"rotate(0deg)","transition":"transform 0.1s"}}> menu </span>:
-                        <span class="material-symbols-outlined" onClick={Reverse} style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.1s"}:{"transform":"rotate(0deg)","transition":"transform 0.1s"}}> <span class="material-symbols-outlined">
-                        arrow_downward
-                        </span> </span>}
+                        {sudo==false?<span class="material-symbols-outlined" style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.3s"}:{"transform":"rotate(0deg)","transition":"transform 0.1s"}} onClick={() => {inputRef.current.focus()}}> menu </span>:
+                        <span class="material-symbols-outlined" onClick={Reverse} style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.1s"}:{"transform":"rotate(0deg)","transition":"transform 0.3s"}}>arrow_downward</span>}
                     </button>
                     <div>
-                        <input type="text" placeholder='Search' onClick={Icon_Changer} ref={ulRef}/>
+                        <input type="text" placeholder='Search' onClick={Icon_Changer} ref={inputRef}/>
                         <button><span class="material-symbols-outlined"> search </span></button>
                     </div>
                 </div>
