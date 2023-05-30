@@ -89,6 +89,9 @@
     display: flex;
     >div.left{
         width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         border-right: 1px solid rgb(230, 230, 230);
         background-color:var(--body-color);
         >div.header{
@@ -146,11 +149,23 @@
         } 
         }
         // messages and contact
-        >a{
+        >div::-webkit-scrollbar{
+            width: 2px;
+            background-color: #356CD2;
+        }
+        >div::-webkit-scrollbar-thumb{
+            height: 10px;
+            width: 2px;
+            background-color: #D2ECFF;
+        }
+        >div{
             text-decoration: none;
             @include size(86%, transparent);
+            border: 1px solid blue;
+            overflow-x: hidden;
+            overflow-y: scroll;
             >div.messages{ 
-                border: 1px solid red;
+                // border: 1px solid red;
                 a{
                     display: block;
                     width: 100%;

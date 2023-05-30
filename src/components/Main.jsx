@@ -101,15 +101,20 @@ function Enterance(){
     let [menu_or_arrow, setMenuArrow] = useState(false)
     let [send, setSend] = useState(false)      
     let [hovered, setHovered] = useState(false);
+    let [search_menu, setSearchMenu] = useState(false)
+    let [search_select, setSearchSelect] = useState('chats')
+    let [input_value, setInputValue] = useState()
     let inputRef = useRef(null);
     function Icon_Changer(e){
         setMenuArrow(true)
         setTimeout(Duration, 100)
+        setSearchMenu(true)
     }
     function Reverse(){
         setSudo(false)
         setMenuArrow(false)
         setTimeout(Duration, 100)
+        setSearchMenu(false)
         console.log(menu_or_arrow,'reverse')
     }
     function Duration(){
@@ -118,7 +123,10 @@ function Enterance(){
         }
         console.log(sudo,'duration')
     }
-    console.log(sudo,'*')
+    let InputChange=(e)=>{
+        setInputValue(e.target.value)
+    }
+    console.log(input_value,'*')
     return(
         <div className="enterance">
             <div className="left">
@@ -128,12 +136,12 @@ function Enterance(){
                         <span class="material-symbols-outlined" onClick={Reverse} style={menu_or_arrow==true?{"transform":"rotate(90deg)","transition":"transform 0.1s"}:{"transform":"rotate(0deg)","transition":"transform 0.3s"}}>arrow_downward</span>}
                     </button>
                     <div>
-                        <input type="text" placeholder='Search' onClick={Icon_Changer} ref={inputRef}/>
+                        <input type="text" placeholder='Search' onClick={Icon_Changer} ref={inputRef} onChange={e=>InputChange(e)}/>
                         <button><span class="material-symbols-outlined"> search </span></button>
                     </div>
                 </div>
-                <NavLink to='' >
-                    <div className="messages">
+                <div>
+                    {search_menu==false?<div className="messages">
                         {data.map((value, index)=>{
                             return(           
                                 <NavLink htmlFor='zz' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} key={index}>
@@ -157,9 +165,50 @@ function Enterance(){
                                 </NavLink>
                             )
                         })}
-                    </div>
-                    <div className="contact"></div>
-                </NavLink>               
+                        </div>:
+                        <div className='search-menu'>
+                            <div className='search-menu-header'>
+                                <button className='search-menu-header-chats'>Chats</button>
+                                <button className='search-menu-header-media'>Media</button>
+                                <button className='search-menu-header-links'>Links</button>
+                                <button className='search-menu-header-files'>Files</button>
+                                <button className='search-menu-header-music'>Music</button>
+                                <button className='search-menu-header-voice'>Voice</button>
+                            </div>
+                            <div className='search-menu-body'>
+                                {search_select=='chats'?
+                                <div>
+                                    {data.map((value, index)=>{
+                                        if(value.username==input_value){
+                                            console.log('yehu')
+                                        }
+                                    return(           
+                                        <NavLink htmlFor='zz' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} key={index}>
+                                            {/* <div style={{"display":"none"}}>{send==true?<Messages data={value}/>:null}</div>                                     */}
+                                            <div className="message-div">
+                                                <div className="left">
+                                                    {/* <img src={require('../images/user1.jpeg')} alt="" /> */}                                            
+                                                    <div className="image"></div>
+                                                </div>
+                                                <div className="center">
+                                                    <div className="username">{value.username} {value.surname}</div>
+                                                    <div className="last-message"><i className="fas fa-check"></i> Salam necesiz? ne vaxt geleceksiz? helloasasasas
+                                                    asasasasasasasasasa
+                                                    saasasasas</div>
+                                                </div>
+                                                <div className='right'>
+                                                    <div className="date">Sonday</div>
+                                                    <div className='messages'>12</div>
+                                                </div>
+                                            </div>
+                                        </NavLink>
+                                        )
+                                    })}
+                                </div>:null}
+                            </div>
+                        </div>
+                        }
+                </div>               
             </div>
             <div className="right">
                 <Outlet />

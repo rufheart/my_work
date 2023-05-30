@@ -28,6 +28,75 @@ let Provider = ({children})=>{
             surname:'Ehmedov',
             image:"",
             text:'standart-17'
+        },
+        {
+            id:5,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:6,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:7,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:8,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:9,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:9,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:10,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:11,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },        {
+            id:12,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
+        },
+        {
+            id:13,
+            username:'Asif',
+            surname:'Ehmedov',
+            image:"",
+            text:'standart-17'
         }
     ]
     // useEffect(() => {
