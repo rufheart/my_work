@@ -98,6 +98,7 @@ function ListChat(){
 function Enterance(){ 
     let data = useContext(MyContext);
     let [sudo, setSudo] = useState(false)
+    let [page_active, setPageActive] = useState('messages')
     let [IsActive, setIsActive] = useState('chat')
     let [menu_or_arrow, setMenuArrow] = useState(false)
     let [send, setSend] = useState(false)      
@@ -120,9 +121,11 @@ function Enterance(){
     }
     function Page_Change(){
         setSearchMenu(true)
+        setPageActive('search')
     }
     function Page_Change_Reverse(){
         setSearchMenu(false)
+        setPageActive('messages')
     }
     function Duration(){
         if(menu_or_arrow==false){
@@ -148,7 +151,7 @@ function Enterance(){
                     </div>
                 </div>
                 <div>
-                    {search_menu==false?<div className="messages">
+                    {search_menu==false?<div className="messages" style={page_active=='messages'?{left:"0%"}:{left:"-100%"}}>
                         {data.map((value, index)=>{
                             return(           
                                 <NavLink htmlFor='zz' to={'/'+value.username.toLowerCase()+' '+value.surname.toLowerCase()} onClick={()=>setSend(true)} key={index}>
@@ -173,7 +176,7 @@ function Enterance(){
                             )
                         })}
                         </div>:
-                        <div className='search-menu'>
+                        <div className='search-menu' style={page_active=='search'?{"left":"0%",  "transition": "left 3s"}:{left:"-100%"}}>
                             <div className='search-menu-header'>
                                 <button id='search-menu-header-chats' className={IsActive=='chat'?'active':null} onClick={()=>setIsActive('chat')}><span>Chat</span><span></span></button>
                                 <button id='search-menu-header-media' className={IsActive=='media'?'active':null} onClick={()=>setIsActive('media')}><span>Media</span><span></span></button>
