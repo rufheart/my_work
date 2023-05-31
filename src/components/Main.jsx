@@ -98,6 +98,7 @@ function ListChat(){
 function Enterance(){ 
     let data = useContext(MyContext);
     let [sudo, setSudo] = useState(false)
+    let [IsActive, setIsActive] = useState('chat')
     let [menu_or_arrow, setMenuArrow] = useState(false)
     let [send, setSend] = useState(false)      
     let [hovered, setHovered] = useState(false);
@@ -108,14 +109,20 @@ function Enterance(){
     function Icon_Changer(e){
         setMenuArrow(true)
         setTimeout(Duration, 100)
-        setSearchMenu(true)
+        setTimeout(Page_Change,200)
     }
     function Reverse(){
         setSudo(false)
         setMenuArrow(false)
         setTimeout(Duration, 100)
-        setSearchMenu(false)
+        setTimeout(Page_Change_Reverse,200)
         console.log(menu_or_arrow,'reverse')
+    }
+    function Page_Change(){
+        setSearchMenu(true)
+    }
+    function Page_Change_Reverse(){
+        setSearchMenu(false)
     }
     function Duration(){
         if(menu_or_arrow==false){
@@ -168,12 +175,12 @@ function Enterance(){
                         </div>:
                         <div className='search-menu'>
                             <div className='search-menu-header'>
-                                <button className='search-menu-header-chats'>Chats</button>
-                                <button className='search-menu-header-media'>Media</button>
-                                <button className='search-menu-header-links'>Links</button>
-                                <button className='search-menu-header-files'>Files</button>
-                                <button className='search-menu-header-music'>Music</button>
-                                <button className='search-menu-header-voice'>Voice</button>
+                                <button id='search-menu-header-chats' className={IsActive=='chat'?'active':null} onClick={()=>setIsActive('chat')}><span>Chat</span><span></span></button>
+                                <button id='search-menu-header-media' className={IsActive=='media'?'active':null} onClick={()=>setIsActive('media')}><span>Media</span><span></span></button>
+                                <button id='search-menu-header-links' className={IsActive=='link'?'active':null} onClick={()=>setIsActive('link')}><span>Links</span><span></span></button>
+                                <button id='search-menu-header-files' className={IsActive=='file'?'active':null} onClick={()=>setIsActive('file')}><span>Files</span><span></span></button>
+                                <button id='search-menu-header-music' className={IsActive=='music'?'active':null} onClick={()=>setIsActive('music')}><span>Music</span><span></span></button>
+                                <button id='search-menu-header-voice' className={IsActive=='voice'?'active':null} onClick={()=>setIsActive('voice')}><span>Voices</span><span></span></button>
                             </div>
                             <div className='search-menu-body'>
                                 {search_select=='chats'?
