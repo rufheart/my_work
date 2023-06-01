@@ -12,6 +12,7 @@
   --main-message-input-text-color:black;
   --card-left-header-icon:black;
   --main-left-search-menu-body-header-color:rgb(50, 50, 50);
+  --main-left-header-icon-hover:rgb(228, 235, 235);
 }
 
 #root[data-theme=dark] {
@@ -28,6 +29,7 @@
   --main-message-input-text-color:#E1E1E1;
   --card-left-header-icon:#FFFFFF;
   --main-left-search-menu-body-header-color:#aaaaaa;
+  --main-left-header-icon-hover:rgb(50, 50, 50);
 }
 
 .main {
@@ -117,7 +119,7 @@
 .enterance > div.left > div.header > button.button:hover {
   cursor: pointer;
   border-radius: 100%;
-  background-color: var(--main-link-hover);
+  background-color: var(--main-left-header-icon-hover);
 }
 .enterance > div.left > div.header > div:nth-child(2) {
   width: 90%;
@@ -163,12 +165,14 @@
 .enterance > div.left > div.enterance-body > div:nth-child(1) {
   position: absolute;
   width: 100%;
+  height: 100%;
 }
 .enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
   width: 100%;
+  border: 1px solid red;
 }
 .enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a {
   display: block;
