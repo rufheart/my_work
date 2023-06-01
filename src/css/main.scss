@@ -160,157 +160,163 @@
             width: 2px;
             background-color: #D2ECFF;
         }
-        >div{
+        &>div.enterance-body{
             text-decoration: none;
             height: 85%;
             position: relative;
-            &>div.messages{ 
-                overflow-x: hidden;
-                overflow-y: scroll;
-                border: 1px solid blue;
-                height: 100%;
+            &>div:nth-child(1){
                 position: absolute;
                 width: 100%;
-                a{
-                    display: block;
-                    width: 100%;
-                    text-decoration: none;
-                    color: rgb(50, 50, 50);
-                    height: max-content;
-                    padding: 8px 10px;
-                    border-bottom: 0.5px solid rgb(240, 240, 240);
-                    div.message-div{
-                        display: flex;
-                        height: 50px;
-                        >*{
-                        }
-                        >div.left{
-                            display: flex;
-                            align-items: center;
-                            >div.image{
-                                display: block;
-                                width: 50px;
-                                height: 50px;
-                                border-radius: 50%;
-                                background-image: url('../images/user1.jpeg');
-                                background-position:top;
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                            }
-                        }
-                        >div.center{
-                            flex-grow: 1;
-                            padding-left: 10px;
-                          >*{
-                          }
-                          >.username{
-                                font-size: 15px;
-                                color: var(--dark-mode-text-username);
-                          }
-                          >.last-message{
-                                font-size: 13px;
-                                color: rgb(150, 150, 150);
-                                padding-top: 10px;
-                                text-overflow:ellipsis;
-                                overflow: hidden; 
-                                width: 200px; 
-                                white-space: nowrap;
-                                >i{
-                                    color: #356CD2;
-                            }
-                          }
-                        }
-                        >div.right{
-                            flex-basis: 10%;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            >.date{
-                                font-size: 13px;
-                                color: rgb(100, 100, 100);
-                            }
-                            >.messages{
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 20px;
-                                height: 20px;
-                                font-size: 11px;
-                                color: #565656;
-                                margin-top: 13px;
-                                padding: 2px 4px;
-                                border-radius: 10px;
-                                background-color: #356CD2;
-                                color: white;
-                            }
-                        }
-                    }
-                }
-                &>a:hover{
-                    background-color: var(--main-link-hover);
-                } 
-                &>a.active{
-                    background-color: var(--main-link-active);
-                }  
-            }   
-            &>div.search-menu{
-                border: 1px solid blue;
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                left: -100%;
-                &>div.search-menu-header{
-                    width: 100%;
-                    height: 5%;
-                    border-bottom: 1px solid black;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    overflow-y: hidden;
-                    overflow-x: scroll;
-                    &>button{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        width:90px;
-                        height: 100%;
-                        font-size: 1em;
-                        font-family: 'Inter', sans-serif;
-                        border: none;
-                        background-color: transparent;
-                        color:var(--main-left-search-menu-body-header-color);
-                        position: relative;
-                        &>span:nth-child(1){
-                            font-weight: 800;
-                        }
-                        &>span:nth-child(2){
-                            width: 40px;
-                            position: absolute;
-                            bottom: 0px;
-                            left:20%;
-                        }
-                    }
-                    &>button.active{
-                        color:#8774e1;
-                        &>span:nth-child(2){
-                           border: 2px solid #8774e1; 
-                           border-top-left-radius: 5px;
-                           border-top-right-radius: 5px;
-                        }
-                    }
-                    &>button:hover{
-                        background-color: #744949;
-                        line-height: 50px;
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
-                    }
-                }
-                &>div.search-menu-body{
-                    height: 80%;
+                &>div.messages{ 
                     overflow-x: hidden;
                     overflow-y: scroll;
+                    height: 100%;
+                    width: 100%;
+                    a{
+                        display: block;
+                        width: 100%;
+                        text-decoration: none;
+                        color: rgb(50, 50, 50);
+                        height: max-content;
+                        padding: 8px 10px;
+                        border-bottom: 0.5px solid rgb(240, 240, 240);
+                        div.message-div{
+                            display: flex;
+                            height: 50px;
+                            >*{
+                            }
+                            >div.left{
+                                display: flex;
+                                align-items: center;
+                                >div.image{
+                                    display: block;
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 50%;
+                                    background-image: url('../images/user1.jpeg');
+                                    background-position:top;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                            >div.center{
+                                flex-grow: 1;
+                                padding-left: 10px;
+                            >*{
+                            }
+                            >.username{
+                                    font-size: 15px;
+                                    color: var(--dark-mode-text-username);
+                            }
+                            >.last-message{
+                                    font-size: 13px;
+                                    color: rgb(150, 150, 150);
+                                    padding-top: 10px;
+                                    text-overflow:ellipsis;
+                                    overflow: hidden; 
+                                    width: 200px; 
+                                    white-space: nowrap;
+                                    >i{
+                                        color: #356CD2;
+                                }
+                            }
+                            }
+                            >div.right{
+                                flex-basis: 10%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                >.date{
+                                    font-size: 13px;
+                                    color: rgb(100, 100, 100);
+                                }
+                                >.messages{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 20px;
+                                    height: 20px;
+                                    font-size: 11px;
+                                    color: #565656;
+                                    margin-top: 13px;
+                                    padding: 2px 4px;
+                                    border-radius: 10px;
+                                    background-color: #356CD2;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    &>a:hover{
+                        background-color: var(--main-link-hover);
+                    } 
+                    &>a.active{
+                        background-color: var(--main-link-active);
+                    }  
+                }  
+            }    
+            &>div:nth-child(2){ 
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: -100%;
+                &>div.search-menu{
+                    height: 100%;
+                    width: 100%;
+                    left: -100%;
+                    &>div.search-menu-header{
+                        width: 100%;
+                        height: 5%;
+                        border-bottom: 1px solid black;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        overflow-y: hidden;
+                        overflow-x: scroll;
+                        &>button{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            width:90px;
+                            height: 100%;
+                            font-size: 1em;
+                            font-family: 'Inter', sans-serif;
+                            border: none;
+                            background-color: transparent;
+                            color:var(--main-left-search-menu-body-header-color);
+                            position: relative;
+                            &>span:nth-child(1){
+                                font-weight: 800;
+                            }
+                            &>span:nth-child(2){
+                                width: 40px;
+                                position: absolute;
+                                bottom: 0px;
+                                left:20%;
+                            }
+                        }
+                        &>button.active{
+                            color:#8774e1;
+                            &>span:nth-child(2){
+                            border: 2px solid #8774e1; 
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            }
+                        }
+                        &>button:hover{
+                            background-color: #744949;
+                            line-height: 50px;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                        }
+                    }
+                    &>div.search-menu-body{
+                        height: 80%;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                    }
                 }
-            }
+            }                
         }       
         >div.footer{                                    /* menu secimi olan hisse */
             @include size(8%, white);

@@ -155,20 +155,22 @@
   width: 2px;
   background-color: #D2ECFF;
 }
-.enterance > div.left > div {
+.enterance > div.left > div.enterance-body {
   text-decoration: none;
   height: 85%;
   position: relative;
 }
-.enterance > div.left > div > div.messages {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  border: 1px solid blue;
-  height: 100%;
+.enterance > div.left > div.enterance-body > div:nth-child(1) {
   position: absolute;
   width: 100%;
 }
-.enterance > div.left > div > div.messages a {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a {
   display: block;
   width: 100%;
   text-decoration: none;
@@ -178,15 +180,15 @@
   padding: 8px 10px;
   border-bottom: 0.5px solid rgb(240, 240, 240);
 }
-.enterance > div.left > div > div.messages a div.message-div {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div {
   display: flex;
   height: 50px;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.left {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.left {
   display: flex;
   align-items: center;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.left > div.image {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.left > div.image {
   display: block;
   width: 50px;
   height: 50px;
@@ -196,15 +198,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.center {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.center {
   flex-grow: 1;
   padding-left: 10px;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.center > .username {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.center > .username {
   font-size: 15px;
   color: var(--dark-mode-text-username);
 }
-.enterance > div.left > div > div.messages a div.message-div > div.center > .last-message {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.center > .last-message {
   font-size: 13px;
   color: rgb(150, 150, 150);
   padding-top: 10px;
@@ -213,20 +215,20 @@
   width: 200px;
   white-space: nowrap;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.center > .last-message > i {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.center > .last-message > i {
   color: #356CD2;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.right {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.right {
   flex-basis: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.enterance > div.left > div > div.messages a div.message-div > div.right > .date {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.right > .date {
   font-size: 13px;
   color: rgb(100, 100, 100);
 }
-.enterance > div.left > div > div.messages a div.message-div > div.right > .messages {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages a div.message-div > div.right > .messages {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,20 +242,24 @@
   background-color: #356CD2;
   color: white;
 }
-.enterance > div.left > div > div.messages > a:hover {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages > a:hover {
   background-color: var(--main-link-hover);
 }
-.enterance > div.left > div > div.messages > a.active {
+.enterance > div.left > div.enterance-body > div:nth-child(1) > div.messages > a.active {
   background-color: var(--main-link-active);
 }
-.enterance > div.left > div > div.search-menu {
-  border: 1px solid blue;
-  height: 100%;
-  width: 100%;
+.enterance > div.left > div.enterance-body > div:nth-child(2) {
   position: absolute;
+  width: 100%;
+  height: 100%;
   left: -100%;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu {
+  height: 100%;
+  width: 100%;
+  left: -100%;
+}
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header {
   width: 100%;
   height: 5%;
   border-bottom: 1px solid black;
@@ -263,7 +269,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header > button {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header > button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,30 +282,30 @@
   color: var(--main-left-search-menu-body-header-color);
   position: relative;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header > button > span:nth-child(1) {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header > button > span:nth-child(1) {
   font-weight: 800;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header > button > span:nth-child(2) {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header > button > span:nth-child(2) {
   width: 40px;
   position: absolute;
   bottom: 0px;
   left: 20%;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header > button.active {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header > button.active {
   color: #8774e1;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header > button.active > span:nth-child(2) {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header > button.active > span:nth-child(2) {
   border: 2px solid #8774e1;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-header > button:hover {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-header > button:hover {
   background-color: #744949;
   line-height: 50px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.enterance > div.left > div > div.search-menu > div.search-menu-body {
+.enterance > div.left > div.enterance-body > div:nth-child(2) > div.search-menu > div.search-menu-body {
   height: 80%;
   overflow-x: hidden;
   overflow-y: scroll;
