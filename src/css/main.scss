@@ -99,11 +99,11 @@
         border-right: 1px solid rgb(230, 230, 230);
         background-color:var(--body-color);
         >div.header{
-          @include size(6%, rgb(240, 240, 240));          
+          @include size(6%, rgb(240, 240, 240));  
+          border-right: none;        
           display: flex;
           align-items: center;
           background-color:var(--main-header-color);
-          border: 1px solid red;
           >*{
             margin: 5px;
           }
@@ -125,7 +125,6 @@
           }
           &>div:nth-child(2){
             width: 90%;
-            // border: 1px solid red;
             position: relative;
             &>input{
                 outline: none;
@@ -175,7 +174,6 @@
                     overflow-y: scroll;
                     height: 100%;
                     width: 100%;
-                    border: 1px solid red;
                     a{
                         display: block;
                         width: 100%;
