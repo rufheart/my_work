@@ -113,10 +113,9 @@
             display: flex;
             justify-content: center;
             align-items: center;            
-            color:var(-main-icon-color);
+            color:var(--main-icon-color);
             border: none;
             background: transparent;
-            color:var(--card-left-header-icon);
           }
           &>button.button:hover{
             cursor: pointer;
