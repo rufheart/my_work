@@ -29,7 +29,7 @@ function Contacts(){
                     <div><input type="text" placeholder='Search' onClick={()=>(setTimeout(Menu_to_Arrrow, 150),setTimeout(Page_to_Search,200),setMenuArrow(true),setMainMenu(false))}/><button><span class="material-symbols-outlined"> search </span>   </button></div>
                 </div>
                 <div className='contacts-main-left-body'>
-                    <div style={page_active=='messages'?{left:"0%",transition:"left 0.5s"}:{left:"-100%",transition:"left 1s"}} className='bir'>
+                    <div style={page_active=='messages'?{left:"0%",transition:"left 0.5s"}:{left:"-100%",transition:"left 1s","border-top":"1px solid blue"}} className='bir'>
                         {main_menu==true?<div className='contacts-main-left-body-main-menu'>
                             <div className='contacts-main-left-body-top'>
                                 <NavLink to={'/'+'soz'}>
@@ -70,7 +70,7 @@ function Contacts(){
                             </div>
                         </div>:null}
                     </div>
-                    <div style={page_active=='search'?{left:"0%",transition:"left 0.5s"}:{left:"-100%",transition:"left 1s"}} className='iki'>
+                    <div style={page_active=='search'?{left:"0%",transition:"left 0.5s"}:{left:"-100%",transition:"left 1s","border-top":"1px solid blue"}} className='iki'>
                         soz
                     </div>
                 </div>

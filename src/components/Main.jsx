@@ -12,6 +12,8 @@ function Messages(props){
     let [icon_change, setIconChange] = useState('mic')
     let {url} = useParams('url');
     let [deyer, setDeyer] = useState()
+    let [additional_icons, setAddIcon] = useState(false)
+    let [style_icon, setStyleIcon] = useState(false)
     let IconChanger = (e)=>{
         if(e.target.value){
             setIconChange('send')
@@ -65,9 +67,15 @@ function Messages(props){
                     <div className="write-messages">
                         <div>
                             <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>
-                            <button><span class="material-symbols-outlined"> attach_file </span></button>
+                            <button><span class="material-symbols-outlined" onClick={()=>(setAddIcon(!additional_icons), setStyleIcon(true))}> attach_file </span></button>
                         </div>
-                        {}
+                        {additional_icons==true?
+                            <div style={style_icon==false?null:{display:"flex",transition:"display 7s ease out"}}>
+                                <label><span class="material-symbols-outlined"> image </span><input type="file" /></label>
+                                <label><span class="material-symbols-outlined"> camera </span></label>
+                                <label htmlFor=""><span class="material-symbols-outlined"> draft </span><input type="file"/></label>
+                            </div>:null
+                        }
                         <span class="material-symbols-outlined"> {icon_change} </span>
                     </div>
                 </div>
