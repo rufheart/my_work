@@ -52,7 +52,10 @@
                     align-items: center;
                     background-color: transparent;
                     border: none;
-                    &>span{
+                    &>span.zz{
+                        border: 1px solid red;
+                    }
+                    &>div{
                         color: var(--contacts-header-icon);
                     }
                 }
@@ -95,188 +98,197 @@
         } 
         &>div.contacts-main-left-body{
             height: 820px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            &>div.contacts-main-left-body-main-menu{
+            position: relative;
+            &>div:nth-child(1){
+                position: absolute;
                 width: 100%;
+                left: 0%;
                 height: 100%;
-                &>div.contacts-main-left-body-top{
-                    height: 50%;
+                &>div.contacts-main-left-body-main-menu{
                     width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    overflow: scroll;    
-                    &>a:hover{
-                        background-color: var(--contacts-hover-color);
-                    }            
-                    &>a{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
-                        height: 72px;
-                        padding: 8px 12px;
-                        gap: 12px;   
-                        text-decoration: none;
-                        &>div:nth-child(1){
-                            width: 79px;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            flex-direction: column;
-                            gap: 4px;
-                            &>span{
-                                width: 66px;
-                                height: 12px;
-                                font-family: 'Inter' sans-serif;
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 10px;
-                                line-height: 12px;
-                                color: #B7B7B7;                            
-                            }
-                            &>i{
-                                font-size: 28px;
-                                color:#FFD96C;
-                            }
-                        }  
-                        &>div:nth-child(2),div:nth-child(4){
-                            height: 100%;
-                            border: 1px solid #EFEFEF;
-                        }
-                        &>div:nth-child(3){
-                            display: flex;
-                            // flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-                            padding: 0px;
-                            gap: 8px;                        
-                            width: 213px;   
-                            &>img{
-                                width: 56px;
-                                height: 56px;
-                                border-radius: 100px;                            
-                            }   
-                            &>span{
-                                width: 149px;
-                                height: 24px;
-                                font-family: 'Inter' sans-serif;
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 16px;
-                                line-height: 24px;           
-                                color: var(--contacts-username-color);                            
-                            }                  
-                        } 
-                        &>div:nth-child(5){
-                            width: 79px;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            display: flex;
-                            align-items: center;
-                            flex-direction: column;
-                            gap: 4px;
-                            &>span{
-                                width: 70px;
-                                height: 12px;
-                                font-family: 'Inter' sans-serif;
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 10px;
-                                line-height: 12px;
-                                color: #B7B7B7;                            
-                            }
-                            &>i{
-                                font-size: 28px;
-                                color: #73E473;;
-                            }
-                        }                                  
-                    }              
-                }
-                &>div.contacts-main-left-body-bottom{
-                    height: 50%;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;  
-                    overflow: scroll; 
-                    &>div:nth-child(1){
-                        display: flex;
-                        flex-direction: row;
-                        align-items: flex-start;
-                        padding: 16px;
-                        gap: 10px;                    
+                    height: 100%;
+                    &>div.contacts-main-left-body-top{
+                        height: 50%;
                         width: 100%;
-                        height: 56px;
-                        background: var(--contacts-header-color);      
-                        &>span{
-                            font-family: 'Inter' sans-serif;
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 16px;
-                            line-height: 24px;
-                            color: #959595;                        
-                        }                         
-                    } 
-                    &>div:nth-child(2){
-                        &>div:hover{
+                        display: flex;
+                        flex-direction: column;
+                        overflow: scroll;    
+                        &>a:hover{
                             background-color: var(--contacts-hover-color);
-                        }
-                        &>div{
+                        }            
+                        &>a{
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                             align-items: center;
-                            padding: 8px 16px;
-                            gap: 171px;                        
-                            width: 100%;
-                            height: 72px;  
+                            height: 72px;
+                            padding: 8px 12px;
+                            gap: 12px;   
+                            text-decoration: none;
                             &>div:nth-child(1){
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                padding: 0px;
-                                gap: 8px;                            
-                                width: 240px; 
-                                &>img{
-                                    width: 56px;
-                                    height: 56px;
-                                    border-radius: 100px;                             
-                                }   
-                                &>span{
-                                    width: 155px;
-                                    height: 24px;
-                                    font-family: 'Inter' sans-serif;
-                                    font-style: normal;
-                                    font-weight: 600;
-                                    font-size: 16px;
-                                    line-height: 24px;
-                                    color: var(--contacts-username-color);  
-                                    overflow: hidden;                              
-                                }                     
-                            } 
-                            &>div:nth-child(2){
-                                width: 60px;
+                                width: 79px;
                                 height: 100%;
                                 display: flex;
                                 align-items: center;
-                                &>button{
-                                    border: none;
-                                    background: transparent;
+                                flex-direction: column;
+                                gap: 4px;
+                                &>span{
+                                    width: 66px;
+                                    height: 12px;
                                     font-family: 'Inter' sans-serif;
                                     font-style: normal;
                                     font-weight: 400;
-                                    font-size: 16px;
-                                    line-height: 24px;
-                                    color: #1A9CFF;                                
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    color: #B7B7B7;                            
                                 }
-                            }                     
-                        }
-                    }        
-                }   
-            }               
+                                &>i{
+                                    font-size: 28px;
+                                    color:#FFD96C;
+                                }
+                            }  
+                            &>div:nth-child(2),div:nth-child(4){
+                                height: 100%;
+                                border: 1px solid #EFEFEF;
+                            }
+                            &>div:nth-child(3){
+                                display: flex;
+                                // flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 0px;
+                                gap: 8px;                        
+                                width: 213px;   
+                                &>img{
+                                    width: 56px;
+                                    height: 56px;
+                                    border-radius: 100px;                            
+                                }   
+                                &>span{
+                                    width: 149px;
+                                    height: 24px;
+                                    font-family: 'Inter' sans-serif;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 24px;           
+                                    color: var(--contacts-username-color);                            
+                                }                  
+                            } 
+                            &>div:nth-child(5){
+                                width: 79px;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                gap: 4px;
+                                &>span{
+                                    width: 70px;
+                                    height: 12px;
+                                    font-family: 'Inter' sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    color: #B7B7B7;                            
+                                }
+                                &>i{
+                                    font-size: 28px;
+                                    color: #73E473;;
+                                }
+                            }                                  
+                        }              
+                    }
+                    &>div.contacts-main-left-body-bottom{
+                        height: 50%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;  
+                        overflow: scroll; 
+                        &>div:nth-child(1){
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 16px;
+                            gap: 10px;                    
+                            width: 100%;
+                            height: 56px;
+                            background: var(--contacts-header-color);      
+                            &>span{
+                                font-family: 'Inter' sans-serif;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #959595;                        
+                            }                         
+                        } 
+                        &>div:nth-child(2){
+                            &>div:hover{
+                                background-color: var(--contacts-hover-color);
+                            }
+                            &>div{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 8px 16px;
+                                gap: 171px;                        
+                                width: 100%;
+                                height: 72px;  
+                                &>div:nth-child(1){
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 0px;
+                                    gap: 8px;                            
+                                    width: 240px; 
+                                    &>img{
+                                        width: 56px;
+                                        height: 56px;
+                                        border-radius: 100px;                             
+                                    }   
+                                    &>span{
+                                        width: 155px;
+                                        height: 24px;
+                                        font-family: 'Inter' sans-serif;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color: var(--contacts-username-color);  
+                                        overflow: hidden;                              
+                                    }                     
+                                } 
+                                &>div:nth-child(2){
+                                    width: 60px;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    &>button{
+                                        border: none;
+                                        background: transparent;
+                                        font-family: 'Inter' sans-serif;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color: #1A9CFF;                                
+                                    }
+                                }                     
+                            }
+                        }        
+                    }   
+                }  
+            } 
+            &>div:nth-child(2){
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: -100%;
+            }            
         }     
     }
     &>div.contacts-main-right{

@@ -56,7 +56,10 @@
   background-color: transparent;
   border: none;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-header > div:nth-child(1) > button > span {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header > div:nth-child(1) > button > span.zz {
+  border: 1px solid red;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-header > div:nth-child(1) > button > div {
   color: var(--contacts-header-icon);
 }
 .contacts-main > div.contacts-main-left > div.contacts-main-left-header > div:nth-child(2) {
@@ -96,26 +99,29 @@
 }
 .contacts-main > div.contacts-main-left > div.contacts-main-left-body {
   height: 820px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+  position: relative;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  height: 100%;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu {
   width: 100%;
   height: 100%;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top {
   height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a:hover {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a:hover {
   background-color: var(--contacts-hover-color);
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -125,7 +131,7 @@
   gap: 12px;
   text-decoration: none;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(1) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(1) {
   width: 79px;
   height: 100%;
   display: flex;
@@ -133,7 +139,7 @@
   flex-direction: column;
   gap: 4px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(1) > span {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(1) > span {
   width: 66px;
   height: 12px;
   font-family: "Inter" sans-serif;
@@ -143,15 +149,15 @@
   line-height: 12px;
   color: #B7B7B7;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(1) > i {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(1) > i {
   font-size: 28px;
   color: #FFD96C;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(2), .contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a div:nth-child(4) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(2), .contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a div:nth-child(4) {
   height: 100%;
   border: 1px solid #EFEFEF;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(3) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,12 +165,12 @@
   gap: 8px;
   width: 213px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(3) > img {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(3) > img {
   width: 56px;
   height: 56px;
   border-radius: 100px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(3) > span {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(3) > span {
   width: 149px;
   height: 24px;
   font-family: "Inter" sans-serif;
@@ -174,7 +180,7 @@
   line-height: 24px;
   color: var(--contacts-username-color);
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(5) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(5) {
   width: 79px;
   height: 100%;
   display: flex;
@@ -184,7 +190,7 @@
   flex-direction: column;
   gap: 4px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(5) > span {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(5) > span {
   width: 70px;
   height: 12px;
   font-family: "Inter" sans-serif;
@@ -194,18 +200,18 @@
   line-height: 12px;
   color: #B7B7B7;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(5) > i {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-top > a > div:nth-child(5) > i {
   font-size: 28px;
   color: #73E473;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom {
   height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(1) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(1) {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -215,7 +221,7 @@
   height: 56px;
   background: var(--contacts-header-color);
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(1) > span {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(1) > span {
   font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -223,10 +229,10 @@
   line-height: 24px;
   color: #959595;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div:hover {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div:hover {
   background-color: var(--contacts-hover-color);
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -236,7 +242,7 @@
   width: 100%;
   height: 72px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -244,12 +250,12 @@
   gap: 8px;
   width: 240px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) > img {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) > img {
   width: 56px;
   height: 56px;
   border-radius: 100px;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) > span {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(1) > span {
   width: 155px;
   height: 24px;
   font-family: "Inter" sans-serif;
@@ -260,13 +266,13 @@
   color: var(--contacts-username-color);
   overflow: hidden;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(2) {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(2) {
   width: 60px;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(2) > button {
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(1) > div.contacts-main-left-body-main-menu > div.contacts-main-left-body-bottom > div:nth-child(2) > div > div:nth-child(2) > button {
   border: none;
   background: transparent;
   font-family: "Inter" sans-serif;
@@ -275,6 +281,12 @@
   font-size: 16px;
   line-height: 24px;
   color: #1A9CFF;
+}
+.contacts-main > div.contacts-main-left > div.contacts-main-left-body > div:nth-child(2) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
 }
 .contacts-main > div.contacts-main-right {
   width: 75%;
