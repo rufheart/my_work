@@ -189,7 +189,8 @@
                 width: 108px;
                 height: 108px;
                 border-radius: 100px;
-                border: 1px solid #F1F9FF;                
+                border: 1px solid #F1F9FF;    
+                object-fit:cover;    
             }
         }
         &>div:nth-child(2){

@@ -192,6 +192,8 @@
   height: 108px;
   border-radius: 100px;
   border: 1px solid #F1F9FF;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .settings-menu > a.go-to-profile > div:nth-child(2) {
   height: 100%;

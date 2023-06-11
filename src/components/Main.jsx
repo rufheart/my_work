@@ -8,12 +8,30 @@ import Cards from './Cards';
 import Contacts from './Contacts';
 
 function Messages(props){
+    let menuRef = useRef()
     let data = props.data
     let [icon_change, setIconChange] = useState('mic')
+    let [three, setThree] = useState(false)
+    let [two, setTwo] = useState(false)
+    let [one, setOne] = useState(false)
     let {url} = useParams('url');
     let [deyer, setDeyer] = useState()
     let [additional_icons, setAddIcon] = useState(false)
     let [style_icon, setStyleIcon] = useState(false)
+    useEffect(()=>{
+        let handler = (e)=>{
+            if(!menuRef.current.contains(e.target)){
+                setTimeout(Three, 70)
+                setTimeout(Two, 100) 
+                setTimeout(One, 130)
+                Deyisen()
+            }
+        };
+        document.addEventListener("mousedown", handler)
+        return()=>{
+            document.removeEventListener("mousedown", handler)
+        }
+    });
     let IconChanger = (e)=>{
         if(e.target.value){
             setIconChange('send')
@@ -21,6 +39,26 @@ function Messages(props){
         else{
             setIconChange('mic')
         }
+    }
+    function Deyisen(){
+        if(additional_icons==false){
+            Vaxt()
+        }
+        else{
+            setTimeout(Vaxt, 150)
+        }
+    }
+    function Vaxt(){
+        setAddIcon(!additional_icons)
+    }
+    function Three(){
+        setThree(!three)
+    }
+    function Two(){
+        setTwo(!two)
+    }
+    function One(){
+        setOne(!one)
     }
     return(
         <div className="messages">
@@ -64,18 +102,20 @@ function Messages(props){
                         </div>
                                             
                     </div>
-                    <div className="write-messages">
+                    <div className="write-messages" >
                         <div>
-                            <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>
-                            <button><span class="material-symbols-outlined" onClick={()=>(setAddIcon(!additional_icons), setStyleIcon(true))}> attach_file </span></button>
+                            <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>                            
                         </div>
-                        {additional_icons==true?
-                            <div style={style_icon==false?null:{display:"flex",transition:"display 7s ease out"}}>
-                                <label><span class="material-symbols-outlined"> image </span><input type="file" /></label>
-                                <label><span class="material-symbols-outlined"> camera </span></label>
-                                <label htmlFor=""><span class="material-symbols-outlined"> draft </span><input type="file"/></label>
-                            </div>:null
-                        }
+                        <div ref={menuRef}>
+                            {additional_icons==true?
+                                <div>
+                                    <label style={one==true?{visibility:"visible",transition:"visibility 1 ease"}:null}><span class="material-symbols-outlined"> image </span><input type="file" /></label>
+                                    <label style={two==true?{visibility:"visible",transition:"visibility 1 ease"}:null}><span class="material-symbols-outlined"> camera </span></label>
+                                    <label style={three==true?{visibility:"visible",transition:"visibility 1 ease"}:null}><span class="material-symbols-outlined"> draft </span><input type="file"/></label>
+                                </div>:null
+                            } 
+                            <button onClick={(e)=>(Deyisen(),setTimeout(Three, 70),setTimeout(Two, 100), setTimeout(One, 130))}><span class="material-symbols-outlined" > attach_file </span></button>                           
+                        </div>
                         <span class="material-symbols-outlined"> {icon_change} </span>
                     </div>
                 </div>
