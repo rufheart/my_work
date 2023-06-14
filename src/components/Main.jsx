@@ -20,11 +20,14 @@ function Messages(props){
     let [style_icon, setStyleIcon] = useState(false)
     useEffect(()=>{
         let handler = (e)=>{
-            if(!menuRef.current.contains(e.target)){
-                setTimeout(Three, 70)
-                setTimeout(Two, 100) 
-                setTimeout(One, 130)
-                Deyisen()
+            if((!menuRef.current.contains(e.target))){
+                console.log('zz')
+                if(three==three&two==true&one==true){
+                    setTimeout(Three, 80)
+                    setTimeout(Two, 90) 
+                    setTimeout(One, 100)
+                    Deyisen()
+                }
             }
         };
         document.addEventListener("mousedown", handler)
@@ -32,6 +35,14 @@ function Messages(props){
             document.removeEventListener("mousedown", handler)
         }
     });
+    let handleFileButton = (e)=>{
+        if(three==false&two==false&one==false){
+            Deyisen()
+            setTimeout(Three, 80)
+            setTimeout(Two, 90)
+            setTimeout(One, 100)
+        }
+    }
     let IconChanger = (e)=>{
         if(e.target.value){
             setIconChange('send')
@@ -45,7 +56,7 @@ function Messages(props){
             Vaxt()
         }
         else{
-            setTimeout(Vaxt, 150)
+            setTimeout(Vaxt, 100)
         }
     }
     function Vaxt(){
@@ -104,17 +115,17 @@ function Messages(props){
                     </div>
                     <div className="write-messages" >
                         <div>
-                            <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>                            
+                            <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>         
+                            <button ref={menuRef} onClick={handleFileButton}><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
-                        <div ref={menuRef}>
+                        <div ref={menuRef} className={three==true?'slide':null}>
                             {additional_icons==true?
-                                <div>
-                                    <label style={one==true?{visibility:"visible",transition:"visibility 1 ease"}:null}><span class="material-symbols-outlined"> image </span><input type="file" /></label>
-                                    <label style={two==true?{visibility:"visible",transition:"visibility 1 ease"}:null}><span class="material-symbols-outlined"> camera </span></label>
-                                    <label style={three==true?{visibility:"visible",transition:"visibility 1 ease"}:null}><span class="material-symbols-outlined"> draft </span><input type="file"/></label>
+                                <div >
+                                    <label><span class="material-symbols-outlined"> image </span><input type="file" /></label>
+                                    <label><span class="material-symbols-outlined"> camera </span></label>
+                                    <label><span class="material-symbols-outlined"> draft </span><input type="file"/></label>
                                 </div>:null
-                            } 
-                            <button onClick={(e)=>(Deyisen(),setTimeout(Three, 70),setTimeout(Two, 100), setTimeout(One, 130))}><span class="material-symbols-outlined" > attach_file </span></button>                           
+                            }                         
                         </div>
                         <span class="material-symbols-outlined"> {icon_change} </span>
                     </div>
@@ -143,7 +154,7 @@ function ListChat(){
     )
 }
 
-function Enterance(){ 
+function Enterance(){     
     let data = useContext(MyContext);
     let [sudo, setSudo] = useState(false)
     let [page_active, setPageActive] = useState('messages')

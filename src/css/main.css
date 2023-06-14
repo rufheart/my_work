@@ -510,18 +510,33 @@
   background-color: var(--main-message-input-background);
   color: var(--main-message-input-text-color);
 }
+.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(1) > button {
+  height: 38px;
+  width: 60px;
+  right: 11px;
+  bottom: 11px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(1) > button > span {
+  transform: rotate(45deg);
+}
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) {
   position: absolute;
-  right: 68px;
+  right: 70px;
   width: 62px;
-  border: 1px solid red;
-  height: 400px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  bottom: 20px;
+  bottom: 85px;
+  border: 1px solid red;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) {
-  border: 1px solid red;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -529,12 +544,15 @@
   gap: 10px;
   overflow: hidden;
   right: 4px;
-  bottom: 62px;
+  bottom: 0px;
+  max-height: 0;
+}
+.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label {
+  padding: 15px;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(1) {
   display: flex;
   align-items: center;
-  visibility: hidden;
   justify-content: center;
   width: 50px;
   height: 50px;
@@ -550,11 +568,10 @@
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(2) {
   display: flex;
   align-items: center;
-  visibility: hidden;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 100px;
   background: #d3396d;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(2) > span {
@@ -566,7 +583,6 @@
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(3) {
   display: flex;
   align-items: center;
-  visibility: hidden;
   justify-content: center;
   width: 50px;
   height: 50px;
@@ -579,21 +595,10 @@
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(3) input {
   display: none;
 }
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > button {
-  height: 38px;
-  width: 60px;
-  right: 0px;
-  border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 1px;
-}
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > button > span {
-  transform: rotate(45deg);
+.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide > div:nth-child(1) {
+  transition: max-height 1s;
+  overflow: hidden;
+  max-height: 300px;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > span {
   background-color: #356CD2;
