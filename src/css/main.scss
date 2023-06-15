@@ -547,6 +547,7 @@
                             bottom: 85px;
                             border: 1px solid red;
                             &>div:nth-child(1){
+                                border: 1px solid red;
                                 position: absolute;
                                 display: flex;
                                 flex-direction: column;
@@ -555,11 +556,11 @@
                                 overflow: hidden;
                                 right: 4px;
                                 bottom: 0px;
-                                max-height: 0;
                                 &>label{
                                     padding: 15px;
                                 }
                                 &>label:nth-child(1){
+                                    max-height: 0px;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
@@ -575,6 +576,7 @@
                                     }
                                 }
                                 &>label:nth-child(2){
+                                    visibility: hidden;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
@@ -590,6 +592,7 @@
                                     }
                                 }
                                 &>label:nth-child(3){
+                                    visibility: hidden;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
@@ -606,7 +609,7 @@
                                 }
                             }                            
                         }   
-                        &>div.slide{
+                        &>div.slide-up{
                             &>div:nth-child(1){
                                 -webkit-transition: max-height 1s; 
                                 -moz-transition: max-height 1s; 
@@ -616,8 +619,44 @@
                                 overflow: hidden;
                                 // "height: 0" not work with css transitions
                                 max-height: 300px;
+                                &>label:nth-child(1){
+                                    max-height: 50px;
+                                    transform: "max-height 2s";
+                                }
+                                &>label:nth-child(2){
+                                    visibility: visible;
+                                    transform: visibility 0.5s;
+                                }
+                                &>label:nth-child(3){
+                                    visibility: visible;
+                                    transform: visibility 0.7s;
+                                }
                             }
                         } 
+                        &>div.slide-down{
+                            &>div:nth-child(1){
+                                -webkit-transition: max-height 1s; 
+                                -moz-transition: max-height 1s; 
+                                -ms-transition: max-height 1s; 
+                                -o-transition: max-height 1s; 
+                                transition: max-height 1s;  
+                                overflow: hidden;
+                                // "height: 0" not work with css transitions
+                                max-height: 0px;
+                                &>label:nth-child(1){
+                                    visibility: hidden;
+                                    transform: "visibility 0.3s";
+                                }
+                                &>label:nth-child(2){
+                                    visibility: hidden;
+                                    transform: "visibility 0.5s";
+                                }
+                                &>label:nth-child(3){
+                                    visibility: hidden;
+                                    transform: "visibility 0.7s";
+                                }
+                            }
+                        }                        
                         >span{
                             background-color: #356CD2;
                             color: white;

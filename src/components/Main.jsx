@@ -14,6 +14,7 @@ function Messages(props){
     let [three, setThree] = useState(false)
     let [two, setTwo] = useState(false)
     let [one, setOne] = useState(false)
+    let [zero, setZero] = useState(false)
     let {url} = useParams('url');
     let [deyer, setDeyer] = useState()
     let [additional_icons, setAddIcon] = useState(false)
@@ -23,10 +24,7 @@ function Messages(props){
             if((!menuRef.current.contains(e.target))){
                 console.log('zz')
                 if(three==three&two==true&one==true){
-                    setTimeout(Three, 80)
-                    setTimeout(Two, 90) 
-                    setTimeout(One, 100)
-                    Deyisen()
+                    setTimeout(Zero,50)
                 }
             }
         };
@@ -38,9 +36,10 @@ function Messages(props){
     let handleFileButton = (e)=>{
         if(three==false&two==false&one==false){
             Deyisen()
+            setTimeout(Zero, 30)
             setTimeout(Three, 80)
-            setTimeout(Two, 90)
-            setTimeout(One, 100)
+            setTimeout(Two, 40)
+            setTimeout(One, 80)
         }
     }
     let IconChanger = (e)=>{
@@ -61,6 +60,12 @@ function Messages(props){
     }
     function Vaxt(){
         setAddIcon(!additional_icons)
+    }
+    function Zero(){
+        setZero(!zero)
+        Three()
+        Two()
+        One()
     }
     function Three(){
         setThree(!three)
@@ -118,7 +123,7 @@ function Messages(props){
                             <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>         
                             <button ref={menuRef} onClick={handleFileButton}><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
-                        <div ref={menuRef} className={three==true?'slide':null}>
+                        <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>
                             {additional_icons==true?
                                 <div >
                                     <label><span class="material-symbols-outlined"> image </span><input type="file" /></label>
