@@ -551,7 +551,6 @@
   padding: 15px;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(1) {
-  max-height: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -567,7 +566,6 @@
   display: none;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(2) {
-  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -583,7 +581,6 @@
   display: none;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label:nth-child(3) {
-  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,34 +600,10 @@
   overflow: hidden;
   max-height: 300px;
 }
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-up > div:nth-child(1) > label:nth-child(1) {
-  max-height: 50px;
-  transform: "max-height 2s";
-}
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-up > div:nth-child(1) > label:nth-child(2) {
-  visibility: visible;
-  transform: visibility 0.5s;
-}
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-up > div:nth-child(1) > label:nth-child(3) {
-  visibility: visible;
-  transform: visibility 0.7s;
-}
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-down > div:nth-child(1) {
   transition: max-height 1s;
   overflow: hidden;
   max-height: 0px;
-}
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-down > div:nth-child(1) > label:nth-child(1) {
-  visibility: hidden;
-  transform: "visibility 0.3s";
-}
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-down > div:nth-child(1) > label:nth-child(2) {
-  visibility: hidden;
-  transform: "visibility 0.5s";
-}
-.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-down > div:nth-child(1) > label:nth-child(3) {
-  visibility: hidden;
-  transform: "visibility 0.7s";
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > span {
   background-color: #356CD2;

@@ -9,6 +9,7 @@ import Contacts from './Contacts';
 
 function Messages(props){
     let menuRef = useRef()
+    let menuRef2 = useRef()
     let data = props.data
     let [icon_change, setIconChange] = useState('mic')
     let [three, setThree] = useState(false)
@@ -19,12 +20,22 @@ function Messages(props){
     let [deyer, setDeyer] = useState()
     let [additional_icons, setAddIcon] = useState(false)
     let [style_icon, setStyleIcon] = useState(false)
+    let IconChanger = (e)=>{
+        if(e.target.value){
+            setIconChange('send')
+        }
+        else{
+            setIconChange('mic')
+        }
+    }
     useEffect(()=>{
         let handler = (e)=>{
-            if((!menuRef.current.contains(e.target))){
-                console.log('zz')
-                if(three==three&two==true&one==true){
-                    setTimeout(Zero,50)
+            console.log(additional_icons,zero,'before if')
+            if(((!menuRef.current.contains(e.target))&(!menuRef2.current.contains(e.target)))){
+                if(zero==true){
+                    console.log(additional_icons,zero,'useffetc after if')
+                    setTimeout(Zero, 100)
+                    Deyisen()
                 }
             }
         };
@@ -34,28 +45,16 @@ function Messages(props){
         }
     });
     let handleFileButton = (e)=>{
-        if(three==false&two==false&one==false){
-            Deyisen()
-            setTimeout(Zero, 30)
-            setTimeout(Three, 80)
-            setTimeout(Two, 40)
-            setTimeout(One, 80)
-        }
-    }
-    let IconChanger = (e)=>{
-        if(e.target.value){
-            setIconChange('send')
-        }
-        else{
-            setIconChange('mic')
-        }
+        Deyisen()
+        setTimeout(Zero, 100)
+        console.log(additional_icons,zero,'btn')
     }
     function Deyisen(){
         if(additional_icons==false){
             Vaxt()
         }
         else{
-            setTimeout(Vaxt, 100)
+            setTimeout(Vaxt,650)
         }
     }
     function Vaxt(){
@@ -63,19 +62,8 @@ function Messages(props){
     }
     function Zero(){
         setZero(!zero)
-        Three()
-        Two()
-        One()
     }
-    function Three(){
-        setThree(!three)
-    }
-    function Two(){
-        setTwo(!two)
-    }
-    function One(){
-        setOne(!one)
-    }
+    console.log(additional_icons,zero,'only')
     return(
         <div className="messages">
             <div className="head">
@@ -121,7 +109,7 @@ function Messages(props){
                     <div className="write-messages" >
                         <div>
                             <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>         
-                            <button ref={menuRef} onClick={handleFileButton}><span class="material-symbols-outlined" > attach_file </span></button>                      
+                            <button ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
                         <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>
                             {additional_icons==true?
