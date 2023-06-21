@@ -510,6 +510,9 @@
   background-color: var(--main-message-input-background);
   color: var(--main-message-input-text-color);
 }
+.enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(1) > textarea:is(:focus, :valid) {
+  border: 1px solid red;
+}
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(1) > button {
   height: 38px;
   width: 60px;

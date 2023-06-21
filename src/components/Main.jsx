@@ -8,9 +8,11 @@ import Cards from './Cards';
 import Contacts from './Contacts';
 
 function Messages(props){
+    let textRef = useRef()
     let menuRef = useRef()
     let menuRef2 = useRef()
     let data = props.data
+    let [mainHeight, setMainHeight] = useState(null)
     let [icon_change, setIconChange] = useState('mic')
     let [three, setThree] = useState(false)
     let [two, setTwo] = useState(false)
@@ -20,7 +22,14 @@ function Messages(props){
     let [deyer, setDeyer] = useState()
     let [additional_icons, setAddIcon] = useState(false)
     let [style_icon, setStyleIcon] = useState(false)
+    let handleHeightArea = (e)=>{
+        let areaHeight=e.target.scrollHeight
+        setMainHeight(areaHeight)
+        console.log(textRef.current.scrollHeight,'dd')
+        console.log(areaHeight,'aewa')
+    }
     let IconChanger = (e)=>{
+        console.log(e.target.cols,'row')
         if(e.target.value){
             setIconChange('send')
         }
@@ -32,9 +41,9 @@ function Messages(props){
         let handler = (e)=>{
             console.log(additional_icons,zero,'before if')
             if(((!menuRef.current.contains(e.target))&(!menuRef2.current.contains(e.target)))){
-                if(zero==true){
+                if(zero==true&additional_icons==true){
                     console.log(additional_icons,zero,'useffetc after if')
-                    setTimeout(Zero, 100)
+                    setTimeout(Zero, 10)
                     Deyisen()
                 }
             }
@@ -45,16 +54,17 @@ function Messages(props){
         }
     });
     let handleFileButton = (e)=>{
+        setTimeout(Zero, 10)
         Deyisen()
-        setTimeout(Zero, 100)
         console.log(additional_icons,zero,'btn')
     }
     function Deyisen(){
+        console.log(additional_icons,'additonal',zero,'zero')
         if(additional_icons==false){
             Vaxt()
         }
         else{
-            setTimeout(Vaxt,650)
+            setTimeout(Vaxt,450)
         }
     }
     function Vaxt(){
@@ -63,7 +73,6 @@ function Messages(props){
     function Zero(){
         setZero(!zero)
     }
-    console.log(additional_icons,zero,'only')
     return(
         <div className="messages">
             <div className="head">
@@ -108,7 +117,7 @@ function Messages(props){
                     </div>
                     <div className="write-messages" >
                         <div>
-                            <textarea name="" id="" cols="30" rows="10" placeholder='Messages' onChange={IconChanger}></textarea>         
+                            <textarea style={{height:mainHeight}} required name=""  onInput={handleHeightArea} placeholder='Messages' onChange={IconChanger} ref={textRef}></textarea>         
                             <button ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
                         <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>
