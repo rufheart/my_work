@@ -23,8 +23,8 @@ function Messages(props){
     let [additional_icons, setAddIcon] = useState(false)
     let [style_icon, setStyleIcon] = useState(false)
     let handleHeightArea = (e)=>{
-        let areaHeight=e.target.scrollHeight
-        textRef.current.style.cssText = `height: ${textRef.scrollHeight}px; overflow-y:hidden`;
+        textRef.current.style.cssText = `height: ${e.target.scrollHeight}px`;
+        console.log(e.target.style.height,'sdcd')
         textRef.current.addEventListener("input", function(){
             this.style.height = "auto";
             this.style.height = `${this.scrollHeight}px`
@@ -119,7 +119,7 @@ function Messages(props){
                     </div>
                     <div className="write-messages" >
                         <div>
-                            <textarea style={{height:mainHeight}} required name="" onKeyUp={handleHeightArea} placeholder='Messages' onChange={IconChanger} ref={textRef}></textarea>         
+                            <textarea required name="" onInput={handleHeightArea} placeholder='Messages' onChange={IconChanger} ref={textRef}></textarea>         
                             <button ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
                         <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>
