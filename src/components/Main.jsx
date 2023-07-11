@@ -24,14 +24,12 @@ function Messages(props){
     let [style_icon, setStyleIcon] = useState(false)
     let handleHeightArea = (e)=>{
         textRef.current.style.cssText = `height: ${e.target.scrollHeight}px`;
-        console.log(e.target.style.height,'sdcd')
         textRef.current.addEventListener("input", function(){
             this.style.height = "auto";
             this.style.height = `${this.scrollHeight}px`
         })
     }
     let IconChanger = (e)=>{
-        console.log(e.target.cols,'row')
         if(e.target.value){
             setIconChange('send')
         }
@@ -41,12 +39,17 @@ function Messages(props){
     }
     useEffect(()=>{
         let handler = (e)=>{
-            console.log(additional_icons,zero,'before if')
+            console.log('colde')
             if(((!menuRef.current.contains(e.target))&(!menuRef2.current.contains(e.target)))){
                 if(zero==true&additional_icons==true){
                     console.log(additional_icons,zero,'useffetc after if')
-                    setTimeout(Zero, 10)
-                    Deyisen()
+                    setTimeout(()=>{setZero(!zero)}, 10);
+                    if(additional_icons==false){
+                        setAddIcon(!additional_icons)
+                    }
+                    else{
+                        setTimeout(()=>{setAddIcon(!additional_icons)}, 850)
+                    }
                 }
             }
         };
@@ -56,25 +59,29 @@ function Messages(props){
         }
     });
     let handleFileButton = (e)=>{
-        setTimeout(Zero, 10)
-        Deyisen()
-        console.log(additional_icons,zero,'btn')
-    }
-    function Deyisen(){
-        console.log(additional_icons,'additonal',zero,'zero')
+        setTimeout(()=>{setZero(!zero)}, 10);
         if(additional_icons==false){
-            Vaxt()
+            setAddIcon(!additional_icons)
         }
         else{
-            setTimeout(Vaxt,450)
+            setTimeout(()=>{setAddIcon(!additional_icons)}, 850)
         }
     }
-    function Vaxt(){
-        setAddIcon(!additional_icons)
-    }
-    function Zero(){
-        setZero(!zero)
-    }
+    // function Deyisen(){
+    //     if(additional_icons==false){
+    //         Vaxt()
+    //     }
+    //     else{
+    //         setTimeout(Vaxt,850)
+    //     }
+    // }
+    // function Vaxt(){
+    //     setAddIcon(!additional_icons)
+    // }
+    // function Zero(){
+    //     setZero(!zero)
+    // }
+    console.log(additional_icons,'additonal',zero,'zero')
     return(
         <div className="messages">
             <div className="head">

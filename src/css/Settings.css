@@ -1773,11 +1773,10 @@
   text-align: center;
   color: var(--link-color);
 }
-.account-main > div.account-main-body > a:hover {
-  background-color: var(--settings-link-hover);
-}
 .account-main > div.account-main-body > a:nth-child(1):hover {
   border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #efefef;
+  margin-top: 1px;
 }
 
 /*Settings My Profile*/
