@@ -551,16 +551,15 @@
                             position: absolute;
                             right: 70px;
                             width: 62px;
-                            height: 250px;
                             display: flex;
                             flex-direction: column;
                             bottom: 85px;
-                            border: 1px solid red;
+                            height: 250px;
                             &>div:nth-child(1){
-                                border: 1px solid red;
                                 position: absolute;
                                 display: flex;
                                 flex-direction: column;
+                                height: 0px;
                                 right: 20px;
                                 gap: 10px;                            
                                 overflow: hidden;
@@ -618,50 +617,18 @@
                         }   
                         &>div.slide-up{
                             &>div:nth-child(1){
-                                -webkit-transition: max-height 1s; 
-                                -moz-transition: max-height 1s; 
-                                -ms-transition: max-height 1s; 
-                                -o-transition: max-height 1s; 
-                                transition: max-height 1s;  
-                                overflow: hidden;
-                                // "height: 0" not work with css transitions
-                                max-height: 300px;
-                                // &>label:nth-child(1){
-                                //     max-height: 50px;
-                                //     transform: "max-height 2s";
-                                // }
-                                // &>label:nth-child(2){
-                                //     visibility: visible;
-                                //     transform: visibility 0.5s;
-                                // }
-                                // &>label:nth-child(3){
-                                //     visibility: visible;
-                                //     transform: visibility 0.7s;
-                                // }
+                                height: 240px;
+                                width: 90%;
+                                // transform-origin: left bottom 200px;
+                                // transform: scale(1);
+                                transition: height 3s;
                             }
                         } 
                         &>div.slide-down{
                             &>div:nth-child(1){
-                                -webkit-transition: max-height 1s; 
-                                -moz-transition: max-height 1s; 
-                                -ms-transition: max-height 1s; 
-                                -o-transition: max-height 1s; 
-                                transition: max-height 1s;  
-                                overflow: hidden;
-                                // "height: 0" not work with css transitions
-                                max-height: 0px;
-                                // &>label:nth-child(1){
-                                //     visibility: hidden;
-                                //     transform: "visibility 0.3s";
-                                // }
-                                // &>label:nth-child(2){
-                                //     visibility: hidden;
-                                //     transform: "visibility 0.5s";
-                                // }
-                                // &>label:nth-child(3){
-                                //     visibility: hidden;
-                                //     transform: "visibility 0.7s";
-                                // }
+                                height: 0px;
+                                width: 90%;
+                                transition: height 3s;
                             }
                         }                        
                         >span{

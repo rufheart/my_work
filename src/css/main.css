@@ -540,17 +540,16 @@
   position: absolute;
   right: 70px;
   width: 62px;
-  height: 250px;
   display: flex;
   flex-direction: column;
   bottom: 85px;
-  border: 1px solid red;
+  height: 250px;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) {
-  border: 1px solid red;
   position: absolute;
   display: flex;
   flex-direction: column;
+  height: 0px;
   right: 20px;
   gap: 10px;
   overflow: hidden;
@@ -606,14 +605,14 @@
   display: none;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-up > div:nth-child(1) {
-  transition: max-height 1s;
-  overflow: hidden;
-  max-height: 300px;
+  height: 240px;
+  width: 90%;
+  transition: height 3s;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-down > div:nth-child(1) {
-  transition: max-height 1s;
-  overflow: hidden;
-  max-height: 0px;
+  height: 0px;
+  width: 90%;
+  transition: height 3s;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > span {
   background-color: #356CD2;

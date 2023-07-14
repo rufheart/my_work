@@ -14,6 +14,7 @@ function Messages(props){
     let data = props.data
     let [mainHeight, setMainHeight] = useState(null)
     let [icon_change, setIconChange] = useState('mic')
+    let [on_off, setOnOff] = useState('')
     let [three, setThree] = useState(false)
     let [two, setTwo] = useState(false)
     let [one, setOne] = useState(false)
@@ -39,7 +40,6 @@ function Messages(props){
     }
     useEffect(()=>{
         let handler = (e)=>{
-            console.log('colde')
             if(((!menuRef.current.contains(e.target))&(!menuRef2.current.contains(e.target)))){
                 if(zero==true&additional_icons==true){
                     console.log(additional_icons,zero,'useffetc after if')
@@ -59,29 +59,10 @@ function Messages(props){
         }
     });
     let handleFileButton = (e)=>{
-        setTimeout(()=>{setZero(!zero)}, 10);
-        if(additional_icons==false){
-            setAddIcon(!additional_icons)
-        }
-        else{
-            setTimeout(()=>{setAddIcon(!additional_icons)}, 850)
-        }
+        setAddIcon(!additional_icons)
+        setZero(!zero)
     }
-    // function Deyisen(){
-    //     if(additional_icons==false){
-    //         Vaxt()
-    //     }
-    //     else{
-    //         setTimeout(Vaxt,850)
-    //     }
-    // }
-    // function Vaxt(){
-    //     setAddIcon(!additional_icons)
-    // }
-    // function Zero(){
-    //     setZero(!zero)
-    // }
-    console.log(additional_icons,'additonal',zero,'zero')
+    console.log(additional_icons,'adit')
     return(
         <div className="messages">
             <div className="head">
@@ -127,17 +108,17 @@ function Messages(props){
                     <div className="write-messages" >
                         <div>
                             <textarea required name="" onInput={handleHeightArea} placeholder='Messages' onChange={IconChanger} ref={textRef}></textarea>         
-                            <button ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
+                            <button disabled={on_off} ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
-                        <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>
-                            {additional_icons==true?
-                                <div >
-                                    <label><span class="material-symbols-outlined"> image </span><input type="file" /></label>
-                                    <label><span class="material-symbols-outlined"> camera </span></label>
-                                    <label><span class="material-symbols-outlined"> draft </span><input type="file"/></label>
-                                </div>:null
-                            }                         
-                        </div>
+                        <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>                         
+                            <div >
+                            {additional_icons==true?  
+                                <> 
+                                <label><span class="material-symbols-outlined"> image </span><input type="file" /></label>
+                                <label><span class="material-symbols-outlined"> camera </span></label>
+                                <label><span class="material-symbols-outlined"> draft </span><input type="file"/></label></>:null}
+                            </div>                                                                      
+                        </div>                
                         <span class="material-symbols-outlined"> {icon_change} </span>
                     </div>
                 </div>
