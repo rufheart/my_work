@@ -542,8 +542,8 @@
   width: 62px;
   display: flex;
   flex-direction: column;
-  bottom: 85px;
-  height: 250px;
+  bottom: 70px;
+  height: 200px;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) {
   position: absolute;
@@ -555,6 +555,8 @@
   overflow: hidden;
   right: 4px;
   bottom: 0px;
+  height: 200px;
+  transform: scale(0);
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div:nth-child(2) > div:nth-child(1) > label {
   padding: 15px;
@@ -605,14 +607,16 @@
   display: none;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-up > div:nth-child(1) {
-  height: 240px;
   width: 90%;
-  transition: height 3s;
+  transform-origin: left bottom 200px;
+  transform: scale(1);
+  transition: transform 1s;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > div.slide-down > div:nth-child(1) {
-  height: 0px;
   width: 90%;
-  transition: height 3s;
+  transform-origin: left bottom 0px;
+  transform: scale(0);
+  transition: transform 1s;
 }
 .enterance > div.right > div.messages > div.main > div.all-messages > div.write-messages > span {
   background-color: #356CD2;

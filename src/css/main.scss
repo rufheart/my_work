@@ -553,8 +553,8 @@
                             width: 62px;
                             display: flex;
                             flex-direction: column;
-                            bottom: 85px;
-                            height: 250px;
+                            bottom: 70px;
+                            height: 200px;
                             &>div:nth-child(1){
                                 position: absolute;
                                 display: flex;
@@ -565,6 +565,8 @@
                                 overflow: hidden;
                                 right: 4px;
                                 bottom: 0px;
+                                height: 200px;
+                                transform: scale(0);
                                 &>label{
                                     padding: 15px;
                                 }
@@ -617,18 +619,19 @@
                         }   
                         &>div.slide-up{
                             &>div:nth-child(1){
-                                height: 240px;
                                 width: 90%;
-                                // transform-origin: left bottom 200px;
-                                // transform: scale(1);
-                                transition: height 3s;
+                                transform-origin: left bottom 200px;
+                                transform: scale(1);
+                                transition: transform 1s;
+                                
                             }
                         } 
                         &>div.slide-down{
                             &>div:nth-child(1){
-                                height: 0px;
                                 width: 90%;
-                                transition: height 3s;
+                                transform-origin: left bottom 0px;
+                                transform: scale(0);
+                                transition: transform 1s;
                             }
                         }                        
                         >span{

@@ -38,29 +38,36 @@ function Messages(props){
             setIconChange('mic')
         }
     }
-    useEffect(()=>{
-        let handler = (e)=>{
-            if(((!menuRef.current.contains(e.target))&(!menuRef2.current.contains(e.target)))){
-                if(zero==true&additional_icons==true){
-                    console.log(additional_icons,zero,'useffetc after if')
-                    setTimeout(()=>{setZero(!zero)}, 10);
-                    if(additional_icons==false){
-                        setAddIcon(!additional_icons)
-                    }
-                    else{
-                        setTimeout(()=>{setAddIcon(!additional_icons)}, 850)
-                    }
-                }
-            }
-        };
-        document.addEventListener("mousedown", handler)
-        return()=>{
-            document.removeEventListener("mousedown", handler)
-        }
-    });
+    // useEffect(()=>{
+    //     let handler = (e)=>{
+    //         if(((!menuRef.current.contains(e.target))&(!menuRef2.current.contains(e.target)))){
+    //             if(zero==true&additional_icons==true){
+    //                 console.log(additional_icons,zero,'useffetc after if')
+    //                 setTimeout(()=>{setZero(!zero)}, 10);
+    //                 if(additional_icons==false){
+    //                     setAddIcon(!additional_icons)
+    //                 }
+    //                 else{
+    //                     setTimeout(()=>{setAddIcon(!additional_icons)}, 850)
+    //                 }
+    //             }
+    //         }
+    //     };
+    //     document.addEventListener("mousedown", handler)
+    //     return()=>{
+    //         document.removeEventListener("mousedown", handler)
+    //     }
+    // });
     let handleFileButton = (e)=>{
-        setAddIcon(!additional_icons)
-        setZero(!zero)
+        if(zero==false){
+            setZero(true)
+            setAddIcon(true)
+        }
+        else{
+            const tmr = setTimeout(()=>{setAddIcon(false)},400)
+            
+            setZero(false)
+        }
     }
     console.log(additional_icons,'adit')
     return(
@@ -108,7 +115,7 @@ function Messages(props){
                     <div className="write-messages" >
                         <div>
                             <textarea required name="" onInput={handleHeightArea} placeholder='Messages' onChange={IconChanger} ref={textRef}></textarea>         
-                            <button disabled={on_off} ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
+                            <button ref={menuRef2} onClick={handleFileButton} className='btn'><span class="material-symbols-outlined" > attach_file </span></button>                      
                         </div>
                         <div ref={menuRef} className={zero==true?'slide-up':'slide-down'}>                         
                             <div >
